@@ -17,16 +17,6 @@ namespace MetaInvitation
 				harmony.CreateClassProcessor(type).Patch();
 			}
 
-			// tmp
-			var cardXml = ItemXmlDataList.instance.GetCardItem(timeWaveCardId, false);
-			Debug.Log(
-				string.Format(
-					"TimeWave id: {0}, xml cooltime: {1}",
-					cardXml.id,
-					cardXml.EgoMaxCooltimeValue
-				)
-			);
-
 			RemoveError();
 		}
 

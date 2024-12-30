@@ -19,28 +19,6 @@ namespace MetaInvitation
 			}
 		}
 
-		[HarmonyPatch(typeof(EntryScene))]
-		class EntryScene_Patch
-		{
-			[HarmonyPatch("GotoTitleOrSelectLanguge")]
-			[HarmonyPrefix]
-			static void PatchLog()
-			{
-				PatchChecker.CheckPatch(typeof(DiceCardXmlInfo).GetMethod("Copy"));
-			}
-		}
-
-		[HarmonyPatch(typeof(LibraryModel))]
-		class LibraryModel_Patch
-		{
-			[HarmonyPatch("LoadFromSaveData")]
-			[HarmonyPostfix]
-			static void PatchLog()
-			{
-				PatchChecker.CheckPatch(typeof(DiceCardXmlInfo).GetMethod("Copy"));
-			}
-		}
-
 		[HarmonyPatch(typeof(StageController))]
 		class StageController_Patch
 		{
@@ -108,17 +86,6 @@ namespace MetaInvitation
 			[HarmonyPostfix]
 			static void Copy_EgoMaxCooltimeValue(DiceCardXmlInfo __instance, DiceCardXmlInfo __result)
 			{
-				if (__result.id == MetaInvitation.timeWaveCardId)
-				{
-					Debug.Log(
-						string.Format(
-							"CopyMaxCooltime id: {0}, value: {1}, source value: {2}",
-							__result.id,
-							__result.EgoMaxCooltimeValue,
-							__instance.EgoMaxCooltimeValue
-						)
-					);
-				}
 				__result.EgoMaxCooltimeValue = __instance.EgoMaxCooltimeValue;
 			}
 		}
