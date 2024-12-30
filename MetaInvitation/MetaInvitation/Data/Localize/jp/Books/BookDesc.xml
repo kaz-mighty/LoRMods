@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BookDescRoot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <bookDescList>
+    <BookDesc BookID="1">
+      <BookName>はぐれフィクサーのページ</BookName>
+      <TextList>
+        <Desc>外郭で偶然遺物を手に入れ、生き残ることに成功した人物。フィクサーは勝手に自称しているだけで、実際は何の身分もない。外郭だから。</Desc>
+      </TextList>
+    </BookDesc>
+    <BookDesc BookID="2">
+      <BookName>時の遺物</BookName>
+      <TextList>
+        <Desc>フィクサーが所持していた剣と謎の装置のセット。戦い続けるほど窮地を脱する力が得られる、結界を張ることができる。
+効果範囲は広く、図書館全体を覆うほどである。</Desc>
+      </TextList>
+    </BookDesc>
+  </bookDescList>
+</BookDescRoot>

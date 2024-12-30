@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiceCardXmlRoot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Version>1.1</Version>
+  <Card ID="1">
+    <Name>時空の盾</Name>
+    <Artwork>Clock_Time.png</Artwork>
+    <Rarity>Uncommon</Rarity>
+    <Spec Range="Near" Cost="1" />
+    <Script>drawCard</Script>
+    <BehaviourList>
+      <Behaviour Min="1" Dice="5" Type="Atk" Detail="Hit" Motion="H" MotionDefault="N" EffectRes="Argalia_G" Script="" ActionScript="" Desc="" />
+      <Behaviour Min="6" Dice="8" Type="Def" Detail="Guard" Motion="G" MotionDefault="N" EffectRes="Argalia_G" Script="" ActionScript="" Desc="" />
+    </BehaviourList>
+    <Chapter>5</Chapter>
+    <Priority>0</Priority>
+  </Card>
+  <Card ID="2">
+    <Name>時の流れ</Name>
+    <Artwork>Seven_EnGarde.png</Artwork>
+    <Rarity>Uncommon</Rarity>
+    <Spec Range="Near" Cost="1" />
+    <Script>energy2</Script>
+    <BehaviourList>
+      <Behaviour Min="2" Dice="4" Type="Atk" Detail="Slash" Motion="J" MotionDefault="N" EffectRes="Argalia_S1" Script="" ActionScript="" Desc="" />
+      <Behaviour Min="3" Dice="8" Type="Def" Detail="Evasion" Motion="E" MotionDefault="N" EffectRes="" Script="" ActionScript="" Desc="" />
+    </BehaviourList>
+    <Chapter>5</Chapter>
+    <Priority>0</Priority>
+  </Card>
+  <Card ID="3">
+    <Name>時の波動</Name>
+    <Artwork>tmp_Time_Wave.png</Artwork>
+    <Rarity>Unique</Rarity>
+    <Option>EGO</Option>
+    <Spec Range="Far" Cost="2" />
+    <Script>TimeWave</Script>
+    <BehaviourList></BehaviourList>
+    <Chapter>5</Chapter>
+    <Priority>0</Priority>
+    <MaxCooltimeForEgo>18</MaxCooltimeForEgo>
+  </Card>
+  <Card ID="4">
+    <!-- 時の波動(敵) -->
+    <Artwork>tmp_Time_Wave.png</Artwork>
+    <Rarity>Unique</Rarity>
+    <Spec Range="Far" Cost="2" />
+    <Script>TimeWave</Script>
+    <BehaviourList></BehaviourList>
+    <Chapter>5</Chapter>
+    <Priority>0</Priority>
+    <MaxCooltimeForEgo>18</MaxCooltimeForEgo>
+  </Card>
+  <Card ID="5">
+    <!-- 素早く捌く -->
+    <Artwork>Seven_EnGarde.png</Artwork>
+    <Rarity>Unique</Rarity>
+    <Spec Range="Near" Cost="0" />
+    <Script></Script>
+    <BehaviourList>
+      <Behaviour Min="2" Dice="7" Type="Standby" Detail="Slash" Motion="J" MotionDefault="N" EffectRes="Argalia_S1" Script="" ActionScript="" Desc="" />
+      <Behaviour Min="1" Dice="6" Type="Standby" Detail="Evasion" Motion="E" MotionDefault="N" EffectRes="" Script="" ActionScript="" Desc="" />
+      <Behaviour Min="1" Dice="5" Type="Standby" Detail="Guard" Motion="G" MotionDefault="N" EffectRes="Argalia_G" Script="" ActionScript="" Desc="" />
+    </BehaviourList>
+    <Chapter>5</Chapter>
+    <Priority>0</Priority>
+  </Card>
+  <Card ID="6">
+    <Name>時の剣</Name>
+    <Artwork>Seven_Moulinet.png</Artwork>
+    <Rarity>Unique</Rarity>
+    <Spec Range="Near" Cost="3" />
+    <Script>TimeSword</Script>
+    <BehaviourList>
+      <Behaviour Min="2" Dice="7" Type="Atk" Detail="Penetrate" Motion="Z" MotionDefault="N" EffectRes="WarpCrew_Z" Script="strength1atk" ActionScript="" Desc="" />
+      <Behaviour Min="4" Dice="10" Type="Atk" Detail="Slash" Motion="J" MotionDefault="N" EffectRes="WarpCrew_H" Script="quickness1atk" ActionScript="" Desc="" />
+      <Behaviour Min="3" Dice="9" Type="Atk" Detail="Hit" Motion="H" MotionDefault="N" EffectRes="WarpCrew_G" Script="endurance1atk" ActionScript="" Desc="" />
+    </BehaviourList>
+    <Chapter>5</Chapter>
+    <Priority>0</Priority>
+  </Card>
+</DiceCardXmlRoot>

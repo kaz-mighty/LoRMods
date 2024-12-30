@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PassiveXmlRoot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Passive ID="1">
+    <!-- 時の結界 -->
+    <Rarity>Unique</Rarity>
+    <Cost>4</Cost>
+    <Script>TimeField</Script>
+  </Passive>
+  <Passive ID="2">
+    <!-- 時の波動 -->
+    <Rarity>Unique</Rarity>
+    <Cost>0</Cost>
+    <Script>TimeWave</Script>
+  </Passive>
+  <Passive ID="3">
+    <!-- 時の波動 (Enemy) -->
+    <Rarity>Unique</Rarity>
+    <Cost>0</Cost>
+    <Script>TimeWaveEnemy</Script>
+  </Passive>
+  <Passive ID="4">
+    <!-- 絆 -->
+    <Rarity>Uncommon</Rarity>
+    <Cost>0</Cost>
+    <Script>Kizuna</Script>
+  </Passive>
+  <Passive ID="5">
+    <!-- 加速 -->
+    <Rarity>Unique</Rarity>
+    <Cost>0</Cost>
+    <Script>EnemyTime</Script>
+  </Passive>
+  <Passive ID="6">
+    <!-- 高速 -->
+    <Rarity>Rare</Rarity>
+    <Cost>9</Cost>
+    <Script>HighSpeed</Script>
+  </Passive>
+  <Passive ID="7">
+    <!-- 素早く捌く -->
+    <Rarity>Unique</Rarity>
+    <Cost>9</Cost>
+    <Script>QuicklyHandle</Script>
+  </Passive>
+  <Passive ID="8">
+    <!-- 謎の装置 -->
+    <Rarity>Unique</Rarity>
+    <Cost>2</Cost>
+    <Script>UnknownMachine</Script>
+  </Passive>
+</PassiveXmlRoot>

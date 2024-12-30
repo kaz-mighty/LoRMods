@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BattleDialogRoot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Character ID="1">
+    <Type ID="START_BATTLE">
+      <BattleDialog ID="0">Start Test</BattleDialog>
+    </Type>
+    <Type ID="BATTLE_VICTORY">
+      <BattleDialog ID="0">Win Test</BattleDialog>
+    </Type>
+    <Type ID="DEATH">
+      <BattleDialog ID="0">Death Test</BattleDialog>
+    </Type>
+    <Type ID="COLLEAGUE_DEATH"><!-- 味方死亡時 -->
+      <BattleDialog ID="0">Ally Test</BattleDialog>
+    </Type>
+    <Type ID="KILLS_OPPONENT"><!-- 敵撃破時 -->
+      <BattleDialog ID="0">Kill Test</BattleDialog>
+    </Type>
+  </Character>
+</BattleDialogRoot>

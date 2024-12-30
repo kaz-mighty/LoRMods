@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BookXmlRoot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Version>1.1</Version>
+  <Book ID="1">
+    <Name>はぐれフィクサーのページ</Name>
+    <TextId>1</TextId>
+    <BookIcon />
+    <EquipEffect>
+      <HpReduction>0</HpReduction>
+      <HP>500</HP>
+      <DeadLine>0</DeadLine>
+      <Break>200</Break>
+      <SpeedMin>3</SpeedMin>
+      <Speed>7</Speed>
+      <SResist>Normal</SResist>
+      <PResist>Endure</PResist>
+      <HResist>Normal</HResist>
+      <SBResist>Endure</SBResist>
+      <PBResist>Endure</PBResist>
+      <HBResist>Normal</HBResist>
+      <MaxPlayPoint>6</MaxPlayPoint>
+      <StartPlayPoint>6</StartPlayPoint>
+      <AddedStartDraw>2</AddedStartDraw>
+      <Passive>5</Passive>
+      <Passive>1</Passive>
+      <Passive>3</Passive>
+      <Passive>6</Passive>
+      <Passive>7</Passive>
+    </EquipEffect>
+    <Rarity>Unique</Rarity>
+    <CharacterSkin>ZweiUnit1</CharacterSkin>
+    <CharacterSkinType>Lor</CharacterSkinType>
+    <SkinGender>N</SkinGender>
+    <Chapter>5</Chapter>
+    <Episode>1</Episode>
+    <RangeType>Melee</RangeType>
+    <RandomFace>false</RandomFace>
+    <SpeedDiceNum>1</SpeedDiceNum>
+  </Book>
+  <Book ID="2">
+    <Name>謎の装置</Name>
+    <TextId>1</TextId>
+    <BookIcon />
+    <EquipEffect>
+      <HpReduction>0</HpReduction>
+      <HP>120</HP>
+      <DeadLine>0</DeadLine>
+      <Break>0</Break>
+      <SpeedMin>1</SpeedMin>
+      <Speed>1</Speed>
+      <SResist>Endure</SResist>
+      <PResist>Normal</PResist>
+      <HResist>Vulnerable</HResist>
+      <SBResist>Immune</SBResist>
+      <PBResist>Immune</PBResist>
+      <HBResist>Immune</HBResist>
+      <MaxPlayPoint>1</MaxPlayPoint>
+      <StartPlayPoint>1</StartPlayPoint>
+      <AddedStartDraw>0</AddedStartDraw>
+      <Passive>8</Passive>
+    </EquipEffect>
+    <Rarity>Rare</Rarity>
+    <CharacterSkin>Creature_SingingMachine</CharacterSkin>
+    <CharacterSkinType>Lor</CharacterSkinType>
+    <SkinGender>N</SkinGender>
+    <Chapter>5</Chapter>
+    <Episode>1</Episode>
+    <RangeType>Melee</RangeType>
+    <RandomFace>false</RandomFace>
+    <SpeedDiceNum>4</SpeedDiceNum>
+  </Book>
+</BookXmlRoot>

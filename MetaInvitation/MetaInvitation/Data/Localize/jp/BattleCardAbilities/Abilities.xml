@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BattleCardAbilityDescRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BattleCardAbility ID="TimeWave">
+    <Desc>自分の時が325以上の場合のみ使用可能。
+[戦闘開始] 相手の強化と状態異常を全て解除する。
+このページはダイスが無いので行動しない。
+再使用には通常の2倍の感情が必要。</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="TimeSword">
+    <Desc>[使用時] ページを1枚引く。時50ごとにこのページの全ダイス最小値+1(最大4)</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="endurance1atk">
+    <Desc>[的中] 次の幕に忍耐1を得る</Desc>
+  </BattleCardAbility>
+</BattleCardAbilityDescRoot>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<PassiveDescRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <PassiveDesc ID="1">
+    <Name>時の結界</Name> <!-- 結界: Bounded Field -->
+    <Desc>舞台開始時、時を全ての味方に付与する。
+時は、今回の接待にて存在した敵味方全員の速度スロット数の累計に応じて恩恵を与える。
+接待のこのパッシブがある最初の2幕の間、全ての味方は受けるダメージ・混乱ダメージ1.25倍(効果によるダメージを含む)</Desc>
+  </PassiveDesc>
+  <PassiveDesc ID="2">
+    <Name>時の波動</Name>
+    <Desc>舞台開始時、階層で共有されるE.G.Oページを追加する。</Desc>
+  </PassiveDesc>
+  <PassiveDesc ID="3">
+    <Name>時の波動</Name>
+    <Desc>時が325以上かつ敵の強化状態が多いとき、専用ページを使用する。</Desc>
+  </PassiveDesc>
+  <PassiveDesc ID="4">
+    <Name>絆</Name>
+    <Desc>他の味方が死亡した場合、その舞台の間幕の開始時にパワー1と忍耐1を得る(最大2回)</Desc>
+  </PassiveDesc>
+  <PassiveDesc ID="5">
+    <Name>加速</Name>
+    <Desc>速度ダイス スロット +3。感情レベルが2以上のとき、追加でスロット+1。
+舞台開始時、手札の上限を+3してデッキの全てのカードを複製する。
+幕の開始時、追加で光を2回復してページを2枚引き、体力を時/10(切り上げ、最大50)回復する。</Desc>
+  </PassiveDesc>
+  <PassiveDesc ID="6">
+    <Name>高速</Name>
+    <Desc>相手の速度が自分の速度よりも低い場合、威力+1</Desc>
+  </PassiveDesc>
+  <PassiveDesc ID="7">
+    <Name>素早く捌く</Name>
+    <Desc>戦闘開始時、反撃ダイス(斬撃 2-7、回避 1-6、防御 1-5)を追加</Desc>
+  </PassiveDesc>
+  <PassiveDesc ID="8">
+    <Name>謎の装置</Name>
+    <Desc>行動しない。混乱状態にならない。他の味方が居なければ破壊される。
+幕の開始時、保護3を得る。幕の終了時、時のカウントを30進める。</Desc>
+  </PassiveDesc>
+</PassiveDescRoot>

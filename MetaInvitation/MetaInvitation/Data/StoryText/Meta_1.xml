@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScenarioRoot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Chapter ID="-1">
+    <Title />
+  </Chapter>
+  <Group>
+    <GroupName>group</GroupName>
+    <Episode>
+      <EpisodeName>Episode</EpisodeName>
+      <Place>
+        <PlaceName>場所：図書館 内部</PlaceName>
+        <Dialog ID="0" Model="롤랑">
+          <Teller>ローラン</Teller>
+          <Title>召使い</Title>
+          <Content>はぁ……</Content>
+        </Dialog>
+        <Dialog ID="1" Model="앤젤라">
+          <Teller>アンジェラ</Teller>
+          <Title>図書館長</Title>
+          <Content>また接待に失敗したのね。でも、いつもよりも落ち込んでいるようだけど？</Content>
+        </Dialog>
+        <Dialog ID="2" Model="롤랑">
+          <Teller>ローラン</Teller>
+          <Title>召使い</Title>
+          <Content>3時間も戦って、あともう一息、ってところだったからな。
+一番強そうな奴を逃がしてしまったし。</Content>
+        </Dialog>
+        <Dialog ID="3" Model="앤젤라">
+          <Teller>アンジェラ</Teller>
+          <Title>図書館長</Title>
+          <Content>それならいいものがあるわ。</Content>
+        </Dialog>
+        <Dialog ID="4" Model="롤랑">
+          <Teller>ローラン</Teller>
+          <Title>召使い</Title>
+          <Content>それは……招待状？また働くんですか館長様～？</Content>
+        </Dialog>
+        <Dialog ID="5" Model="앤젤라">
+          <Teller>アンジェラ</Teller>
+          <Title>図書館長</Title>
+          <Content>今すぐにとは言わないわ。
+でも、このゲストは長期戦に強いらしいの。</Content>
+        </Dialog>
+        <Dialog ID="6" Model="앤젤라">
+          <Teller>アンジェラ</Teller>
+          <Title>図書館長</Title>
+          <Content>外郭から発掘された装備を手にしていて、
+それが戦いの中で力を与えてくれるらしいの。</Content>
+        </Dialog>
+        <Dialog ID="7" Model="롤랑">
+          <Teller>ローラン</Teller>
+          <Title>召使い</Title>
+          <Content>つまり、そのゲストを本にすれば、長期戦に負けない力が手に入ると？</Content>
+        </Dialog>
+        <Dialog ID="8" Model="앤젤라">
+          <Teller>アンジェラ</Teller>
+          <Title>図書館長</Title>
+          <Content>そういうことよ。</Content>
+        </Dialog>
+        <Dialog ID="7" Model="롤랑">
+          <Teller>ローラン</Teller>
+          <Title>召使い</Title>
+          <Content>よ～し、それなら接待してやりますか！</Content>
+        </Dialog>
+      </Place>
+    </Episode>
+  </Group>
+</ScenarioRoot>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BattleCardDescRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <cardDescList>
+    <BattleCardDesc ID="1">
+      <LocalizedName>時空の盾</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="2">
+      <LocalizedName>時の流れ</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="3">
+      <LocalizedName>時の波動</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="4">
+      <LocalizedName>時の波動</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="5">
+      <LocalizedName>素早く捌く</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="6">
+      <LocalizedName>時の剣</LocalizedName>
+    </BattleCardDesc>
+  </cardDescList>
+</BattleCardDescRoot>
