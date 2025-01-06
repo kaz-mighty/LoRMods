@@ -12,7 +12,7 @@
         <Dialog ID="0" Model="롤랑">
           <Teller>ローラン</Teller>
           <Title>召使い</Title>
-          <Content>外郭の人間ってだけじゃなく、フィクサーも自称だったのかよ……。</Content>
+          <Content>外郭の人間ってだけじゃなく、フィクサーと名乗ってたのは自称だったのかよ……。</Content>
         </Dialog>
         <Dialog ID="1" Model="앤젤라">
           <Teller>アンジェラ</Teller>

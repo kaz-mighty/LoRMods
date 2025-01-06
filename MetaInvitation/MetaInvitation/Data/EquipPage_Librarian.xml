@@ -8,7 +8,7 @@
     <EquipEffect>
       <HP>96</HP>
       <Break>50</Break>
-      <SpeedMin>3</SpeedMin>
+      <SpeedMin>2</SpeedMin>
       <Speed>7</Speed>
       <SResist>Normal</SResist>
       <PResist>Endure</PResist>
@@ -22,6 +22,7 @@
       <Passive Pid="@origin">10001</Passive>
       <Passive>1</Passive>
       <Passive>2</Passive>
+      <Passive>6</Passive>
     </EquipEffect>
     <Rarity>Unique</Rarity>
     <CharacterSkin>ZweiUnit1</CharacterSkin>

@@ -16,9 +16,12 @@ namespace MetaInvitation
 			// 条件でカード入手
 			if (CheckStatus())
 			{
-				var card = owner.allyCardDetail.AddNewCard(MetaInvitation.timeWaveEnemyCardId);
-				card.temporary = true;
-				card.SetPriorityAdder(20);
+				var card = owner.allyCardDetail.AddTempCard(MetaInvitation.timeWaveEnemyCardId);
+				if (card != null)
+				{
+					card.SetCostToZero(true);
+					card.SetPriorityAdder(20);
+				}
 			}
 		}
 
@@ -121,7 +124,11 @@ namespace MetaInvitation
 			var deck = owner.allyCardDetail.GetAllDeck();
 			foreach (var card in deck)
 			{
-				owner.allyCardDetail.AddNewCardToDeck(card.GetID(), false);
+				var newCard = owner.allyCardDetail.AddNewCardToDeck(card.GetID(), false);
+				if (newCard != null)
+				{
+					newCard.SetPriorityAdder(-1);
+				}
 			}
 		}
 
@@ -131,7 +138,7 @@ namespace MetaInvitation
 			var buf = owner.bufListDetail.GetActivatedBufList().Find(x => x is BattleUnitBuf_Time) as BattleUnitBuf_Time;
 			if (buf != null && buf.stack > 0)
 			{
-				owner.RecoverHP(Mathf.Min((buf.stack + 9) / 10, 50));
+				owner.RecoverHP(Mathf.Min((buf.stack + 4) / 5, 70));
 			}
 		}
 
@@ -176,6 +183,10 @@ namespace MetaInvitation
 		public override void OnRoundStart()
 		{
 			owner.bufListDetail.AddKeywordBufThisRoundByEtc(KeywordBuf.Protection, 3, owner);
+			foreach (var unit in BattleObjectManager.instance.GetAliveList(owner.faction))
+			{
+				unit.bufListDetail.AddKeywordBufThisRoundByEtc(KeywordBuf.Quickness, 1, owner);
+			}
 		}
 
 		public override void OnRoundEnd_before()
