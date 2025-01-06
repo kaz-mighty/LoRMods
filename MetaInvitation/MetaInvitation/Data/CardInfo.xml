@@ -58,8 +58,9 @@
     <Script></Script>
     <BehaviourList>
       <Behaviour Min="3" Dice="7" Type="Standby" Detail="Slash" Motion="J" MotionDefault="N" EffectRes="Argalia_S1" Script="" ActionScript="" Desc="" />
-      <Behaviour Min="2" Dice="6" Type="Standby" Detail="Evasion" Motion="E" MotionDefault="N" EffectRes="" Script="" ActionScript="" Desc="" />
-      <Behaviour Min="2" Dice="5" Type="Standby" Detail="Guard" Motion="G" MotionDefault="N" EffectRes="Argalia_G" Script="" ActionScript="" Desc="" />
+      <Behaviour Min="2" Dice="7" Type="Standby" Detail="Evasion" Motion="E" MotionDefault="N" EffectRes="" Script="" ActionScript="" Desc="" />
+      <Behaviour Min="2" Dice="6" Type="Standby" Detail="Guard" Motion="G" MotionDefault="N" EffectRes="Argalia_G" Script="" ActionScript="" Desc="" />
+      <Behaviour Min="2" Dice="6" Type="Standby" Detail="Guard" Motion="G" MotionDefault="N" EffectRes="Argalia_G" Script="" ActionScript="" Desc="" />
     </BehaviourList>
     <Chapter>5</Chapter>
     <Priority>0</Priority>

@@ -3,7 +3,7 @@
   <Passive ID="1">
     <!-- 時の結界 -->
     <Rarity>Unique</Rarity>
-    <Cost>4</Cost>
+    <Cost>0</Cost>
     <Script>TimeField</Script>
   </Passive>
   <Passive ID="2">
@@ -31,10 +31,10 @@
     <Script>EnemyTime</Script>
   </Passive>
   <Passive ID="6">
-    <!-- 高速 -->
+    <!-- 速度差 -->
     <Rarity>Rare</Rarity>
-    <Cost>9</Cost>
-    <Script>HighSpeed</Script>
+    <Cost>5</Cost>
+    <Script>SpeedDiff</Script>
   </Passive>
   <Passive ID="7">
     <!-- 素早く捌く -->

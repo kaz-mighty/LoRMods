@@ -60,7 +60,7 @@
     <Compile Include="DiceCardAbility_endurance1atk.cs" />
     <Compile Include="EnemyPassive.cs" />
     <Compile Include="Main.cs" />
-    <Compile Include="PassiveAbility_HighSpeed.cs" />
+    <Compile Include="PassiveAbility_SpeedDiff.cs" />
     <Compile Include="PatchClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TimePassive.cs" />

@@ -1,6 +1,8 @@
-﻿namespace MetaInvitation
+﻿using UnityEngine;
+
+namespace MetaInvitation
 {
-	class PassiveAbility_HighSpeed: PassiveAbilityBase
+	class PassiveAbility_SpeedDiff: PassiveAbilityBase
 	{
 		public override void OnUseCard(BattlePlayingCardDataInUnitModel curCard)
 		{
@@ -9,7 +11,8 @@
 			int targetSpeed = curCard.target.GetSpeedDiceResult(targetSlot).value;
 			if (mySpeed > targetSpeed)
 			{
-				curCard.ApplyDiceStatBonus(DiceMatch.AllDice, new DiceStatBonus { power = 1 });
+				int num = Mathf.Min(mySpeed - targetSpeed, 5);
+				curCard.ApplyDiceStatBonus(DiceMatch.AllDice, new DiceStatBonus { max = num });
 			}
 		}
 	}

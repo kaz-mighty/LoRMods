@@ -149,10 +149,10 @@ namespace MetaInvitation
 
 		public override int SpeedDiceNumAdder()
 		{
-			int value = 3;
-			if (owner != null && owner.emotionDetail != null && owner.emotionDetail.EmotionLevel >= 2)
+			int value = 1;
+			if (owner != null && owner.emotionDetail != null)
 			{
-				value += 1;
+				value += Mathf.Min(owner.emotionDetail.EmotionLevel, 3);
 			}
 			return value;
 		}
@@ -185,7 +185,7 @@ namespace MetaInvitation
 			owner.bufListDetail.AddKeywordBufThisRoundByEtc(KeywordBuf.Protection, 3, owner);
 			foreach (var unit in BattleObjectManager.instance.GetAliveList(owner.faction))
 			{
-				unit.bufListDetail.AddKeywordBufThisRoundByEtc(KeywordBuf.Quickness, 1, owner);
+				unit.bufListDetail.AddKeywordBufThisRoundByEtc(KeywordBuf.Quickness, 2, owner);
 			}
 		}
 
