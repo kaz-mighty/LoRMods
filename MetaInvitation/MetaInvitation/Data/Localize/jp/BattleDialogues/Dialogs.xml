@@ -2,19 +2,21 @@
 <BattleDialogRoot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Character ID="1">
     <Type ID="START_BATTLE">
-      <BattleDialog ID="0">Start Test</BattleDialog>
+      <BattleDialog ID="0">都市の中でも戦わなくちゃいけないのか……</BattleDialog>
     </Type>
     <Type ID="BATTLE_VICTORY">
-      <BattleDialog ID="0">Win Test</BattleDialog>
+      <BattleDialog ID="0">これで都市に入る方法が分かるかな？</BattleDialog>
     </Type>
     <Type ID="DEATH">
-      <BattleDialog ID="0">Death Test</BattleDialog>
+      <BattleDialog ID="0">この力でも勝てないなんて……</BattleDialog>
+      <BattleDialog ID="1">都市の人たちはこんなに強いのか！？</BattleDialog>
     </Type>
     <Type ID="COLLEAGUE_DEATH"><!-- 味方死亡時 -->
-      <BattleDialog ID="0">Ally Test</BattleDialog>
+      <BattleDialog ID="0">あっ、加速装置が！</BattleDialog>
     </Type>
     <Type ID="KILLS_OPPONENT"><!-- 敵撃破時 -->
-      <BattleDialog ID="0">Kill Test</BattleDialog>
+      <BattleDialog ID="0">大丈夫、これなら勝てる……！</BattleDialog>
+      <BattleDialog ID="1">もう、降参してくれない？</BattleDialog>
     </Type>
   </Character>
 </BattleDialogRoot>

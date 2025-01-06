@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScenarioRoot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Chapter ID="-1">
+    <Title />
+  </Chapter>
+  <Group>
+    <GroupName>group</GroupName>
+    <Episode>
+      <EpisodeName>Episode</EpisodeName>
+      <Place>
+        <PlaceName>場所：図書館 内部</PlaceName>
+        <Dialog ID="0" Model="롤랑">
+          <Teller>ローラン</Teller>
+          <Title>召使い</Title>
+          <Content>外郭の人間ってだけじゃなく、フィクサーも自称だったのかよ……。</Content>
+        </Dialog>
+        <Dialog ID="1" Model="앤젤라">
+          <Teller>アンジェラ</Teller>
+          <Title>図書館長</Title>
+          <Content>自称？つまり、フィクサーでもないただの一般人がやってきたということかしら？</Content>
+        </Dialog>
+        <Dialog ID="2" Model="롤랑">
+          <Teller>ローラン</Teller>
+          <Title>召使い</Title>
+          <Content>いや、フィクサーとしての仕事をやったこともあるみたいだ。
+ただ、ハナ協会に登録されていないし、どの事務所や組織にも所属していないってことだ。</Content>
+        </Dialog>
+        <Dialog ID="3" Model="앤젤라">
+          <Teller>アンジェラ</Teller>
+          <Title>図書館長</Title>
+          <Content>なにかに所属しないと、都市で生きるのは難しいんじゃなかったかしら?</Content>
+        </Dialog>
+        <Dialog ID="4" Model="롤랑">
+          <Teller>ローラン</Teller>
+          <Title>召使い</Title>
+          <Content>外郭は都市じゃないし、情報もあまりないからな。
+外郭の人間がどう生きていたって不思議じゃないさ。</Content>
+        </Dialog>
+      </Place>
+    </Episode>
+  </Group>
+</ScenarioRoot>

@@ -21,8 +21,8 @@
     <Condition>
       <Level>0</Level>
     </Condition>
-    <Story Condition="Start" />
-    <Story Condition="End" />
+    <Story Condition="Start">Meta_1_start.xml</Story>
+    <Story Condition="End">Meta_1_end.xml</Story>
     <IsChapterLast>false</IsChapterLast>
     <invitationtype>false</invitationtype>
   </Stage>
