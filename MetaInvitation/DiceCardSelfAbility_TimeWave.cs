@@ -10,6 +10,16 @@
 			}
 		}
 
+		public override bool IsTargetableSelf()
+		{
+			return true;
+		}
+
+		public override bool IsTargetableAllUnit()
+		{
+			return true;
+		}
+
 		public override bool OnChooseCard(BattleUnitModel owner)
 		{
 			var timeBuf = owner.bufListDetail.GetActivatedBufList().Find(buf => buf is BattleUnitBuf_Time) as BattleUnitBuf_Time;
