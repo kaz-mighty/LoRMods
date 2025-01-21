@@ -34,8 +34,23 @@ namespace MetaInvitation
 		public static readonly LorId timeWaveEnemyCardId = new LorId(packageId, 4);
 		public static readonly LorId quicklyHandleCardId = new LorId(packageId, 5);
 		public static readonly LorId kizunaPassiveId = new LorId(packageId, 4);
+		public static readonly LorId timeSub2PassiveId = new LorId(packageId, 9);
 		public static readonly LorId disabledEmotionCardStageId = new LorId(packageId, 1);
 
 	}
 
+	public static class Util
+	{
+		// positive only
+		public static int CeilDiv(this int a, int b)
+		{
+			return (a + b - 1) / b;
+		}
+
+		// positive only
+		public static int RandomRoundDiv(this int a, int b)
+		{
+			return (a + RandomUtil.Range(0, b - 1)) / b;
+		}
+	}
 }

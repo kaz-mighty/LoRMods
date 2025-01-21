@@ -26,6 +26,6 @@
 			}
 		}
 
-		internal const int canUse = 325;
+		internal const int canUse = 350;
 	}
 }

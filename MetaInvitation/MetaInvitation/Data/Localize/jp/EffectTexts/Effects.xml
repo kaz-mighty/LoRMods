@@ -3,15 +3,14 @@
   <effectTextList>
     <BattleEffectText ID="kazmighty.meta_Time">
       <Name>時</Name>
-      <Desc>幕の終了時、敵味方全員の速度スロット数の合計だけ数値が増加する。
-幕の開始時、体力を数値/50(切り上げ、最大10)回復する。
-125以上なら、混乱時に耐性が1段階しか低下しないようになる。
-225以上なら、「絆」パッシブスキルを追加。
-425以上なら、全ダイスの威力+1</Desc>
-    </BattleEffectText>
-    <BattleEffectText ID="kazmighty.meta_TimePenalty">
-      <Name>時の結界</Name>
-      <Desc>受けるダメージ・混乱ダメージ1.25倍(効果によるダメージを含む)</Desc>
+      <Desc>&lt;size=85%&gt;幕の終了時、敵味方全員の速度スロット数の合計だけ数値が増加する。
+幕の開始時、体力を数値/80(小数点以下ランダム、最低1、最大8)回復する。
+さらに一定値以上で追加効果を与える。
+150: 混乱時に耐性が1段階しか低下しない
+200: 「絆」パッシブを追加
+300: 全ダイス最大値+1
+400: 全ダイス最小値+1
+500: 「???」パッシブを追加&lt;/size&gt;</Desc>
     </BattleEffectText>
   </effectTextList>
 </BattleEffectTextRoot>

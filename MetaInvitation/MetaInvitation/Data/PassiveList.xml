@@ -48,4 +48,10 @@
     <Cost>2</Cost>
     <Script>UnknownMachine</Script>
   </Passive>
+  <Passive ID="9">
+    <!-- ??? -->
+    <Rarity>Unique</Rarity>
+    <Cost>0</Cost>
+    <Script>TimeSub2</Script>
+  </Passive>
 </PassiveXmlRoot>

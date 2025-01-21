@@ -89,5 +89,27 @@ namespace MetaInvitation
 				__result.EgoMaxCooltimeValue = __instance.EgoMaxCooltimeValue;
 			}
 		}
+
+		[HarmonyPatch(typeof(BattleUnitModel))]
+		class BattleUnitModel_Patch
+		{
+			[HarmonyPatch("Die")]
+			[HarmonyPrefix]
+			[HarmonyPriority(Priority.LowerThanNormal)]
+			static bool ForcelyDieCancel(BattleUnitModel __instance, bool __runOriginal)
+			{
+				if (__runOriginal && __instance.hp > __instance.Book.DeadLine && __instance.passiveDetail.HasPassive<PassiveAbility_TimeSub2>())
+				{
+					var minHp = __instance.GetMinHp();
+					if (minHp > __instance.Book.DeadLine)
+					{
+						AccessTools.Property(typeof(BattleUnitModel), "hp").SetValue(__instance, minHp);
+						SingletonBehavior<BattleManagerUI>.Instance.ui_unitListInfoSummary.UpdateCharacterProfile(__instance, __instance.faction, __instance.hp, __instance.breakDetail.breakGauge, null);
+						return false;
+					}
+				}
+				return true;
+			}
+		}
 	}
 }
