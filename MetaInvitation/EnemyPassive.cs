@@ -180,6 +180,8 @@ namespace MetaInvitation
 	// 謎の装置
 	public class PassiveAbility_UnknownMachine : PassiveAbilityBase
 	{
+		public override bool isActionable => false;
+
 		public override void OnRoundStart()
 		{
 			owner.bufListDetail.AddKeywordBufThisRoundByEtc(KeywordBuf.Protection, 3, owner);
