@@ -49,10 +49,10 @@ namespace MetaInvitation
 			}
 
 			foreach (var unit in BattleObjectManager.instance.GetAliveList(Faction.Player)) {
+				int point = 0;
 				var bufList = unit.bufListDetail.GetActivatedBufList();
-				foreach(var buf in bufList)
+				foreach (var buf in bufList)
 				{
-					int point = 0;
 					switch (buf.bufType)
 					{
 						case KeywordBuf.AllPowerUp:
@@ -69,7 +69,6 @@ namespace MetaInvitation
 						case KeywordBuf.PenetratePowerUp:
 						case KeywordBuf.HitPowerUp:
 						case KeywordBuf.DefensePowerUp:
-						case KeywordBuf.Resistance:
 							point += buf.stack;
 							break;
 						case KeywordBuf.Weak:
@@ -101,11 +100,11 @@ namespace MetaInvitation
 							}
 							break;
 					}
-					if (point > max)
-					{
-						_target = unit;
-						max = point;
-					}
+				}
+				if (point > max)
+				{
+					_target = unit;
+					max = point;
 				}
 			}
 			return max >= 6;
