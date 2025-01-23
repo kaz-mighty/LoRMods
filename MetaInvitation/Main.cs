@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using HarmonyLib;
 using Mod;
 using LOR_DiceSystem;
@@ -16,6 +17,7 @@ namespace MetaInvitation
 				Debug.Log(MetaInvitation.packageId + ": HarmonyPatch " + type.Name);
 				harmony.CreateClassProcessor(type).Patch();
 			}
+			SceneManager.sceneLoaded += LatePatch;
 
 			RemoveError();
 		}
@@ -25,6 +27,18 @@ namespace MetaInvitation
 			Singleton<ModContentManager>.Instance.GetErrorLogs().RemoveAll(
 				(string errorLog) => errorLog.Contains(packageId) && errorLog.Contains("The same assembly name already exists")
 			);
+		}
+
+		private static void LatePatch(Scene scene, LoadSceneMode _)
+		{
+			if (scene.name == "Stage_Hod_New")
+			{
+				SceneManager.sceneLoaded -= LatePatch;
+				if (!Harmony.HasAnyPatches("LOR.HatSingularity"))
+				{
+					harmony.PatchAll(typeof(ManualPatch.AddPositiveBufText));
+				}
+			}
 		}
 
 		public static readonly string packageId = "kazmighty.meta";

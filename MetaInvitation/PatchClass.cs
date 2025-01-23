@@ -65,20 +65,6 @@ namespace MetaInvitation
 			}
 		}
 
-		[HarmonyPatch(typeof(BattleUnitBuf))]
-		class BattleUnitBuf_Patch
-		{
-			[HarmonyPatch("GetAddTextData")]
-			[HarmonyPostfix]
-			static void GetAddTextData_Postfix(BattleUnitBuf __instance, ref string __result)
-			{
-				if (__instance.positiveType == BufPositiveType.Positive)
-				{
-					__result += " \n<color=#00FF00>(" + TextDataModel.GetText("BattleUI_buf", Array.Empty<object>()) + ")</color>";
-				}
-			}
-		}
-
 		[HarmonyPatch(typeof(DiceCardXmlInfo))]
 		class DiceCardXmlInfo_Patch
 		{
