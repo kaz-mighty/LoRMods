@@ -69,4 +69,147 @@
     <RandomFace>false</RandomFace>
     <SpeedDiceNum>4</SpeedDiceNum>
   </Book>
+  <Book ID="100">
+    <Name>ニコルのページ</Name>
+    <TextId>100</TextId>
+    <BookIcon />
+    <EquipEffect>
+      <HpReduction>0</HpReduction>
+      <HP>184</HP>
+      <DeadLine>0</DeadLine>
+      <Break>86</Break>
+      <SpeedMin>2</SpeedMin>
+      <Speed>7</Speed>
+      <SResist>Endure</SResist>
+      <PResist>Normal</PResist>
+      <HResist>Normal</HResist>
+      <SBResist>Endure</SBResist>
+      <PBResist>Normal</PBResist>
+      <HBResist>Normal</HBResist>
+      <MaxPlayPoint>4</MaxPlayPoint>
+      <StartPlayPoint>4</StartPlayPoint>
+      <AddedStartDraw>2</AddedStartDraw>
+      <Passive Pid="@origin">10008</Passive>
+      <Passive>100</Passive>
+      <Passive>101</Passive>
+      <Passive Pid="@origin">250223</Passive>
+      <Passive>102</Passive><!-- enemy only -->
+    </EquipEffect>
+    <Rarity>Unique</Rarity>
+    <CharacterSkin>Mei</CharacterSkin>
+    <CharacterSkinType>Lor</CharacterSkinType>
+    <SkinGender>N</SkinGender>
+    <Chapter>6</Chapter>
+    <Episode>2</Episode>
+    <RangeType>Melee</RangeType>
+    <RandomFace>false</RandomFace>
+    <SpeedDiceNum>1</SpeedDiceNum>
+  </Book>
+  <Book ID="101">
+    <Name>(ネームド1)のページ</Name>
+    <TextId>101</TextId>
+    <BookIcon />
+    <EquipEffect>
+      <HpReduction>0</HpReduction>
+      <HP>142</HP>
+      <DeadLine>0</DeadLine>
+      <Break>65</Break>
+      <SpeedMin>1</SpeedMin>
+      <Speed>8</Speed>
+      <SResist>Normal</SResist>
+      <PResist>Endure</PResist>
+      <HResist>Endure</HResist>
+      <SBResist>Normal</SBResist>
+      <PBResist>Normal</PBResist>
+      <HBResist>Normal</HBResist>
+      <MaxPlayPoint>4</MaxPlayPoint>
+      <StartPlayPoint>4</StartPlayPoint>
+      <AddedStartDraw>2</AddedStartDraw>
+      <Passive Pid="@origin">10008</Passive>
+      <Passive>106</Passive>
+      <Passive>103</Passive>
+      <Passive>104</Passive>
+      <Passive>107</Passive><!-- enemy only -->
+    </EquipEffect>
+    <Rarity>Unique</Rarity>
+    <CharacterSkin>Liu1Unit</CharacterSkin><!-- tmp -->
+    <CharacterSkinType>Lor</CharacterSkinType>
+    <SkinGender>N</SkinGender>
+    <Chapter>6</Chapter>
+    <Episode>2</Episode>
+    <RangeType>Melee</RangeType>
+    <RandomFace>true</RandomFace>
+    <SpeedDiceNum>1</SpeedDiceNum>
+  </Book>
+  <Book ID="102">
+    <Name>(ネームド2)のページ</Name>
+    <TextId>102</TextId>
+    <BookIcon />
+    <EquipEffect>
+      <HpReduction>0</HpReduction>
+      <HP>124</HP>
+      <DeadLine>0</DeadLine>
+      <Break>78</Break>
+      <SpeedMin>4</SpeedMin>
+      <Speed>6</Speed>
+      <SResist>Normal</SResist>
+      <PResist>Normal</PResist>
+      <HResist>Normal</HResist>
+      <SBResist>Endure</SBResist>
+      <PBResist>Endure</PBResist>
+      <HBResist>Normal</HBResist>
+      <MaxPlayPoint>4</MaxPlayPoint>
+      <StartPlayPoint>4</StartPlayPoint>
+      <AddedStartDraw>2</AddedStartDraw>
+      <Passive Pid="@origin">10008</Passive>
+      <Passive>105</Passive>
+      <Passive Pid="@origin">243105</Passive>
+      <Passive>107</Passive><!-- enemy only -->
+    </EquipEffect>
+    <Rarity>Unique</Rarity>
+    <CharacterSkin>Liu1Unit</CharacterSkin><!-- tmp -->
+    <CharacterSkinType>Lor</CharacterSkinType>
+    <SkinGender>N</SkinGender>
+    <Chapter>6</Chapter>
+    <Episode>2</Episode>
+    <RangeType>Melee</RangeType>
+    <RandomFace>true</RandomFace>
+    <SpeedDiceNum>1</SpeedDiceNum>
+  </Book>
+  <Book ID="103">
+    <Name>メタ事務所 フィクサーのページ</Name>
+    <TextId>103</TextId>
+    <BookIcon />
+    <EquipEffect>
+      <HpReduction>0</HpReduction>
+      <HP>112</HP>
+      <DeadLine>0</DeadLine>
+      <Break>54</Break>
+      <SpeedMin>1</SpeedMin>
+      <Speed>6</Speed>
+      <SResist>Normal</SResist>
+      <PResist>Normal</PResist>
+      <HResist>Normal</HResist>
+      <SBResist>Normal</SBResist>
+      <PBResist>Normal</PBResist>
+      <HBResist>Endure</HBResist>
+      <MaxPlayPoint>3</MaxPlayPoint>
+      <StartPlayPoint>3</StartPlayPoint>
+      <AddedStartDraw>1</AddedStartDraw>
+      <Passive Pid="@origin">10001</Passive>
+      <Passive>102</Passive>
+      <Passive>108</Passive>
+      <Passive>107</Passive>
+      <Passive Pid="@origin">250001</Passive>
+    </EquipEffect>
+    <Rarity>Unique</Rarity>
+    <CharacterSkin>LiuSection2Unit</CharacterSkin><!-- tmp -->
+    <CharacterSkinType>Lor</CharacterSkinType>
+    <SkinGender>N</SkinGender>
+    <Chapter>6</Chapter>
+    <Episode>2</Episode>
+    <RangeType>Melee</RangeType>
+    <RandomFace>true</RandomFace>
+    <SpeedDiceNum>1</SpeedDiceNum>
+  </Book>
 </BookXmlRoot>

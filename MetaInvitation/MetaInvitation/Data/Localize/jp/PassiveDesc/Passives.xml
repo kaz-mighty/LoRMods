@@ -41,4 +41,40 @@
     <Desc>1幕に受けるダメージ・混乱ダメージが最大体力・混乱抵抗値の25%を超えるとき、超える分の半分だけダメージを軽減する。
 1幕の体力減少量が最大値の75%を超えることがない(即死を含む)</Desc>
   </PassiveDesc>
+  <PassiveDesc ID="100">
+    <Name>対抗戦術</Name>
+    <Desc>パッシブを追加するx種類の特殊ページを得る。それらは1つの舞台でいずれか1枚のみ使用できる。</Desc>
+  </PassiveDesc>
+  <PassiveDesc ID="101">
+    <Name>代理指揮</Name>
+    <Desc>幕の開始時、パワーを得ていない全ての味方にパワー1を付与する。得ている場合でも20%の確率で付与する。忍耐1とクイック1も同様にして付与する。</Desc>
+  </PassiveDesc>
+  <PassiveDesc ID="102">
+    <Name>受け流し1</Name>
+    <Desc></Desc>
+  </PassiveDesc>
+  <PassiveDesc ID="103">
+    <Name>受け流し2</Name>
+    <Desc></Desc>
+  </PassiveDesc>
+  <PassiveDesc ID="104">
+    <Name>力の発散</Name>
+    <Desc></Desc>
+  </PassiveDesc>
+  <PassiveDesc ID="105">
+    <Name>覚悟</Name>
+    <Desc></Desc>
+  </PassiveDesc>
+  <PassiveDesc ID="106">
+    <Name>見切り</Name>
+    <Desc></Desc>
+  </PassiveDesc>
+  <PassiveDesc ID="107">
+    <Name>深呼吸+</Name>
+    <Desc></Desc>
+  </PassiveDesc>
+  <PassiveDesc ID="108">
+    <Name>慎重な追撃</Name>
+    <Desc></Desc>
+  </PassiveDesc>
 </PassiveDescRoot>

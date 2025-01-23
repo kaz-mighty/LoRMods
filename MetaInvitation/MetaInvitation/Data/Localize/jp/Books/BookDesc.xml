@@ -16,5 +16,29 @@
         <Desc>フィクサーが所持していた剣。戦い続けるほど窮地を脱する力が強まるが、一休みすると元に戻ってしまう。</Desc>
       </TextList>
     </BookDesc>
+    <BookDesc BookID="100">
+      <BookName>ニコルのページ</BookName>
+      <TextList>
+        <Desc></Desc>
+      </TextList>
+    </BookDesc>
+    <BookDesc BookID="101">
+      <BookName>(ネームド1)のページ</BookName>
+      <TextList>
+        <Desc></Desc>
+      </TextList>
+    </BookDesc>
+    <BookDesc BookID="102">
+      <BookName>(ネームド2)のページ</BookName>
+      <TextList>
+        <Desc></Desc>
+      </TextList>
+    </BookDesc>
+    <BookDesc BookID="103">
+      <BookName>メタ事務所 フィクサーのページ</BookName>
+      <TextList>
+        <Desc></Desc>
+      </TextList>
+    </BookDesc>
   </bookDescList>
 </BookDescRoot>

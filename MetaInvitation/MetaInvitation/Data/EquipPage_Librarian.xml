@@ -61,6 +61,128 @@
     <Chapter>5</Chapter>
     <Episode>1</Episode>
     <NotEquip>true</NotEquip>
-    <SpeedDiceNum>1</SpeedDiceNum>
+  </Book>
+  <Book ID="10000100">
+    <Name>ニコルのページ</Name>
+    <TextId>100</TextId>
+    <BookIcon />
+    <EquipEffect>
+      <HP>103</HP>
+      <Break>56</Break>
+      <SpeedMin>2</SpeedMin>
+      <Speed>7</Speed>
+      <SResist>Endure</SResist>
+      <PResist>Normal</PResist>
+      <HResist>Normal</HResist>
+      <SBResist>Endure</SBResist>
+      <PBResist>Normal</PBResist>
+      <HBResist>Normal</HBResist>
+      <MaxPlayPoint>4</MaxPlayPoint>
+      <StartPlayPoint>4</StartPlayPoint>
+      <AddedStartDraw>0</AddedStartDraw>
+      <Passive Pid="@origin">10008</Passive>
+      <Passive>100</Passive>
+      <Passive>101</Passive>
+      <Passive Pid="@origin">250223</Passive>
+    </EquipEffect>
+    <Rarity>Unique</Rarity>
+    <CharacterSkin>Mei</CharacterSkin>
+    <CharacterSkinType>Lor</CharacterSkinType>
+    <SkinGender>N</SkinGender>
+    <Chapter>6</Chapter>
+    <Episode>1</Episode>
+    <RangeType>Melee</RangeType>
+  </Book>
+  <Book ID="10000101">
+    <Name>(ネームド1)のページ</Name>
+    <TextId>101</TextId>
+    <BookIcon />
+    <EquipEffect>
+      <HP>108</HP>
+      <Break>46</Break>
+      <SpeedMin>1</SpeedMin>
+      <Speed>8</Speed>
+      <SResist>Normal</SResist>
+      <PResist>Endure</PResist>
+      <HResist>Endure</HResist>
+      <SBResist>Normal</SBResist>
+      <PBResist>Normal</PBResist>
+      <HBResist>Normal</HBResist>
+      <MaxPlayPoint>4</MaxPlayPoint>
+      <StartPlayPoint>4</StartPlayPoint>
+      <AddedStartDraw>0</AddedStartDraw>
+      <Passive Pid="@origin">10008</Passive>
+      <Passive>106</Passive>
+      <Passive>103</Passive>
+      <Passive>104</Passive>
+    </EquipEffect>
+    <Rarity>Unique</Rarity>
+    <CharacterSkin>Liu1Unit</CharacterSkin><!-- tmp -->
+    <CharacterSkinType>Lor</CharacterSkinType>
+    <SkinGender>N</SkinGender>
+    <Chapter>6</Chapter>
+    <Episode>2</Episode>
+    <RangeType>Melee</RangeType>
+  </Book>
+  <Book ID="10000102">
+    <Name>(ネームド2)のページ</Name>
+    <TextId>102</TextId>
+    <BookIcon />
+    <EquipEffect>
+      <HP>88</HP>
+      <Break>59</Break>
+      <SpeedMin>4</SpeedMin>
+      <Speed>6</Speed>
+      <SResist>Normal</SResist>
+      <PResist>Normal</PResist>
+      <HResist>Normal</HResist>
+      <SBResist>Endure</SBResist>
+      <PBResist>Endure</PBResist>
+      <HBResist>Normal</HBResist>
+      <MaxPlayPoint>4</MaxPlayPoint>
+      <StartPlayPoint>4</StartPlayPoint>
+      <AddedStartDraw>0</AddedStartDraw>
+      <Passive Pid="@origin">10008</Passive>
+      <Passive>105</Passive>
+      <Passive Pid="@origin">243105</Passive>
+    </EquipEffect>
+    <Rarity>Unique</Rarity>
+    <CharacterSkin>LiuSection2Unit</CharacterSkin><!-- tmp -->
+    <CharacterSkinType>Lor</CharacterSkinType>
+    <SkinGender>N</SkinGender>
+    <Chapter>6</Chapter>
+    <Episode>2</Episode>
+    <RangeType>Melee</RangeType>
+  </Book>
+  <Book ID="10000103">
+    <Name>メタ事務所 フィクサーのページ</Name>
+    <TextId>103</TextId>
+    <BookIcon />
+    <EquipEffect>
+      <HP>89</HP>
+      <Break>44</Break>
+      <SpeedMin>1</SpeedMin>
+      <Speed>6</Speed>
+      <SResist>Normal</SResist>
+      <PResist>Normal</PResist>
+      <HResist>Normal</HResist>
+      <SBResist>Normal</SBResist>
+      <PBResist>Normal</PBResist>
+      <HBResist>Endure</HBResist>
+      <MaxPlayPoint>3</MaxPlayPoint>
+      <StartPlayPoint>3</StartPlayPoint>
+      <AddedStartDraw>0</AddedStartDraw>
+      <Passive Pid="@origin">10001</Passive>
+      <Passive>102</Passive>
+      <Passive>108</Passive>
+      <Passive>107</Passive>
+    </EquipEffect>
+    <Rarity>Unique</Rarity>
+    <CharacterSkin>LiuSection2Unit</CharacterSkin><!-- tmp -->
+    <CharacterSkinType>Lor</CharacterSkinType>
+    <SkinGender>N</SkinGender>
+    <Chapter>6</Chapter>
+    <Episode>2</Episode>
+    <RangeType>Melee</RangeType>
   </Book>
 </BookXmlRoot>
