@@ -97,5 +97,27 @@ namespace MetaInvitation
 				return true;
 			}
 		}
+
+		[HarmonyPatch(typeof(BattleFarAreaPlayManager))]
+		class BattleFarAreaPlayManager_Patch
+		{
+			[HarmonyPatch("EndFarAreaPlay")]
+			[HarmonyPrefix]
+			static void CancelDestroyDices(BattleFarAreaPlayManager __instance, float ____endDelay, float ____elapsedEndDelay, float deltaTime)
+			{
+				if (____elapsedEndDelay + deltaTime < ____endDelay)
+				{
+					return;
+				}
+				foreach (var victimInfo in __instance.victims)
+				{
+					if (victimInfo.unitModel.passiveDetail.HasPassive<Second.PassiveAbility_kaz_Preparedness>())
+					{
+						victimInfo.cardDestroyed = false;
+						victimInfo.destroyedDicesIndex.Clear();
+					}
+				}
+			}
+		}
 	}
 }

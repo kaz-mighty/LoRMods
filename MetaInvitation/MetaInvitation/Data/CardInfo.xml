@@ -79,4 +79,26 @@
     <Chapter>5</Chapter>
     <Priority>0</Priority>
   </Card>
+  <Card ID="150">
+    <!-- 対抗：標準 実装するかは未定 -->
+    <Artwork></Artwork>
+    <Rarity>Unique</Rarity>
+    <Option>Personal</Option>
+    <Spec Range="Instance" Cost="0" />
+    <Script></Script>
+    <BehaviourList></BehaviourList>
+    <Chapter>6</Chapter>
+    <Priority>0</Priority>
+  </Card>
+  <Card ID="151">
+    <!-- 対抗：煙 -->
+    <Artwork></Artwork>
+    <Rarity>Unique</Rarity>
+    <Option>Personal</Option>
+    <Spec Range="Instance" Cost="0" />
+    <Script></Script>
+    <BehaviourList></BehaviourList>
+    <Chapter>6</Chapter>
+    <Priority>0</Priority>
+  </Card>
 </DiceCardXmlRoot>

@@ -54,58 +54,59 @@
     <Cost>0</Cost>
     <Script>TimeSub2</Script>
   </Passive>
+
   <Passive ID="100">
     <!-- 対抗戦術 -->
     <Rarity>Unique</Rarity>
     <Cost>4</Cost>
-    <Script></Script>
+    <Script>kaz_MetaTactics</Script>
   </Passive>
   <Passive ID="101">
     <!-- 代理指揮 -->
     <Rarity>Unique</Rarity>
     <Cost>7</Cost>
-    <Script></Script>
+    <Script>kaz_ActingCommander</Script>
   </Passive>
   <Passive ID="102">
     <!-- 受け流し1 -->
     <Rarity>Rare</Rarity>
     <Cost>1</Cost>
-    <Script></Script>
+    <Script>kaz_Parry1</Script>
   </Passive>
   <Passive ID="103">
     <!-- 受け流し2 -->
     <Rarity>Unique</Rarity>
     <Cost>3</Cost>
-    <Script></Script>
+    <Script>kaz_Parry2</Script>
   </Passive>
   <Passive ID="104">
     <!-- 力の発散 -->
     <Rarity>Unique</Rarity>
     <Cost>2</Cost>
-    <Script></Script>
+    <Script>kaz_PowerDiverGence</Script>
   </Passive>
   <Passive ID="105">
     <!-- 覚悟 -->
     <Rarity>Unique</Rarity>
     <Cost>3</Cost>
-    <Script></Script>
+    <Script>kaz_Preparedness</Script>
   </Passive>
   <Passive ID="106">
     <!-- 見切り -->
     <Rarity>Unique</Rarity>
     <Cost>6</Cost>
-    <Script></Script>
+    <Script>kaz_GreaterEvasion</Script>
   </Passive>
   <Passive ID="107">
     <!-- 深呼吸+ -->
     <Rarity>Common</Rarity>
-    <Cost>2</Cost>
-    <Script></Script>
+    <Cost>3</Cost>
+    <Script>kaz_DeepBreath</Script>
   </Passive>
   <Passive ID="108">
     <!-- 慎重な追撃 -->
     <Rarity>Common</Rarity>
     <Cost>1</Cost>
-    <Script></Script>
+    <Script>kaz_CarefulPursuit</Script>
   </Passive>
 </PassiveXmlRoot>

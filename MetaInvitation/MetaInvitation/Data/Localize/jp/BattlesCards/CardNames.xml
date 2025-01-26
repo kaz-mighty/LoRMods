@@ -19,5 +19,12 @@
     <BattleCardDesc ID="6">
       <LocalizedName>時の剣</LocalizedName>
     </BattleCardDesc>
+
+    <BattleCardDesc ID="150">
+      <LocalizedName>対抗:標準</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="151">
+      <LocalizedName>対抗:煙</LocalizedName>
+    </BattleCardDesc>
   </cardDescList>
 </BattleCardDescRoot>

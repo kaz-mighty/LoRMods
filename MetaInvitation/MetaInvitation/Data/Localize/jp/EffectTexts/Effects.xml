@@ -12,5 +12,10 @@
 400: 全ダイス最小値+1
 500: 「???」パッシブを追加&lt;/size&gt;</Desc>
     </BattleEffectText>
+    <BattleEffectText ID="kazmighty.meta_PowerDivergence">
+      <Name>力の発散</Name>
+      <Desc>現在の広域攻撃の威力 -{0}(合算なら2倍)
+あと{1}幕経過すると数値が1減少する。</Desc>
+    </BattleEffectText>
   </effectTextList>
 </BattleEffectTextRoot>

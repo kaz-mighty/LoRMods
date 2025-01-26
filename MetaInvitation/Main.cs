@@ -50,7 +50,7 @@ namespace MetaInvitation
 		public static readonly LorId kizunaPassiveId = new LorId(packageId, 4);
 		public static readonly LorId timeSub2PassiveId = new LorId(packageId, 9);
 		public static readonly LorId disabledEmotionCardStageId = new LorId(packageId, 1);
-
+		// Also in MetaTactics
 	}
 
 	public static class Util
