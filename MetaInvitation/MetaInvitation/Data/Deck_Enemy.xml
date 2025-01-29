@@ -13,4 +13,34 @@
     <Card Pid="@origin">506006</Card>
   </Deck>
   <Deck ID="2"></Deck>
+
+  <Deck ID="100">
+    <Card Pid="@origin">3</Card>
+    <Card Pid="@origin">100001</Card>
+    <Card Pid="@origin">101006</Card>
+    <Card Pid="@origin">701009</Card>
+    <Card Pid="@origin">701009</Card>
+    <Card Pid="@origin">9907515</Card>
+  </Deck>
+  <Deck ID="101">
+    <Card Pid="@origin">3</Card>
+    <Card Pid="@origin">100001</Card>
+    <Card Pid="@origin">101006</Card>
+    <Card Pid="@origin">701009</Card>
+    <Card Pid="@origin">701009</Card>
+  </Deck>
+  <Deck ID="102">
+    <Card Pid="@origin">3</Card>
+    <Card Pid="@origin">100001</Card>
+    <Card Pid="@origin">101006</Card>
+    <Card Pid="@origin">701009</Card>
+    <Card Pid="@origin">701009</Card>
+  </Deck>
+  <Deck ID="103">
+    <Card Pid="@origin">3</Card>
+    <Card Pid="@origin">100001</Card>
+    <Card Pid="@origin">101006</Card>
+    <Card Pid="@origin">701009</Card>
+    <Card Pid="@origin">701009</Card>
+  </Deck>
 </DeckXmlRoot>

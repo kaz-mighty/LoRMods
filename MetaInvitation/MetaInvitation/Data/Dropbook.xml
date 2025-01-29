@@ -12,4 +12,37 @@
     <DropItem Type="Card">2</DropItem>
     <DropItem Type="Card">6</DropItem>
   </BookUse>
+
+  <BookUse ID="100">
+    <!-- ニコルの本 -->
+    <TextId>100</TextId>
+    <BookIcon />
+    <Chapter>6</Chapter>
+    <BookValue>7</BookValue>
+    <DropItem Type="Equip">10000100</DropItem>
+  </BookUse>
+  <BookUse ID="101">
+    <!-- ネームド1の本 -->
+    <TextId>101</TextId>
+    <BookIcon />
+    <Chapter>6</Chapter>
+    <BookValue>7</BookValue>
+    <DropItem Type="Equip">10000101</DropItem>
+  </BookUse>
+  <BookUse ID="102">
+    <!-- ネームド2の本 -->
+    <TextId>102</TextId>
+    <BookIcon />
+    <Chapter>6</Chapter>
+    <BookValue>7</BookValue>
+    <DropItem Type="Equip">10000102</DropItem>
+  </BookUse>
+  <BookUse ID="103">
+    <!-- メタ事務所の本 -->
+    <TextId>103</TextId>
+    <BookIcon />
+    <Chapter>6</Chapter>
+    <BookValue>7</BookValue>
+    <DropItem Type="Equip">10000103</DropItem>
+  </BookUse>
 </BookUseXmlRoot>

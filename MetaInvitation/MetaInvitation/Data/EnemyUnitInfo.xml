@@ -24,4 +24,93 @@
     <Retreat>false</Retreat>
     <BookId>2</BookId>
   </Enemy>
+
+  <Enemy ID="100">
+    <Name>ニコル</Name>
+    <FaceType>Skin</FaceType>
+    <MinHeight>150</MinHeight>
+    <MaxHeight>150</MaxHeight>
+    <Unknown>false</Unknown>
+    <Gender>F</Gender>
+    <Retreat>false</Retreat>
+    <BookId>100</BookId>
+    <DropTable Level="0">
+      <DropItem Prob="1.0">103</DropItem>
+      <DropItem Prob="1.0">100</DropItem>
+    </DropTable>
+    <DropTable Level="1">
+      <!-- Corrected sum: 2.5 (orig: 2.3) -->
+      <DropItem Prob="0.5">103</DropItem>
+      <DropItem Prob="1.8">100</DropItem>
+    </DropTable>
+    <DropTable Level="2">
+      <!-- Corrected sum: 3.2 -->
+      <DropItem Prob="2.6">100</DropItem>
+    </DropTable>
+    <DropTable Level="3">
+      <!-- Corrected sum: 4.0 -->
+      <DropItem Prob="3.0">100</DropItem>
+    </DropTable>
+ </Enemy>
+  <Enemy ID="101">
+    <Name>(ネームド1)</Name>
+    <FaceType>Skin</FaceType>
+    <MinHeight>170</MinHeight>
+    <MaxHeight>170</MaxHeight>
+    <Unknown>false</Unknown>
+    <Gender>F</Gender>
+    <Retreat>false</Retreat>
+    <BookId>101</BookId>
+    <DropTable Level="0">
+      <DropItem Prob="1.0">103</DropItem>
+      <DropItem Prob="1.0">101</DropItem>
+    </DropTable>
+    <DropTable Level="1">
+      <DropItem Prob="0.5">103</DropItem>
+      <DropItem Prob="1.8">101</DropItem>
+    </DropTable>
+    <DropTable Level="2">
+      <DropItem Prob="2.6">101</DropItem>
+    </DropTable>
+    <DropTable Level="3">
+      <DropItem Prob="3.0">101</DropItem>
+    </DropTable>
+  </Enemy>
+  <Enemy ID="102">
+    <Name>(ネームド2)</Name>
+    <FaceType>Skin</FaceType>
+    <MinHeight>170</MinHeight>
+    <MaxHeight>170</MaxHeight>
+    <Unknown>false</Unknown>
+    <Gender>F</Gender>
+    <Retreat>false</Retreat>
+    <BookId>102</BookId>
+    <DropTable Level="0">
+      <DropItem Prob="1.0">103</DropItem>
+      <DropItem Prob="1.0">102</DropItem>
+    </DropTable>
+    <DropTable Level="1">
+      <DropItem Prob="0.5">103</DropItem>
+      <DropItem Prob="1.8">102</DropItem>
+    </DropTable>
+    <DropTable Level="2">
+      <DropItem Prob="2.6">102</DropItem>
+    </DropTable>
+    <DropTable Level="3">
+      <DropItem Prob="3.0">102</DropItem>
+    </DropTable>
+  </Enemy>
+  <Enemy ID="103">
+    <Name>メタ事務所 フィクサー</Name>
+    <FaceType>Skin</FaceType>
+    <MinHeight>160</MinHeight>
+    <MaxHeight>180</MaxHeight>
+    <Unknown>false</Unknown>
+    <Gender>F</Gender>
+    <Retreat>false</Retreat>
+    <BookId>103</BookId>
+    <DropTable Level="0">
+      <DropItem Prob="1.0">103</DropItem>
+    </DropTable>
+  </Enemy>
 </EnemyUnitClassRoot>

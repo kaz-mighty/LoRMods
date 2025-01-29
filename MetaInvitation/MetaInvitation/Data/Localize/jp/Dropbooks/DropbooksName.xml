@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <localize xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<text id="1">はぐれフィクサーの本</text>
+
+	<text id="100">ニコルの本</text>
+	<text id="101">(ネームド1)の本</text>
+	<text id="102">(ネームド2)の本</text>
+	<text id="103">メタ事務所の本</text>
 </localize>
