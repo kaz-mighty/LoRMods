@@ -12,3 +12,4 @@ obj/
 
 # Build and Reference dll
 *.dll
+*.pdb
