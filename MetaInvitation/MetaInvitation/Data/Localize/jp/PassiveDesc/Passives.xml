@@ -48,7 +48,7 @@
   </PassiveDesc>
   <PassiveDesc ID="101">
     <Name>代理指揮</Name>
-    <Desc>幕の開始時、パワーを得ていない全ての味方にパワー1を付与する。得ている場合でも50%の確率で付与する。忍耐1も同様にして付与する。</Desc>
+    <Desc>幕の開始時、パワーを得ていない全ての味方にパワー1を付与する。得ている場合でも40%の確率で付与する。忍耐1も同様にして付与する。</Desc>
   </PassiveDesc>
   <PassiveDesc ID="102">
     <Name>受け流し1</Name>
@@ -69,11 +69,11 @@
   </PassiveDesc>
   <PassiveDesc ID="106">
     <Name>見切り</Name>
-    <Desc>回避の最小値+2、威力+1。回避ダイスを再使用できない。</Desc>
+    <Desc>回避の最小値+3、威力+1。回避ダイスを再使用できない。</Desc>
   </PassiveDesc>
   <PassiveDesc ID="107">
     <Name>深呼吸+</Name>
-    <Desc>幕の終了時、(戦闘開始時に)使用できた速度スロット数より使用したバトルページが少なければ、1つにつき光を1回復する。(最大2)</Desc>
+    <Desc>幕の終了時、(戦闘開始時に)使用可能な速度スロット数より使用したバトルページが少なければ、1つにつき光を1回復する。(最大2)</Desc>
   </PassiveDesc>
   <PassiveDesc ID="108">
     <Name>慎重な追撃</Name>

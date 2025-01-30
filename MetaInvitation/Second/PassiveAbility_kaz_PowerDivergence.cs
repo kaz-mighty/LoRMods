@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using HarmonyLib;
 using LOR_DiceSystem;
 
 namespace MetaInvitation.Second
@@ -20,6 +21,9 @@ namespace MetaInvitation.Second
 
 		class BattleUnitBuf_kaz_PowerDivergence : BattleUnitBuf
 		{
+			// Since the display must be toggled on and off,
+			// the stack must be manipulated using properties.
+
 			protected override string keywordId => MetaInvitation.packageId + "_PowerDivergence";
 
 			public override string bufActivatedText
@@ -30,28 +34,46 @@ namespace MetaInvitation.Second
 				}
 			}
 
-			public override bool Hide
+			public int Stack
 			{
-				get
+				get => stack;
+				set
 				{
-					return stack > 0;
+					stack = value;
+					if (stack == 0)
+					{
+						hide = true;
+						AccessTools.Field(typeof(BattleUnitBuf), "_bufIcon").SetValue(this, null);
+					}
+					else
+					{
+						hide = false;
+						AccessTools.Field(typeof(BattleUnitBuf), "_bufIcon").SetValue(this, _storedBufIcon);
+					}
 				}
+			}
+
+			public override void Init(BattleUnitModel owner)
+			{
+				base.Init(owner);
+				_storedBufIcon = GetBufIcon();  // Load icons before hiding
+				Stack = 0;
 			}
 
 			public override void OnUseCard(BattlePlayingCardDataInUnitModel card)
 			{
-				if (stack <= 0)
+				if (Stack <= 0)
 				{
 					return;
 				}
 				var range = card.card.GetSpec().Ranged;
 				if (range == CardRange.FarArea)
 				{
-					card.AddDiceAdder(DiceMatch.AllDice, -stack * 2);
+					card.AddDiceAdder(DiceMatch.AllDice, -Stack * 2);
 				}
 				else if (range == CardRange.FarAreaEach)
 				{
-					card.AddDiceAdder(DiceMatch.AllDice, -stack);
+					card.AddDiceAdder(DiceMatch.AllDice, -Stack);
 				}
 			}
 
@@ -71,19 +93,19 @@ namespace MetaInvitation.Second
 					}
 					if (flag)
 					{
-						stack += 1;
+						Stack += 1;
 					}
 				}
 			}
 
 			public override void OnRoundEnd()
 			{
-				if (remainTurn > 0 && stack > 0)
+				if (remainTurn > 0 && Stack > 0)
 				{
 					remainTurn -= 1;
 					if (remainTurn == 0)
 					{
-						stack -= 1;
+						Stack -= 1;
 						remainTurn = decreaseTurn;
 					}
 				}
@@ -91,6 +113,7 @@ namespace MetaInvitation.Second
 
 			private int remainTurn = decreaseTurn;
 			private const int decreaseTurn = 4;
+			private Sprite _storedBufIcon;
 		}
 	}
 }

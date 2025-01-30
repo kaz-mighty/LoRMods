@@ -69,7 +69,7 @@
   </Passive>
   <Passive ID="102">
     <!-- 受け流し1 -->
-    <Rarity>Rare</Rarity>
+    <Rarity>Uncommon</Rarity>
     <Cost>1</Cost>
     <Script>kaz_Parry1</Script>
   </Passive>
@@ -83,7 +83,7 @@
     <!-- 力の発散 -->
     <Rarity>Unique</Rarity>
     <Cost>2</Cost>
-    <Script>kaz_PowerDiverGence</Script>
+    <Script>kaz_PowerDivergence</Script>
   </Passive>
   <Passive ID="105">
     <!-- 覚悟 -->
@@ -94,7 +94,7 @@
   <Passive ID="106">
     <!-- 見切り -->
     <Rarity>Unique</Rarity>
-    <Cost>6</Cost>
+    <Cost>5</Cost>
     <Script>kaz_GreaterEvasion</Script>
   </Passive>
   <Passive ID="107">

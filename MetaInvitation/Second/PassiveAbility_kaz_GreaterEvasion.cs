@@ -15,7 +15,7 @@ namespace MetaInvitation.Second
 				behavior.ApplyDiceStatBonus(new DiceStatBonus
 				{
 					power = 1,
-					min = 2,
+					min = 3,
 				});
 				behavior.forbiddenBonusDice = true;
 			}

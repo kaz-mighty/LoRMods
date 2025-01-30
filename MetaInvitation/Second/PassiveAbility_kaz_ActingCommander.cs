@@ -30,6 +30,6 @@ namespace MetaInvitation.Second
 			}
 		}
 
-		private const float _prob = 0.5f;
+		private const float _prob = 0.4f;
 	}
 }
