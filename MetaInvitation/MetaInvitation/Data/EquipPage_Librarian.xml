@@ -90,7 +90,7 @@
     <CharacterSkinType>Lor</CharacterSkinType>
     <SkinGender>N</SkinGender>
     <Chapter>6</Chapter>
-    <Episode>1</Episode>
+    <Episode>2</Episode>
     <RangeType>Melee</RangeType>
   </Book>
   <Book ID="10000101">
@@ -177,7 +177,7 @@
       <Passive>108</Passive>
       <Passive>107</Passive>
     </EquipEffect>
-    <Rarity>Unique</Rarity>
+    <Rarity>Common</Rarity>
     <CharacterSkin>LiuSection2Unit</CharacterSkin><!-- tmp -->
     <CharacterSkinType>Lor</CharacterSkinType>
     <SkinGender>N</SkinGender>
