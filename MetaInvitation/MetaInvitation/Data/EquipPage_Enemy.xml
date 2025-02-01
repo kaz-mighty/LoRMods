@@ -69,6 +69,7 @@
     <RandomFace>false</RandomFace>
     <SpeedDiceNum>4</SpeedDiceNum>
   </Book>
+  
   <Book ID="100">
     <Name>ニコルのページ</Name>
     <TextId>100</TextId>
@@ -106,7 +107,7 @@
     <SpeedDiceNum>1</SpeedDiceNum>
   </Book>
   <Book ID="101">
-    <Name>(ネームド1)のページ</Name>
+    <Name>ナレーのページ</Name>
     <TextId>101</TextId>
     <BookIcon />
     <EquipEffect>
@@ -142,7 +143,7 @@
     <SpeedDiceNum>1</SpeedDiceNum>
   </Book>
   <Book ID="102">
-    <Name>(ネームド2)のページ</Name>
+    <Name>ブレイクのページ</Name>
     <TextId>102</TextId>
     <BookIcon />
     <EquipEffect>

@@ -16,6 +16,7 @@
         <Desc>フィクサーが所持していた剣。戦い続けるほど窮地を脱する力が強まるが、一休みすると元に戻ってしまう。</Desc>
       </TextList>
     </BookDesc>
+    
     <BookDesc BookID="100">
       <BookName>ニコルのページ</BookName>
       <TextList>
@@ -23,13 +24,13 @@
       </TextList>
     </BookDesc>
     <BookDesc BookID="101">
-      <BookName>(ネームド1)のページ</BookName>
+      <BookName>ナレーのページ</BookName>
       <TextList>
         <Desc></Desc>
       </TextList>
     </BookDesc>
     <BookDesc BookID="102">
-      <BookName>(ネームド2)のページ</BookName>
+      <BookName>ブレイクのページ</BookName>
       <TextList>
         <Desc></Desc>
       </TextList>

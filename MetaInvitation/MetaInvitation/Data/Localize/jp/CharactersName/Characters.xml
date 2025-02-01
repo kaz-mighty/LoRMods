@@ -2,8 +2,9 @@
 <CharactersNameRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Name ID="1">はぐれフィクサー</Name>
   <Name ID="2">謎の装置</Name>
-  <Name ID="100">ニコル</Name>
-  <Name ID="101">(ネームド1)</Name>
-  <Name ID="102">(ネームド2)</Name>
+  <Name ID="100">ニコル</Name> <!-- name come from: ニコライ -->
+  
+  <Name ID="101">ナレー</Name> <!-- name come from: knowledge -->
+  <Name ID="102">ブレイク</Name> <!-- name come from: break -->
   <Name ID="103">メタ事務所 フィクサー</Name>
 </CharactersNameRoot>

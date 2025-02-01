@@ -53,10 +53,10 @@
     </DropTable>
  </Enemy>
   <Enemy ID="101">
-    <Name>(ネームド1)</Name>
+    <Name>ナレー</Name>
     <FaceType>Skin</FaceType>
-    <MinHeight>170</MinHeight>
-    <MaxHeight>170</MaxHeight>
+    <MinHeight>160</MinHeight>
+    <MaxHeight>160</MaxHeight>
     <Unknown>false</Unknown>
     <Gender>F</Gender>
     <Retreat>false</Retreat>
@@ -77,10 +77,10 @@
     </DropTable>
   </Enemy>
   <Enemy ID="102">
-    <Name>(ネームド2)</Name>
+    <Name>ブレイク</Name>
     <FaceType>Skin</FaceType>
-    <MinHeight>170</MinHeight>
-    <MaxHeight>170</MaxHeight>
+    <MinHeight>180</MinHeight>
+    <MaxHeight>180</MaxHeight>
     <Unknown>false</Unknown>
     <Gender>F</Gender>
     <Retreat>false</Retreat>

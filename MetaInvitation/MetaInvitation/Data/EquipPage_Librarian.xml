@@ -62,6 +62,7 @@
     <Episode>1</Episode>
     <NotEquip>true</NotEquip>
   </Book>
+  
   <Book ID="10000100">
     <Name>ニコルのページ</Name>
     <TextId>100</TextId>
@@ -94,7 +95,7 @@
     <RangeType>Melee</RangeType>
   </Book>
   <Book ID="10000101">
-    <Name>(ネームド1)のページ</Name>
+    <Name>ナレーのページ</Name>
     <TextId>101</TextId>
     <BookIcon />
     <EquipEffect>
@@ -125,7 +126,7 @@
     <RangeType>Melee</RangeType>
   </Book>
   <Book ID="10000102">
-    <Name>(ネームド2)のページ</Name>
+    <Name>ブレイクのページ</Name>
     <TextId>102</TextId>
     <BookIcon />
     <EquipEffect>
