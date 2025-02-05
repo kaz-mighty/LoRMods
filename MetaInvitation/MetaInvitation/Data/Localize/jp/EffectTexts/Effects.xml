@@ -17,5 +17,18 @@
       <Desc>現在の広域攻撃の威力 -{0}(合算なら2倍)
 あと{1}幕経過すると数値が1減少する。</Desc>
     </BattleEffectText>
+
+    <BattleEffectText ID="kazmighty.meta_Smoke">
+      <Name></Name>
+      <Desc>効果がないようだ…。幕の終了時に煙の数値が1減少。</Desc>
+    </BattleEffectText>
+    <BattleEffectText ID="kazmighty.meta_MetaSmoke">
+      <Name>対抗:煙</Name>
+      <Desc>得た煙の効果がなくなる。</Desc>
+    </BattleEffectText>
+    <BattleEffectText ID="kazmighty.meta_MetaOverPower">
+      <Name>対抗:超威力</Name>
+      <Desc>{0}～{1}の範囲を超えた威力の効果が、超えた分だけ半減する。</Desc>
+    </BattleEffectText>
   </effectTextList>
 </BattleEffectTextRoot>

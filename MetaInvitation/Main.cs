@@ -14,9 +14,9 @@ namespace MetaInvitation
 		{
 			foreach (Type type in typeof(PatchClass).GetNestedTypes(AccessTools.all))
 			{
-				Debug.Log(MetaInvitation.packageId + ": HarmonyPatch " + type.Name);
-				harmony.CreateClassProcessor(type).Patch();
+				harmony.PatchAll(type);
 			}
+			harmony.PatchAll(typeof(PatchClass));
 			SceneManager.sceneLoaded += LatePatch;
 
 			RemoveError();

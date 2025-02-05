@@ -65,6 +65,13 @@
     <Compile Include="EnemyPassive.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="ManualPatch\AddPositiveBufText.cs" />
+    <Compile Include="RelativeFactions.cs" />
+    <Compile Include="Second\BattleUnitBuf_MetaManager.cs" />
+    <Compile Include="Second\BattleUnitBuf_MetaOverPower.cs" />
+    <Compile Include="Second\BattleUnitBuf_MetaSmoke.cs" />
+    <Compile Include="Second\DiceCardSelfAbility_MetaBase.cs" />
+    <Compile Include="Second\DiceCardSelfAbility_MetaOverPower.cs" />
+    <Compile Include="Second\DiceCardSelfAbility_MetaSmoke.cs" />
     <Compile Include="Second\PassiveAbility_kaz_CarefulPursuit.cs" />
     <Compile Include="Second\PassiveAbility_kaz_DeepBreath.cs" />
     <Compile Include="Second\PassiveAbility_kaz_GreaterEvasion.cs" />

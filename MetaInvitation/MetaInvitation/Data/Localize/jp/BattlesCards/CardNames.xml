@@ -26,5 +26,8 @@
     <BattleCardDesc ID="151">
       <LocalizedName>対抗:煙</LocalizedName>
     </BattleCardDesc>
+    <BattleCardDesc ID="152">
+      <LocalizedName>対抗:超威力</LocalizedName>
+    </BattleCardDesc>
   </cardDescList>
 </BattleCardDescRoot>

@@ -15,7 +15,7 @@ namespace MetaInvitation.Second
 			{
 				return;
 			}
-			foreach (var cardId in _cards)
+			foreach (var cardId in cards)
 			{
 				owner.personalEgoDetail.AddCard(cardId);
 			}
@@ -31,15 +31,33 @@ namespace MetaInvitation.Second
 			{
 				return;
 			}
-			// TODO: 各ページの仕様が決まってから
+			if (_usedEnemy)
+			{
+				return;
+			}
+			// TODO: 3～4種類のページを実装したら賢くする
+
+			int usePage = RandomUtil.Range(0, 1);
+			switch (usePage)
+			{
+				case 0:
+					new DiceCardSelfAbility_MetaSmoke().Activate(owner);
+					break;
+				case 1:
+					new DiceCardSelfAbility_MetaOverPower().Activate(owner);
+					break;
+			}
+			_usedEnemy = true;
+
 		}
 
-
+		private bool _usedEnemy;
 		private static readonly LorId _vsStandard = new LorId(MetaInvitation.packageId, 150);
 		private static readonly LorId _vsSmoke = new LorId(MetaInvitation.packageId, 151);
-		private static readonly LorId[] _cards = {
-			_vsStandard,
+		private static readonly LorId _vsOverPower = new LorId(MetaInvitation.packageId, 152);
+		public static readonly LorId[] cards = {
 			_vsSmoke,
+			_vsOverPower,
 		};
 	}
 }

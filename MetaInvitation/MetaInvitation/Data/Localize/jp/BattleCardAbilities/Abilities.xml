@@ -12,4 +12,15 @@
   <BattleCardAbility ID="endurance1atk">
     <Desc>[的中] 次の幕に忍耐1を得る</Desc>
   </BattleCardAbility>
+
+  <BattleCardAbility ID="MetaSmoke">
+    <Desc>[装着時発動]
+舞台の間、全ての敵は付与された煙の効果がなくなる。</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="MetaOverPower">
+    <Desc>[装着時発動]
+舞台の間、全ての敵は-2～2の範囲を超えた威力の効果が、超えた分だけ半減する。
+全ての味方は0～4の範囲を超えた威力の効果が、超えた分だけ半減する。
+(小数点以下ランダム)</Desc>
+  </BattleCardAbility>
 </BattleCardAbilityDescRoot>

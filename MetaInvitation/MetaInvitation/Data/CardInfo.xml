@@ -79,9 +79,10 @@
     <Chapter>5</Chapter>
     <Priority>0</Priority>
   </Card>
+  
   <Card ID="150">
     <!-- 対抗：標準 実装するかは未定 -->
-    <Artwork></Artwork>
+    <Artwork>tmp_PassivePage.png</Artwork>
     <Rarity>Unique</Rarity>
     <Option>Personal</Option>
     <Spec Range="Instance" Cost="0" />
@@ -92,11 +93,22 @@
   </Card>
   <Card ID="151">
     <!-- 対抗：煙 -->
-    <Artwork></Artwork>
+    <Artwork>tmp_PassivePage.png</Artwork>
     <Rarity>Unique</Rarity>
     <Option>Personal</Option>
     <Spec Range="Instance" Cost="0" />
-    <Script></Script>
+    <Script>MetaSmoke</Script>
+    <BehaviourList></BehaviourList>
+    <Chapter>6</Chapter>
+    <Priority>0</Priority>
+  </Card>
+  <Card ID="152">
+    <!-- 対抗：超威力 -->
+    <Artwork>tmp_PassivePage.png</Artwork>
+    <Rarity>Unique</Rarity>
+    <Option>Personal</Option>
+    <Spec Range="Instance" Cost="0" />
+    <Script>MetaOverPower</Script>
     <BehaviourList></BehaviourList>
     <Chapter>6</Chapter>
     <Priority>0</Priority>

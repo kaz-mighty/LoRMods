@@ -119,5 +119,65 @@ namespace MetaInvitation
 				}
 			}
 		}
+
+		[HarmonyPatch(typeof(BattleUnitBuf_smoke))]
+		[HarmonyPriority(Priority.Normal + 10)]
+		class MetaSmoke_Patch
+		{
+			[HarmonyPatch("bufActivatedText", MethodType.Getter)]
+			[HarmonyPrefix]
+			static bool bufActivatedText(bool __runOriginal, ref string __result, BattleUnitModel ____owner)
+			{
+				if (!__runOriginal) { return false; }
+				if (____owner.bufListDetail.HasBuf<Second.BattleUnitBuf_MetaSmoke>())
+				{
+					__result = Singleton<BattleEffectTextsXmlList>.Instance.GetEffectTextDesc(MetaInvitation.packageId + "_Smoke");
+					return false;
+				}
+				return true;
+			}
+
+			[HarmonyPatch(typeof(BattleUnitBuf_smoke), "BeforeRollDice")]
+			[HarmonyPatch(typeof(BattleUnitBuf_smoke), "BeforeGiveDamage")]
+			[HarmonyPrefix]
+			static bool BeforeEffect(bool __runOriginal, BattleUnitModel ____owner)
+			{
+				if (!__runOriginal) { return false; }
+				if (____owner.bufListDetail.HasBuf<Second.BattleUnitBuf_MetaSmoke>()) { return false; }
+				return true;
+			}
+
+			[HarmonyPatch("GetDamageIncreaseRate")]
+			[HarmonyPrefix]
+			static bool GetDamageIncreaseRate(bool __runOriginal, ref int __result, BattleUnitModel ____owner)
+			{
+				if (!__runOriginal) { return false; }
+				if (____owner.bufListDetail.HasBuf<Second.BattleUnitBuf_MetaSmoke>())
+				{
+					__result = 0;
+					return false;
+				}
+				return true;
+			}
+		}
+
+		[HarmonyPatch(typeof(BattleDiceBehavior), "UpdateDiceFinalValue")]
+		[HarmonyPrefix]
+		static void MetaOverPower_Patch(BattleDiceBehavior __instance, DiceStatBonus ____statBonus)
+		{
+			var buf = __instance.owner?.bufListDetail.GetActivatedBufList().Find(x => x is Second.BattleUnitBuf_MetaOverPower) as Second.BattleUnitBuf_MetaOverPower;
+			if (buf != null)
+			{
+				if (____statBonus.power < buf.Lower)
+				{
+					____statBonus.power += (buf.Lower - ____statBonus.power).RandomRoundDiv(2);
+				}
+				else if (____statBonus.power > buf.Upper)
+				{
+					____statBonus.power -= (____statBonus.power - buf.Upper).RandomRoundDiv(2);
+				}
+			}
+		}
+
 	}
 }
