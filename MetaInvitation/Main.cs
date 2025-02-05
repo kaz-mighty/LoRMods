@@ -16,7 +16,6 @@ namespace MetaInvitation
 			{
 				harmony.PatchAll(type);
 			}
-			harmony.PatchAll(typeof(PatchClass));
 			SceneManager.sceneLoaded += LatePatch;
 
 			RemoveError();

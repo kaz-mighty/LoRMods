@@ -8,78 +8,24 @@ namespace MetaInvitation
 {
 	class PatchClass
 	{
-		[HarmonyPatch(typeof(StageModel))]
-		class StageModel_Patch
+		[HarmonyPatch]
+		class TimePassive_Patch
 		{
-			[HarmonyPatch("Init")]
+			[HarmonyPatch(typeof(StageModel), "Init")]
 			[HarmonyPostfix]
-			static void Init_Postfix()
+			static void Init()
 			{
 				Singleton<TimeFieldManager>.Instance.Init();
 			}
-		}
 
-		[HarmonyPatch(typeof(StageController))]
-		class StageController_Patch
-		{
-			[HarmonyPatch("SortUnitPhase")]
+			[HarmonyPatch(typeof(StageController), "SortUnitPhase")]
 			[HarmonyPostfix]
-			static void SortUnitPhase_Postfix()
+			static void OnAfterRollSpeedDice()
 			{
 				Singleton<TimeFieldManager>.Instance.OnAfterRollSpeedDice();
 			}
-		}
 
-		[HarmonyPatch(typeof(StageWaveModel))]
-		class StageWaveModel_Patch
-		{
-			// 一部ステージでEmotionCardを無効化
-			// 付与時に混乱抵抗値が0から1になってしまうため
-			[HarmonyPatch("PickRandomEmotionCard")]
-			[HarmonyPrefix]
-			static bool PickRandomEmotionCard_Prefix(StageWaveModel __instance)
-			{
-				var id = __instance.team.stage.id;
-				if (id == MetaInvitation.disabledEmotionCardStageId)
-				{
-					return false;
-				}
-				return true;
-			}
-		}
-
-		[HarmonyPatch(typeof(EmotionBattleTeamModel))]
-		class EmotionBattleTeamModel_Patch
-		{
-			// 共有EGOにページを追加するパッシブのため
-			[HarmonyPatch("CanUsingEgo")]
-			[HarmonyPostfix]
-			static void CanUsingEgo_Postfix(ref bool __result)
-			{
-				var cards = (Dictionary<SephirahType, List<BattleDiceCardModel>>)AccessTools.Field(typeof(SpecialCardListModel), "_cardSelectedDataByFloor").GetValue(Singleton<SpecialCardListModel>.Instance);
-				var sephirah = Singleton<StageController>.Instance.GetCurrentStageFloorModel().Sephirah;
-				if (cards[sephirah].Count != 0)
-				{
-					__result = true;
-				}
-			}
-		}
-
-		[HarmonyPatch(typeof(DiceCardXmlInfo))]
-		class DiceCardXmlInfo_Patch
-		{
-			[HarmonyPatch("Copy")]
-			[HarmonyPostfix]
-			static void Copy_EgoMaxCooltimeValue(DiceCardXmlInfo __instance, DiceCardXmlInfo __result)
-			{
-				__result.EgoMaxCooltimeValue = __instance.EgoMaxCooltimeValue;
-			}
-		}
-
-		[HarmonyPatch(typeof(BattleUnitModel))]
-		class BattleUnitModel_Patch
-		{
-			[HarmonyPatch("Die")]
+			[HarmonyPatch(typeof(BattleUnitModel), "Die")]
 			[HarmonyPrefix]
 			[HarmonyPriority(Priority.LowerThanNormal)]
 			static bool ForcelyDieCancel(BattleUnitModel __instance, bool __runOriginal)
@@ -98,10 +44,52 @@ namespace MetaInvitation
 			}
 		}
 
-		[HarmonyPatch(typeof(BattleFarAreaPlayManager))]
-		class BattleFarAreaPlayManager_Patch
+		[HarmonyPatch]
+		class DisableEnemyEmotionCard_Patch
 		{
-			[HarmonyPatch("EndFarAreaPlay")]
+			// 一部ステージでEmotionCardを無効化
+			// 付与時に混乱抵抗値が0から1になってしまうため
+			[HarmonyPatch(typeof(StageWaveModel), "PickRandomEmotionCard")]
+			[HarmonyPrefix]
+			static bool PickRandomEmotionCard_Prefix(StageWaveModel __instance)
+			{
+				var id = __instance.team.stage.id;
+				if (id == MetaInvitation.disabledEmotionCardStageId)
+				{
+					return false;
+				}
+				return true;
+			}
+		}
+
+		[HarmonyPatch]
+		class AddEGO_Patch
+		{
+			// 共有EGOにページを追加するパッシブのため
+			[HarmonyPatch(typeof(EmotionBattleTeamModel), "CanUsingEgo")]
+			[HarmonyPostfix]
+			static void CanUsingEgoFix(ref bool __result)
+			{
+				var cards = (Dictionary<SephirahType, List<BattleDiceCardModel>>)AccessTools.Field(typeof(SpecialCardListModel), "_cardSelectedDataByFloor").GetValue(Singleton<SpecialCardListModel>.Instance);
+				var sephirah = Singleton<StageController>.Instance.GetCurrentStageFloorModel().Sephirah;
+				if (cards[sephirah].Count != 0)
+				{
+					__result = true;
+				}
+			}
+
+			[HarmonyPatch(typeof(DiceCardXmlInfo), "Copy")]
+			[HarmonyPostfix]
+			static void Copy_EgoMaxCooltimeValue(DiceCardXmlInfo __instance, DiceCardXmlInfo __result)
+			{
+				__result.EgoMaxCooltimeValue = __instance.EgoMaxCooltimeValue;
+			}
+		}
+
+		[HarmonyPatch]
+		class Preparedness_Patch
+		{
+			[HarmonyPatch(typeof(BattleFarAreaPlayManager), "EndFarAreaPlay")]
 			[HarmonyPrefix]
 			static void CancelDestroyDices(BattleFarAreaPlayManager __instance, float ____endDelay, float ____elapsedEndDelay, float deltaTime)
 			{
@@ -161,23 +149,26 @@ namespace MetaInvitation
 			}
 		}
 
-		[HarmonyPatch(typeof(BattleDiceBehavior), "UpdateDiceFinalValue")]
-		[HarmonyPrefix]
-		static void MetaOverPower_Patch(BattleDiceBehavior __instance, DiceStatBonus ____statBonus)
+		[HarmonyPatch]
+		class MetaOverPower_Patch
 		{
-			var buf = __instance.owner?.bufListDetail.GetActivatedBufList().Find(x => x is Second.BattleUnitBuf_MetaOverPower) as Second.BattleUnitBuf_MetaOverPower;
-			if (buf != null)
+			[HarmonyPatch(typeof(BattleDiceBehavior), "UpdateDiceFinalValue")]
+			[HarmonyPrefix]
+			static void HalfPower(BattleDiceBehavior __instance, DiceStatBonus ____statBonus)
 			{
-				if (____statBonus.power < buf.Lower)
+				var buf = __instance.owner?.bufListDetail.GetActivatedBufList().Find(x => x is Second.BattleUnitBuf_MetaOverPower) as Second.BattleUnitBuf_MetaOverPower;
+				if (buf != null)
 				{
-					____statBonus.power += (buf.Lower - ____statBonus.power).RandomRoundDiv(2);
-				}
-				else if (____statBonus.power > buf.Upper)
-				{
-					____statBonus.power -= (____statBonus.power - buf.Upper).RandomRoundDiv(2);
+					if (____statBonus.power < buf.Lower)
+					{
+						____statBonus.power += (buf.Lower - ____statBonus.power).RandomRoundDiv(2);
+					}
+					else if (____statBonus.power > buf.Upper)
+					{
+						____statBonus.power -= (____statBonus.power - buf.Upper).RandomRoundDiv(2);
+					}
 				}
 			}
 		}
-
 	}
 }
