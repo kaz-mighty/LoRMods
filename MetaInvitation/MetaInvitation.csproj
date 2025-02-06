@@ -69,7 +69,7 @@
     <Compile Include="Second\BattleUnitBuf_MetaManager.cs" />
     <Compile Include="Second\BattleUnitBuf_MetaOverPower.cs" />
     <Compile Include="Second\BattleUnitBuf_MetaSmoke.cs" />
-    <Compile Include="Second\DiceCardSelfAbility_MetaBase.cs" />
+    <Compile Include="Second\DiceCardSelfAbilityBase_Meta.cs" />
     <Compile Include="Second\DiceCardSelfAbility_MetaOverPower.cs" />
     <Compile Include="Second\DiceCardSelfAbility_MetaSmoke.cs" />
     <Compile Include="Second\PassiveAbility_kaz_CarefulPursuit.cs" />

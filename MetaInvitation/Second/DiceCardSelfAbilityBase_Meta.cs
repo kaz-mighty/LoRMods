@@ -6,7 +6,7 @@ using LOR_DiceSystem;
 namespace MetaInvitation.Second
 {
 
-	abstract class DiceCardSelfAbility_MetaBase : DiceCardSelfAbilityBase
+	abstract class DiceCardSelfAbilityBase_Meta : DiceCardSelfAbilityBase
 	{
 		public override bool IsTargetableSelf() => true;
 
