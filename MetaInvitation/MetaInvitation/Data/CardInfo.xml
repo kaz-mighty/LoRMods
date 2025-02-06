@@ -80,6 +80,141 @@
     <Priority>0</Priority>
   </Card>
   
+  <Card ID="100">
+    <!-- 換気 -->
+    <Artwork>tmp.png</Artwork>
+    <Rarity>Common</Rarity>
+    <Spec Range="Near" Cost="0" />
+    <Script>kaz_Ventilation</Script>
+    <BehaviourList>
+      <Behaviour Min="3" Dice="9" Type="Def" Detail="Evasion" Motion="E" EffectRes="" Script="" />
+    </BehaviourList>
+    <Chapter>6</Chapter>
+    <Priority>0</Priority>
+  </Card>
+  <Card ID="101">
+    <!-- 冷却 -->
+    <Artwork>tmp.png</Artwork>
+    <Rarity>Common</Rarity>
+    <Spec Range="Near" Cost="1" />
+    <Script>kaz_Cooling</Script>
+    <BehaviourList>
+      <Behaviour Min="3" Dice="9" Type="Atk" Detail="Hit" Motion="H" EffectRes="" Script="" />
+      <Behaviour Min="3" Dice="6" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="" />
+    </BehaviourList>
+    <Chapter>6</Chapter>
+    <Priority>0</Priority>
+  </Card>
+  <Card ID="102">
+    <!-- 反復 -->
+    <Artwork>tmp.png</Artwork>
+    <Rarity>Uncommon</Rarity>
+    <Spec Range="Near" Cost="1" />
+    <Script>kaz_nextDraw1</Script>
+    <BehaviourList>
+      <Behaviour Min="4" Dice="9" Type="Def" Detail="Evasion" Motion="E" EffectRes="" Script="" />
+      <Behaviour Min="3" Dice="7" Type="Atk" Detail="Slash" Motion="J" EffectRes="" Script="" />
+    </BehaviourList>
+    <Chapter>6</Chapter>
+    <Priority>0</Priority>
+  </Card>
+  <Card ID="103">
+    <!-- 再点火 -->
+    <Artwork>tmp.png</Artwork>
+    <Rarity>Unique</Rarity>
+    <Spec Range="Near" Cost="5" />
+    <Script>kaz_Reignition</Script>
+    <BehaviourList>
+      <Behaviour Min="1" Dice="3" Type="Def" Detail="Evasion" Motion="E" EffectRes="" Script="" />
+      <Behaviour Min="7" Dice="12" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="" />
+    </BehaviourList>
+    <Chapter>6</Chapter>
+    <Priority>0</Priority>
+  </Card>
+  <Card ID="104">
+    <!-- 光の軌跡 -->
+    <Artwork>tmp.png</Artwork>
+    <Rarity>Unique</Rarity>
+    <Spec Range="Near" Cost="2" />
+    <Script>kaz_LightTrail</Script>
+    <BehaviourList>
+      <Behaviour Min="5" Dice="10" Type="Def" Detail="Evasion" Motion="E" EffectRes="" Script="" />
+      <Behaviour Min="2" Dice="6" Type="Atk" Detail="Slash" Motion="J" EffectRes="" Script="" />
+    </BehaviourList>
+    <Chapter>6</Chapter>
+    <Priority>0</Priority>
+  </Card>
+  <Card ID="105">
+    <!-- 多彩な戦術 -->
+    <Artwork>tmp.png</Artwork>
+    <Rarity>Unique</Rarity>
+    <Spec Range="Near" Cost="4" />
+    <Script>kaz_DiverseTactics</Script>
+    <BehaviourList>
+      <Behaviour Min="3" Dice="9" Type="Atk" Detail="Penetrate" Motion="Z" EffectRes="" Script="powerUpNext2pl" />
+      <Behaviour Min="3" Dice="9" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="powerUpNext2pl" />
+      <Behaviour Min="3" Dice="9" Type="Atk" Detail="Slash" Motion="J" EffectRes="" Script="powerUpNext2pl" />
+      <Behaviour Min="3" Dice="9" Type="Atk" Detail="Hit" Motion="H" EffectRes="" Script="" />
+    </BehaviourList>
+    <Chapter>6</Chapter>
+    <Priority>0</Priority>
+  </Card>
+  <Card ID="106">
+    <!-- 戦術考案 -->
+    <Artwork>tmp.png</Artwork>
+    <Rarity>Rare</Rarity>
+    <Spec Range="Near" Cost="2" />
+    <Script>kaz_nextDraw1Highlander</Script>
+    <BehaviourList>
+      <Behaviour Min="3" Dice="8" Type="Atk" Detail="Slash" Motion="J" EffectRes="" Script="kaz_weak1pl" />
+      <Behaviour Min="6" Dice="9" Type="Atk" Detail="Penetrate" Motion="Z" EffectRes="" Script="kaz_disarm1pl" />
+    </BehaviourList>
+    <Chapter>6</Chapter>
+    <Priority>0</Priority>
+  </Card>
+  <Card ID="107">
+    <!-- その手はもう見た -->
+    <Artwork>tmp.png</Artwork>
+    <Rarity>Rare</Rarity>
+    <Spec Range="Near" Cost="3" />
+    <Script>kaz_PowerDown2TargetNotHighlander</Script>
+    <BehaviourList>
+      <Behaviour Min="4" Dice="8" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="" />
+      <Behaviour Min="5" Dice="12" Type="Def" Detail="Evasion" Motion="E" EffectRes="" Script="kaz_powerDownNow3pw" />
+      <Behaviour Min="5" Dice="9" Type="Atk" Detail="Slash" Motion="J" EffectRes="" Script="drawCard1atk" />
+    </BehaviourList>
+    <Chapter>6</Chapter>
+    <Priority>0</Priority>
+  </Card>
+  <Card ID="108">
+    <!-- 時間稼ぎ -->
+    <Artwork>tmp.png</Artwork>
+    <Rarity>Rare</Rarity>
+    <Spec Range="Near" Cost="3" />
+    <Script>kaz_BuyTime</Script>
+    <BehaviourList>
+      <Behaviour Min="7" Dice="11" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="kaz_recoverBreak2pwFriend" />
+      <Behaviour Min="1" Dice="5" Type="Atk" Detail="Hit" Motion="H" EffectRes="" Script="kaz_vulnerable1pl" />
+      <Behaviour Min="3" Dice="10" Type="Def" Detail="Evasion" Motion="E" EffectRes="" Script="" />
+      <Behaviour Min="2" Dice="7" Type="Standby" Detail="Guard" Motion="G" EffectRes="" Script="" />
+    </BehaviourList>
+    <Chapter>6</Chapter>
+    <Priority>0</Priority>
+  </Card>
+  <Card ID="109">
+    <!-- 判断の隙 -->
+    <Artwork>tmp.png</Artwork>
+    <Rarity>Uncommon</Rarity>
+    <Spec Range="Near" Cost="2" />
+    <Script>kaz_PowerDown2TargetHighlander</Script>
+    <BehaviourList>
+      <Behaviour Min="6" Dice="10" Type="Atk" Detail="Penetrate" Motion="Z" EffectRes="" Script="kaz_vulnerableBreak1pw" />
+      <Behaviour Min="3" Dice="7" Type="Atk" Detail="Slash" Motion="J" EffectRes="" Script="" />
+    </BehaviourList>
+    <Chapter>6</Chapter>
+    <Priority>0</Priority>
+  </Card>
+ 
   <Card ID="150">
     <!-- 対抗：標準 実装するかは未定 -->
     <Artwork>tmp_PassivePage.png</Artwork>

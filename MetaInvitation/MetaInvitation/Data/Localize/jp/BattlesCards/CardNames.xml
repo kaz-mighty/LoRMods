@@ -20,6 +20,37 @@
       <LocalizedName>時の剣</LocalizedName>
     </BattleCardDesc>
 
+    <BattleCardDesc ID="100">
+      <LocalizedName>換気</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="101">
+      <LocalizedName>冷却</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="102">
+      <LocalizedName>反復</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="103">
+      <LocalizedName>再点火</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="104">
+      <LocalizedName>光の軌跡</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="105">
+      <LocalizedName>多彩な戦術</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="106">
+      <LocalizedName>戦術考案</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="107">
+      <LocalizedName>その手はもう見た</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="108">
+      <LocalizedName>時間稼ぎ</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="109">
+      <LocalizedName>判断の隙</LocalizedName>
+    </BattleCardDesc>
+
     <BattleCardDesc ID="150">
       <LocalizedName>対抗:標準</LocalizedName>
     </BattleCardDesc>

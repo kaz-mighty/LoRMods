@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -61,6 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BattleUnitBuf_kaz_NextRoundDraw.cs" />
     <Compile Include="DiceCardAbility_endurance1atk.cs" />
     <Compile Include="EnemyPassive.cs" />
     <Compile Include="Main.cs" />
@@ -69,6 +70,22 @@
     <Compile Include="Second\BattleUnitBuf_MetaManager.cs" />
     <Compile Include="Second\BattleUnitBuf_MetaOverPower.cs" />
     <Compile Include="Second\BattleUnitBuf_MetaSmoke.cs" />
+    <Compile Include="Second\DiceCardAbility_kaz_powerDownNow3pw.cs" />
+    <Compile Include="Second\DiceCardAbility_kaz_recoverBreak2pwFriend.cs" />
+    <Compile Include="Second\DiceCardAbility_kaz_vulnerableBreak1pw.cs" />
+    <Compile Include="Second\DiceCardAbility_kaz_vulnerable1pl.cs" />
+    <Compile Include="Second\DiceCardAbility_kaz_disarm1pl.cs" />
+    <Compile Include="Second\DiceCardAbility_kaz_weak1pl.cs" />
+    <Compile Include="Second\DiceCardSelfAbility_kaz_BuyTime.cs" />
+    <Compile Include="Second\DiceCardSelfAbility_kaz_Cooling.cs" />
+    <Compile Include="Second\DiceCardSelfAbility_kaz_nextDraw1Highlander.cs" />
+    <Compile Include="Second\DiceCardSelfAbility_kaz_DiverseTactics.cs" />
+    <Compile Include="Second\DiceCardSelfAbility_kaz_LightTrail.cs" />
+    <Compile Include="Second\DiceCardSelfAbility_kaz_nextDraw1.cs" />
+    <Compile Include="Second\DiceCardSelfAbility_kaz_PowerDown2TargetHighlander.cs" />
+    <Compile Include="Second\DiceCardSelfAbility_kaz_PowerDown2TargetNotHighlander.cs" />
+    <Compile Include="Second\DiceCardSelfAbility_kaz_Reignition.cs" />
+    <Compile Include="Second\DiceCardSelfAbility_kaz_Ventilation.cs" />
     <Compile Include="Second\DiceCardSelfAbilityBase_Meta.cs" />
     <Compile Include="Second\DiceCardSelfAbility_MetaOverPower.cs" />
     <Compile Include="Second\DiceCardSelfAbility_MetaSmoke.cs" />

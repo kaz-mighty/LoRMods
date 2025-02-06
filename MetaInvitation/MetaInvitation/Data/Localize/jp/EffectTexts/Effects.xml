@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <BattleEffectTextRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <effectTextList>
+    <!-- Vanilla no text Effect -->
+    <BattleEffectText ID="Vulnerable_break">
+      <Name>混乱脆弱</Name>
+      <Desc>今回の幕の間、攻撃によって受ける混乱ダメージ量が{0}増加</Desc>
+    </BattleEffectText>
+    <BattleEffectText ID="Vulnerable_break_Keyword">
+      <Name>混乱脆弱 X</Name>
+      <Desc>1幕の間、攻撃によって受ける混乱ダメージ量が X 増加</Desc>
+    </BattleEffectText>
+
+    <!-- 1st reception -->
     <BattleEffectText ID="kazmighty.meta_Time">
       <Name>時</Name>
       <Desc>&lt;size=85%&gt;幕の終了時、敵味方全員の速度スロット数の合計だけ数値が増加する。
@@ -12,12 +23,23 @@
 400: 全ダイス最小値+1
 500: 「???」パッシブを追加&lt;/size&gt;</Desc>
     </BattleEffectText>
+
+    <!-- 2nd reception -->
     <BattleEffectText ID="kazmighty.meta_PowerDivergence">
       <Name>力の発散</Name>
       <Desc>現在の広域攻撃の威力 -{0}(合算なら2倍)
 あと{1}幕経過すると数値が1減少する。</Desc>
     </BattleEffectText>
+    <BattleEffectText ID="kazmighty.meta_DiverseTactics_Keyword">
+      <Name>条件</Name>
+      <Desc>コスト1以上で、まだコストが低下していないページからランダムに選ばれる。</Desc>
+    </BattleEffectText>
+    <BattleEffectText ID="ThisDice_Keyword">
+      <Name>このダイス</Name>
+      <Desc>再使用が終わるまで効果が持続する。</Desc>
+    </BattleEffectText>
 
+    <!-- meta tactics-->
     <BattleEffectText ID="kazmighty.meta_Smoke">
       <Name></Name>
       <Desc>効果がないようだ…。幕の終了時に煙の数値が1減少。</Desc>

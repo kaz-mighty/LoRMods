@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <BattleCardAbilityDescRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!-- 1st reception -->
   <BattleCardAbility ID="TimeWave">
     <Desc>自分の時が350以上の場合のみ使用可能。
 [誰でも指定可能] [戦闘開始] 相手の強化と状態異常を全て解除する。
@@ -13,6 +14,62 @@
     <Desc>[的中] 次の幕に忍耐1を得る</Desc>
   </BattleCardAbility>
 
+  <!-- 2nd reception Page Ability -->
+  <BattleCardAbility ID="kaz_Ventilation">
+    <Desc>[使用時] 光 1 回復。互いの煙が3減少</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="kaz_Cooling">
+    <Desc>[使用時] 光 2 回復。自分の火傷が3減少し、混乱抵抗値を3回復</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="kaz_nextDraw1">
+    <Desc>[使用時] 次の幕の開始時にページを1枚引く</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="kaz_nextDraw1Highlander">
+    <Desc>[使用時] 「唯一」状態なら次の幕の開始時にページを1枚引く</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="kaz_Reignition">
+    <Desc>このページのコストは自分の光の現在値より高くならない。
+[使用時] 光を全て回復</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="kaz_LightTrail">
+    <Desc>3幕目から使用可能。
+このページは使用後に消滅し、4幕が過ぎると手元に戻る。
+[使用時] 光 5 回復</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="kaz_DiverseTactics">
+    <Desc>[使用時] 「唯一」状態なら、手元の[条件]を満たすページ1枚のコストが舞台の間1減少する。</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="kaz_PowerDown2TargetNotHighlander">
+    <Desc>[マッチ開始時] 相手が「唯一」状態でなければ相手の全ダイス威力 -2</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="kaz_PowerDown2TargetHighlander">
+    <Desc>[マッチ開始時] 相手が「唯一」状態なら相手の全ダイス威力 -2</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="kaz_BuyTime">
+    <Desc>[戦闘開始] 全ての味方の火傷と出血の値が2/3に減少(切り捨て)</Desc>
+  </BattleCardAbility>
+  
+  <!-- Dice Ability -->
+  <BattleCardAbility ID="kaz_vulnerable1pl">
+    <Desc>[マッチ敗北] 次の幕にて、脆弱1 付与</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="kaz_vulnerableBreak1pw">
+    <Desc>[マッチ勝利] 次の幕にて、混乱脆弱1 付与</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="kaz_powerDownNow3pw">
+    <Desc>[マッチ勝利] このダイスの威力-3</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="kaz_weak1pl">
+    <Desc>[マッチ敗北] 次の幕にて、虚弱1 付与</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="kaz_disarm1pl">
+    <Desc>[マッチ敗北] 次の幕にて、武装解除1 付与</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="kaz_recoverBreak2pwFriend">
+    <Desc>[マッチ勝利] 全ての味方の混乱抵抗値を2回復</Desc>
+  </BattleCardAbility>
+
+  <!-- Meta Tactics Ability -->
   <BattleCardAbility ID="MetaSmoke">
     <Desc>[装着時発動]
 舞台の間、全ての敵は付与された煙の効果がなくなる。</Desc>
