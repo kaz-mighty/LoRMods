@@ -20,22 +20,37 @@
     <Chapter>6</Chapter>
     <BookValue>7</BookValue>
     <DropItem Type="Equip">10000100</DropItem>
+    <DropItem Type="Card">103</DropItem>
+    <DropItem Type="Card">104</DropItem>
+    <DropItem Type="Card">105</DropItem>
+    <DropItem Type="Card">106</DropItem>
   </BookUse>
   <BookUse ID="101">
-    <!-- ネームド1の本 -->
+    <!-- ナレーの本 -->
     <TextId>101</TextId>
     <BookIcon />
     <Chapter>6</Chapter>
     <BookValue>7</BookValue>
     <DropItem Type="Equip">10000101</DropItem>
+    <DropItem Type="Card">100</DropItem>
+    <DropItem Type="Card">101</DropItem>
+    <DropItem Type="Card">102</DropItem>
+    <DropItem Type="Card">104</DropItem>
+    <DropItem Type="Card">107</DropItem>
   </BookUse>
   <BookUse ID="102">
-    <!-- ネームド2の本 -->
+    <!-- ブレイクの本 -->
     <TextId>102</TextId>
     <BookIcon />
     <Chapter>6</Chapter>
     <BookValue>7</BookValue>
     <DropItem Type="Equip">10000102</DropItem>
+    <DropItem Type="Card">100</DropItem>
+    <DropItem Type="Card">101</DropItem>
+    <DropItem Type="Card">102</DropItem>
+    <DropItem Type="Card">103</DropItem>
+    <DropItem Type="Card">108</DropItem>
+    <DropItem Type="Card">109</DropItem>
   </BookUse>
   <BookUse ID="103">
     <!-- メタ事務所の本 -->
@@ -44,5 +59,8 @@
     <Chapter>6</Chapter>
     <BookValue>7</BookValue>
     <DropItem Type="Equip">10000103</DropItem>
+    <DropItem Type="Card">100</DropItem>
+    <DropItem Type="Card">101</DropItem>
+    <DropItem Type="Card">102</DropItem>
   </BookUse>
 </BookUseXmlRoot>
