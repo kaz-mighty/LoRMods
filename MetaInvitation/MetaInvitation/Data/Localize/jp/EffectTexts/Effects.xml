@@ -30,9 +30,21 @@
       <Desc>現在の広域攻撃の威力 -{0}(合算なら2倍)
 あと{1}幕経過すると数値が1減少する。</Desc>
     </BattleEffectText>
-    <BattleEffectText ID="kazmighty.meta_DiverseTactics_Keyword">
-      <Name>条件</Name>
-      <Desc>コスト1以上で、まだコストが低下していないページからランダムに選ばれる。</Desc>
+    <BattleEffectText ID="kaz_DiverseTactics_Desc1">
+      <Name>候補 ゲスト</Name>
+      <Desc>都市の星1-2段目の入手可能なバトルページ</Desc>
+    </BattleEffectText>
+    <BattleEffectText ID="kaz_DiverseTactics_Desc2">
+      <Name>候補 司書</Name>
+      <Desc>入手済みの都市の星以降のバトルページ</Desc>
+    </BattleEffectText>
+    <BattleEffectText ID="kaz_DiverseTactics_Desc3">
+      <Name>候補</Name>
+      <Desc>(Modページ、現在所持しているページ、ページを追加するページ、広域ページは除く)</Desc>
+    </BattleEffectText>
+    <BattleEffectText ID="kaz_DiverseTactics_Desc4">
+      <Name>隠し効果</Name>
+      <Desc>2幕後まで手札上限+1</Desc>
     </BattleEffectText>
     <BattleEffectText ID="ThisDice_Keyword">
       <Name>このダイス</Name>

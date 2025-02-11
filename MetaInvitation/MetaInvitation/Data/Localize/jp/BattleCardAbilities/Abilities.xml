@@ -37,7 +37,7 @@
 [使用時] 光 5 回復</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="kaz_DiverseTactics">
-    <Desc>[使用時] 「唯一」状態なら、手元の[条件]を満たすページ1枚のコストが舞台の間1減少する。</Desc>
+    <Desc>[使用時] [候補]からランダムなページ1枚を、コストを1下げて2幕後まで手元に追加する。</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="kaz_PowerDown2TargetNotHighlander">
     <Desc>[マッチ開始時] 相手が「唯一」状態でなければ相手の全ダイス威力 -2</Desc>
