@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
 using HarmonyLib;
 using LOR_DiceSystem;
 
@@ -28,6 +29,7 @@ namespace MetaInvitation.Second
 				// xmlData is copied (except for DiceBehaviour) when the card is generated, so it can be rewritten.
 				newCard.XmlData.optionList.Add(CardOption.ExhaustOnUse);
 				newCard.AddBuf(new DiverseTacticsCard(round));
+				Debug.Log(MetaInvitation.packageId + ": DicerseTactics Generate Page " + newCard.GetName());
 			}
 		}
 
@@ -37,7 +39,18 @@ namespace MetaInvitation.Second
 			if (owner.faction == Faction.Player)
 			{
 				var candidates = InventoryModel.Instance.GetCardList().ConvertAll(x => x.ClassInfo);
-				candidates.RemoveAll(x => x.Chapter <= 5 || !IsCandidate(x) || handIdSet.Contains(x.id));
+				candidates.RemoveAll(x => x.Chapter <= 5 || !IsCandidate(x));
+				if (!logAlly)
+				{
+					candidates.Sort((x, y) => x.id.id - y.id.id);
+					var list = candidates.ConvertAll(x =>
+						string.Format("{0} ({1})", x.id, x.Name)
+					);
+					Debug.Log(MetaInvitation.packageId + ": DiverseTactics Card List by Ally");
+					Debug.Log(string.Join("\n", list));
+					logAlly = true;
+				}
+				candidates.RemoveAll(x => handIdSet.Contains(x.id));
 				return candidates.ConvertAll(x => x.id);
 			}
 			else
@@ -46,6 +59,14 @@ namespace MetaInvitation.Second
 				{
 					var cache = GetEnemyInventory();
 					cache.RemoveAll(x => !IsCandidate(x));
+
+					cache.Sort((x, y) => x.id.id - y.id.id);
+					var list = cache.ConvertAll(x =>
+						string.Format("{0} ({1})", x.id, x.Name)
+					);
+					Debug.Log(MetaInvitation.packageId + ": DiverseTactics Card List by Emeny");
+					Debug.Log(string.Join("\n", list));
+
 					_enemyCache = cache.ConvertAll(x => x.id);
 				}
 				var candidates = new List<LorId>(_enemyCache);
@@ -92,6 +113,8 @@ namespace MetaInvitation.Second
 		}
 
 		const int round = 3;
+
+		static bool logAlly = false;
 
 		static List<LorId> _enemyCache = null;
 
