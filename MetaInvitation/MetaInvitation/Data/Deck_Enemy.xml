@@ -33,7 +33,7 @@
     <Card>107</Card>
     <Card>107</Card>
     <Card>104</Card>
-    <Card Pid="@origin">609011</Card>
+    <Card Pid="@origin">616005</Card>
     <Card Pid="@origin">616005</Card>
   </Deck>
   <Deck ID="102">
@@ -41,8 +41,8 @@
     <Card>101</Card>
     <Card>102</Card>
     <Card>108</Card>
-    <Card>103</Card>
     <Card Pid="@origin">601004</Card>
+    <Card Pid="@origin">602008</Card>
     <Card>109</Card>
     <Card>109</Card>
     <Card>109</Card>
@@ -55,7 +55,7 @@
     <Card Pid="@origin">601010</Card>
     <Card Pid="@origin">601002</Card>
     <Card Pid="@origin">601001</Card>
-    <Card Pid="@origin">610011</Card>
-    <Card Pid="@origin">610011</Card>
+    <Card Pid="@origin">601001</Card>
+    <Card Pid="@origin">601004</Card>
   </Deck>
 </DeckXmlRoot>

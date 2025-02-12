@@ -21,9 +21,9 @@
     <BookValue>7</BookValue>
     <DropItem Type="Equip">10000100</DropItem>
     <DropItem Type="Card">103</DropItem>
-    <DropItem Type="Card">104</DropItem>
     <DropItem Type="Card">105</DropItem>
     <DropItem Type="Card">106</DropItem>
+    <DropItem Type="Card" Pid="@origin">605007</DropItem>
   </BookUse>
   <BookUse ID="101">
     <!-- ナレーの本 -->
@@ -33,7 +33,6 @@
     <BookValue>7</BookValue>
     <DropItem Type="Equip">10000101</DropItem>
     <DropItem Type="Card">100</DropItem>
-    <DropItem Type="Card">101</DropItem>
     <DropItem Type="Card">102</DropItem>
     <DropItem Type="Card">104</DropItem>
     <DropItem Type="Card">107</DropItem>
@@ -45,10 +44,8 @@
     <Chapter>6</Chapter>
     <BookValue>7</BookValue>
     <DropItem Type="Equip">10000102</DropItem>
-    <DropItem Type="Card">100</DropItem>
     <DropItem Type="Card">101</DropItem>
     <DropItem Type="Card">102</DropItem>
-    <DropItem Type="Card">103</DropItem>
     <DropItem Type="Card">108</DropItem>
     <DropItem Type="Card">109</DropItem>
   </BookUse>
@@ -62,5 +59,6 @@
     <DropItem Type="Card">100</DropItem>
     <DropItem Type="Card">101</DropItem>
     <DropItem Type="Card">102</DropItem>
+    <DropItem Type="Card" Pid="@origin">601010</DropItem>
   </BookUse>
 </BookUseXmlRoot>
