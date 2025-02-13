@@ -91,6 +91,7 @@
     </BehaviourList>
     <Chapter>6</Chapter>
     <Priority>0</Priority>
+    <PriorityScript>kaz_Ventilation</PriorityScript>
   </Card>
   <Card ID="101">
     <!-- 冷却 -->
@@ -104,6 +105,7 @@
     </BehaviourList>
     <Chapter>6</Chapter>
     <Priority>0</Priority>
+    <PriorityScript>kaz_Cooling</PriorityScript>
   </Card>
   <Card ID="102">
     <!-- 反復 -->
@@ -130,6 +132,7 @@
     </BehaviourList>
     <Chapter>6</Chapter>
     <Priority>0</Priority>
+    <PriorityScript>kaz_LightTrump</PriorityScript>
   </Card>
   <Card ID="104">
     <!-- 光の軌跡 -->
@@ -143,6 +146,7 @@
     </BehaviourList>
     <Chapter>6</Chapter>
     <Priority>0</Priority>
+    <PriorityScript>kaz_LightTrump</PriorityScript>
   </Card>
   <Card ID="105">
     <!-- 多彩な戦術 -->

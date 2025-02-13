@@ -76,6 +76,9 @@
     <Compile Include="Second\DiceCardAbility_kaz_vulnerable1pl.cs" />
     <Compile Include="Second\DiceCardAbility_kaz_disarm1pl.cs" />
     <Compile Include="Second\DiceCardAbility_kaz_weak1pl.cs" />
+    <Compile Include="Second\DiceCardPriority_kaz_Cooling.cs" />
+    <Compile Include="Second\DiceCardPriority_kaz_LightTrump.cs" />
+    <Compile Include="Second\DiceCardPriority_kaz_Ventilation.cs" />
     <Compile Include="Second\DiceCardSelfAbility_kaz_BuyTime.cs" />
     <Compile Include="Second\DiceCardSelfAbility_kaz_Cooling.cs" />
     <Compile Include="Second\DiceCardSelfAbility_kaz_nextDraw1Highlander.cs" />
