@@ -67,8 +67,11 @@
     <Compile Include="Main.cs" />
     <Compile Include="ManualPatch\AddPositiveBufText.cs" />
     <Compile Include="RelativeFactions.cs" />
+    <Compile Include="Second\BattleUnitBuf_MetaDamageRateEnemy.cs" />
     <Compile Include="Second\BattleUnitBuf_MetaManager.cs" />
     <Compile Include="Second\BattleUnitBuf_MetaOverPower.cs" />
+    <Compile Include="Second\BattleUnitBuf_MetaDamageRateAlly.cs" />
+    <Compile Include="Second\BattleUnitBuf_MetaNormal.cs" />
     <Compile Include="Second\BattleUnitBuf_MetaSmoke.cs" />
     <Compile Include="Second\DiceCardAbility_kaz_powerDownNow3pw.cs" />
     <Compile Include="Second\DiceCardAbility_kaz_recoverBreak2pwFriend.cs" />
@@ -90,7 +93,9 @@
     <Compile Include="Second\DiceCardSelfAbility_kaz_Reignition.cs" />
     <Compile Include="Second\DiceCardSelfAbility_kaz_Ventilation.cs" />
     <Compile Include="Second\DiceCardSelfAbilityBase_Meta.cs" />
+    <Compile Include="Second\DiceCardSelfAbility_MetaNormal.cs" />
     <Compile Include="Second\DiceCardSelfAbility_MetaOverPower.cs" />
+    <Compile Include="Second\DiceCardSelfAbility_MetaDamageRate.cs" />
     <Compile Include="Second\DiceCardSelfAbility_MetaSmoke.cs" />
     <Compile Include="Second\PassiveAbility_kaz_CarefulPursuit.cs" />
     <Compile Include="Second\PassiveAbility_kaz_DeepBreath.cs" />

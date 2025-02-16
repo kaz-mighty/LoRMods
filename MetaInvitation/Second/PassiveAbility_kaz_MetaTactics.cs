@@ -52,12 +52,15 @@ namespace MetaInvitation.Second
 		}
 
 		private bool _usedEnemy;
-		private static readonly LorId _vsStandard = new LorId(MetaInvitation.packageId, 150);
+		private static readonly LorId _vsNormal = new LorId(MetaInvitation.packageId, 150);
 		private static readonly LorId _vsSmoke = new LorId(MetaInvitation.packageId, 151);
 		private static readonly LorId _vsOverPower = new LorId(MetaInvitation.packageId, 152);
+		private static readonly LorId _vsDamageRate = new LorId(MetaInvitation.packageId, 153);
 		public static readonly LorId[] cards = {
+			_vsNormal,
 			_vsSmoke,
 			_vsOverPower,
+			_vsDamageRate,
 		};
 	}
 }

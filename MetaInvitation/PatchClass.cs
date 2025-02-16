@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection;
+using System.Reflection.Emit;
 using UnityEngine;
 using HarmonyLib;
 using LOR_DiceSystem;
@@ -168,6 +170,148 @@ namespace MetaInvitation
 						____statBonus.power -= (____statBonus.power - buf.Upper).RandomRoundDiv(2);
 					}
 				}
+			}
+		}
+
+		[HarmonyPatch]
+		class MetaDamageRate_Patch
+		{
+			static bool HasAllyBuf(BattleUnitModel unit)
+			{
+				return unit?.bufListDetail.GetActivatedBufList().Find(
+					x => x is Second.BattleUnitBuf_MetaDamageRateAlly && !x.IsDestroyed()
+				) != null;
+			}
+
+			static bool HasEnemyBuf(BattleUnitModel unit)
+			{
+				return unit?.bufListDetail.GetActivatedBufList().Find(
+					x => x is Second.BattleUnitBuf_MetaDamageRateEnemy && !x.IsDestroyed()
+				) != null;
+			}
+
+			[HarmonyPatch(typeof(BattleDiceBehavior), "ApplyDiceStatBonus")]
+			[HarmonyPrefix]
+			static void DiceStatBonusHalf(BattleDiceBehavior __instance, DiceStatBonus bonus)
+			{
+				if (!HasEnemyBuf(__instance.card.owner)) { return; }
+
+				if (bonus.dmgRate > 0) { bonus.dmgRate /= 2; }
+				if (bonus.breakRate > 0) { bonus.breakRate /= 2; }
+			}
+
+			[HarmonyPatch(typeof(BattleUnitBufListDetail), "GetDamageIncreaseRate")]
+			[HarmonyPatch(typeof(BattleUnitBufListDetail), "GetBreakDamageIncreaseRate")]
+			[HarmonyTranspiler]
+			static IEnumerable<CodeInstruction> DamageIncreaseRateHalf(IEnumerable<CodeInstruction> codes, ILGenerator ilGen, MethodBase original)
+			{
+				var hasAllyBuf = ilGen.DeclareLocal(typeof(bool));
+				var x = ilGen.DeclareLocal(typeof(int));
+				var targetMethod = AccessTools.Method(typeof(BattleUnitBuf), original.Name);
+
+				// insert: bool hasAllyBuf = HasAllyBuf(this._self);
+				yield return new CodeInstruction(OpCodes.Ldarg_0);
+				yield return new CodeInstruction(OpCodes.Ldfld, AccessTools.Field(typeof(BattleUnitBufListDetail), "_self"));
+				yield return CodeInstruction.Call(typeof(MetaDamageRate_Patch), "HasAllyBuf");
+				yield return new CodeInstruction(OpCodes.Stloc, hasAllyBuf);
+
+				var codeList = new List<CodeInstruction>(codes);
+				foreach(var code in codes)
+				{
+					yield return code;
+					if (code.Calls(targetMethod))
+					{
+						// diff (if GetDamageIncreaseRate):
+						// - num += battleUnitBuf.GetDamageIncreaseRate();
+						// + int x = battleUnitBuf.GetDamageIncreaseRate();
+						// + if (hasAllyBuf && x > 0) { x /= 2; }
+						// + num += x;
+						var label = ilGen.DefineLabel();
+						yield return new CodeInstruction(OpCodes.Stloc, x);
+						yield return new CodeInstruction(OpCodes.Ldloc, hasAllyBuf);
+						yield return new CodeInstruction(OpCodes.Brfalse, label);
+
+						yield return new CodeInstruction(OpCodes.Ldloc, x);
+						yield return new CodeInstruction(OpCodes.Ldc_I4_0);
+						yield return new CodeInstruction(OpCodes.Ble, label);
+
+						yield return new CodeInstruction(OpCodes.Ldloc, x);
+						yield return new CodeInstruction(OpCodes.Ldc_I4_2);
+						yield return new CodeInstruction(OpCodes.Div);
+						yield return new CodeInstruction(OpCodes.Stloc, x);
+
+						var labelCode = new CodeInstruction(OpCodes.Ldloc, x);
+						labelCode.labels.Add(label);
+						yield return labelCode;
+					}
+				}
+				yield break;
+			}
+
+			[HarmonyPatch(typeof(BattleUnitEmotionDetail), "DmgFactor")]
+			[HarmonyPatch(typeof(BattleUnitEmotionDetail), "BreakDmgFactor")]
+			[HarmonyPatch(typeof(BattleUnitPassiveDetail), "DmgFactor")]
+			[HarmonyPatch(typeof(BattleUnitPassiveDetail), "BreakDmgFactor")]
+			[HarmonyPatch(typeof(BattleUnitBufListDetail), "DmgFactor")]
+			[HarmonyPatch(typeof(BattleUnitBufListDetail), "BreakDmgFactor")]
+			[HarmonyTranspiler]
+			static IEnumerable<CodeInstruction> DamageFactorHalf(IEnumerable<CodeInstruction> codes, ILGenerator ilGen, MethodBase original)
+			{
+				var hasAllyBuf = ilGen.DeclareLocal(typeof(bool));
+				var x = ilGen.DeclareLocal(typeof(float));
+				Type methodClass;
+				if (original.DeclaringType == typeof(BattleUnitEmotionDetail))
+				{
+					methodClass = typeof(BattleEmotionCardModel);
+				}
+				else if (original.DeclaringType == typeof(BattleUnitPassiveDetail))
+				{
+					methodClass = typeof(PassiveAbilityBase);
+				}
+				else
+				{
+					methodClass = typeof(BattleUnitBuf);
+				}
+				var targetMethod = AccessTools.Method(methodClass, original.Name);
+
+				// insert: bool hasAllyBuf = HasAllyBuf(this._self);
+				yield return new CodeInstruction(OpCodes.Ldarg_0);
+				yield return new CodeInstruction(OpCodes.Ldfld, AccessTools.Field(original.DeclaringType, "_self"));
+				yield return CodeInstruction.Call(typeof(MetaDamageRate_Patch), "HasAllyBuf");
+				yield return new CodeInstruction(OpCodes.Stloc, hasAllyBuf);
+
+				var codeList = new List<CodeInstruction>(codes);
+				foreach(var code in codes)
+				{
+					yield return code;
+					if (code.Calls(targetMethod))
+					{
+						// diff (example):
+						// - num *= battleEmotionCardModel.DmgFactor(dmg, type, keyword);
+						// + float x = battleEmotionCardModel.DmgFactor(dmg, type, keyword);
+						// + if (hasAllyBuf && x > 1f) { x = x / 2f + 0.5f; }
+						// + num *= x;
+						var label = ilGen.DefineLabel();
+						yield return new CodeInstruction(OpCodes.Stloc, x);
+						yield return new CodeInstruction(OpCodes.Ldloc, hasAllyBuf);
+						yield return new CodeInstruction(OpCodes.Brfalse, label);
+
+						yield return new CodeInstruction(OpCodes.Ldloc, x);
+						yield return new CodeInstruction(OpCodes.Ldc_R4, 1f);
+						yield return new CodeInstruction(OpCodes.Ble_Un, label);
+
+						yield return new CodeInstruction(OpCodes.Ldloc, x);
+						yield return new CodeInstruction(OpCodes.Ldc_R4, 2f);
+						yield return new CodeInstruction(OpCodes.Div);
+						yield return new CodeInstruction(OpCodes.Ldc_R4, 0.5f);
+						yield return new CodeInstruction(OpCodes.Add);
+						yield return new CodeInstruction(OpCodes.Stloc, x);
+						var labelCode = new CodeInstruction(OpCodes.Ldloc, x);
+						labelCode.labels.Add(label);
+						yield return labelCode;
+					}
+				}
+				yield break;
 			}
 		}
 	}

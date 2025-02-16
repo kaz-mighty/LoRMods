@@ -220,12 +220,12 @@
   </Card>
  
   <Card ID="150">
-    <!-- 対抗：標準 実装するかは未定 -->
+    <!-- 通常：全面戦争 -->
     <Artwork>tmp_PassivePage.png</Artwork>
     <Rarity>Unique</Rarity>
     <Option>Personal</Option>
     <Spec Range="Instance" Cost="0" />
-    <Script></Script>
+    <Script>MetaNormal</Script>
     <BehaviourList></BehaviourList>
     <Chapter>6</Chapter>
     <Priority>0</Priority>
@@ -248,6 +248,17 @@
     <Option>Personal</Option>
     <Spec Range="Instance" Cost="0" />
     <Script>MetaOverPower</Script>
+    <BehaviourList></BehaviourList>
+    <Chapter>6</Chapter>
+    <Priority>0</Priority>
+  </Card>
+  <Card ID="153">
+    <!-- 対抗：ダメージ倍化 -->
+    <Artwork>tmp_PassivePage.png</Artwork>
+    <Rarity>Unique</Rarity>
+    <Option>Personal</Option>
+    <Spec Range="Instance" Cost="0" />
+    <Script>MetaDamageRate</Script>
     <BehaviourList></BehaviourList>
     <Chapter>6</Chapter>
     <Priority>0</Priority>

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using UnityEngine;
-using LOR_DiceSystem;
-
-namespace MetaInvitation.Second
+﻿namespace MetaInvitation.Second
 {
 	class BattleUnitBuf_MetaSmoke : BattleUnitBuf
 	{

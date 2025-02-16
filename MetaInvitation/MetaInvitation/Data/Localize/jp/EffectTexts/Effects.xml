@@ -52,17 +52,29 @@
     </BattleEffectText>
 
     <!-- meta tactics-->
+    <BattleEffectText ID="kazmighty.meta_MetaNormal">
+      <Name>通常：全面戦争</Name>
+      <Desc>最大体力+10、混乱抵抗値+5</Desc>
+    </BattleEffectText>
     <BattleEffectText ID="kazmighty.meta_Smoke">
       <Name></Name>
       <Desc>効果がないようだ…。幕の終了時に煙の数値が1減少。</Desc>
     </BattleEffectText>
     <BattleEffectText ID="kazmighty.meta_MetaSmoke">
-      <Name>対抗:煙</Name>
+      <Name>対抗：煙</Name>
       <Desc>得た煙の効果がなくなる。</Desc>
     </BattleEffectText>
     <BattleEffectText ID="kazmighty.meta_MetaOverPower">
-      <Name>対抗:超威力</Name>
+      <Name>対抗：超威力</Name>
       <Desc>{0}～{1}の範囲を超えた威力の効果が、超えた分だけ半減する。</Desc>
+    </BattleEffectText>
+    <BattleEffectText ID="kazmighty.meta_MetaDamageRateAlly">
+      <Name>対抗：ダメージ倍化</Name>
+      <Desc>割合被ダメージ増加の効果が半減する。(混乱ダメージも含む)</Desc>
+    </BattleEffectText>
+    <BattleEffectText ID="kazmighty.meta_MetaDamageRateEnemy">
+      <Name>対抗：ダメージ倍化</Name>
+      <Desc>割合与ダメージ増加の効果が半減する。(混乱ダメージも含む)</Desc>
     </BattleEffectText>
   </effectTextList>
 </BattleEffectTextRoot>

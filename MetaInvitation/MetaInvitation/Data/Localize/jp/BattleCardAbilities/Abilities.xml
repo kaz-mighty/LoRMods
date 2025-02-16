@@ -70,6 +70,11 @@
   </BattleCardAbility>
 
   <!-- Meta Tactics Ability -->
+  <BattleCardAbility ID="MetaNormal">
+    <Desc>[装着時発動]
+舞台の間、全ての味方の最大体力を10、混乱抵抗値を5増加させる。
+(現在値は割合が一定になるよう増加する)</Desc>
+  </BattleCardAbility>
   <BattleCardAbility ID="MetaSmoke">
     <Desc>[装着時発動]
 舞台の間、全ての敵は付与された煙の効果がなくなる。</Desc>
@@ -79,5 +84,10 @@
 舞台の間、全ての敵は-2～2の範囲を超えた威力の効果が、超えた分だけ半減する。
 全ての味方は0～4の範囲を超えた威力の効果が、超えた分だけ半減する。
 (小数点以下ランダム)</Desc>
+  </BattleCardAbility>
+  <BattleCardAbility ID="MetaDamageRate">
+    <Desc>[装着時発動]
+舞台の間、全ての味方の割合被ダメージ増加の効果と、全ての敵の割合与ダメージ増加の効果が半減する。
+(混乱ダメージ、「効果によるダメージを含む効果」も含む。まなざし、カウンターダメージ増加を含まない)</Desc>
   </BattleCardAbility>
 </BattleCardAbilityDescRoot>

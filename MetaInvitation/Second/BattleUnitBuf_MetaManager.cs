@@ -5,6 +5,8 @@ using LOR_DiceSystem;
 
 namespace MetaInvitation.Second
 {
+	// バフを付与するバフを用意することで、後から生成された敵へも効果を発揮する
+	// 死亡時に他の味方へ移動することで、舞台中永続するようにしている
 	class BattleUnitBuf_MetaManager : BattleUnitBuf
 	{
 		public BattleUnitBuf_MetaManager(ManagerActivater activater)
@@ -24,6 +26,10 @@ namespace MetaInvitation.Second
 
 		public override void OnDie()
 		{
+			if (IsDestroyed())
+			{
+				return;
+			}
 			var others = BattleObjectManager.instance.GetAliveList(_owner.faction);
 			if (others.Count == 0)
 			{

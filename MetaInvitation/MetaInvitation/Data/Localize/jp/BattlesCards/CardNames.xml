@@ -52,13 +52,16 @@
     </BattleCardDesc>
 
     <BattleCardDesc ID="150">
-      <LocalizedName>対抗:標準</LocalizedName>
+      <LocalizedName>通常：全面戦争</LocalizedName>
     </BattleCardDesc>
     <BattleCardDesc ID="151">
-      <LocalizedName>対抗:煙</LocalizedName>
+      <LocalizedName>対抗：煙</LocalizedName>
     </BattleCardDesc>
     <BattleCardDesc ID="152">
-      <LocalizedName>対抗:超威力</LocalizedName>
+      <LocalizedName>対抗：超威力</LocalizedName>
+    </BattleCardDesc>
+    <BattleCardDesc ID="153">
+      <LocalizedName>対抗：ダメージ倍化</LocalizedName>
     </BattleCardDesc>
   </cardDescList>
 </BattleCardDescRoot>
