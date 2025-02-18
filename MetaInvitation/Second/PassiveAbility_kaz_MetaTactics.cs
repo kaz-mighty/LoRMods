@@ -8,6 +8,13 @@ namespace MetaInvitation.Second
 {
 	class PassiveAbility_kaz_MetaTactics : PassiveAbilityBase
 	{
+		public bool IsUsed { get; private set; }
+
+		public void OnPassiveCardUsed()
+		{
+			_isAddCardNextRound = true;
+			IsUsed = true;
+		}
 
 		public override void OnWaveStart()
 		{
@@ -15,9 +22,29 @@ namespace MetaInvitation.Second
 			{
 				return;
 			}
-			foreach (var cardId in cards)
+			_isAddCardNextRound = true;
+		}
+
+		public override void OnRoundStart()
+		{
+			if (owner.faction != Faction.Player) { return; }
+
+			if (_isAddCardNextRound)
 			{
-				owner.personalEgoDetail.AddCard(cardId);
+				_isAddCardNextRound = false;
+				foreach (var cardId in cardIds)
+				{
+					owner.personalEgoDetail.AddCard(cardId);
+				}
+
+				if (IsUsed)
+				{
+					var deckCards = owner.personalEgoDetail.GetCardAll();
+					foreach (var cardId in cardIds)
+					{
+						deckCards.Find(x => x.GetID() == cardId)?.SetCurrentCost(3);
+					}
+				}
 			}
 		}
 
@@ -33,10 +60,6 @@ namespace MetaInvitation.Second
 				return;
 			}
 			if (owner.RollSpeedDice().FindAll(x => !x.breaked).Count <= 0 || owner.IsBreakLifeZero())
-			{
-				return;
-			}
-			if (_usedEnemy)
 			{
 				return;
 			}
@@ -70,7 +93,7 @@ namespace MetaInvitation.Second
 					new DiceCardSelfAbility_MetaDamageRate().Activate(owner);
 					break;
 			}
-			_usedEnemy = true;
+			IsUsed = true;
 
 		}
 
@@ -172,12 +195,13 @@ namespace MetaInvitation.Second
 			return keywords;
 		}
 
-		private bool _usedEnemy;
+		private bool _isAddCardNextRound;
+
 		private static readonly LorId _vsNormal = new LorId(MetaInvitation.packageId, 150);
 		private static readonly LorId _vsSmoke = new LorId(MetaInvitation.packageId, 151);
 		private static readonly LorId _vsOverPower = new LorId(MetaInvitation.packageId, 152);
 		private static readonly LorId _vsDamageRate = new LorId(MetaInvitation.packageId, 153);
-		public static readonly LorId[] cards = {
+		public static readonly LorId[] cardIds = {
 			_vsNormal,
 			_vsSmoke,
 			_vsOverPower,

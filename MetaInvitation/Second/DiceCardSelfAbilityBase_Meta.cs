@@ -7,6 +7,8 @@ namespace MetaInvitation.Second
 {
 	abstract class DiceCardSelfAbilityBase_Meta : DiceCardSelfAbilityBase
 	{
+		public override string[] Keywords => new string[] { "kaz_MetaKeyword" };
+
 		public override bool IsTargetableSelf() => true;
 
 		public override bool IsTargetableAllUnit() => true;
@@ -14,7 +16,11 @@ namespace MetaInvitation.Second
 		public override void OnUseInstance(BattleUnitModel unit, BattleDiceCardModel self, BattleUnitModel targetUnit)
 		{
 			Activate(unit);
-			foreach (var cardId in PassiveAbility_kaz_MetaTactics.cards)
+
+			// 並び順を固定したいため、いったん消して次ラウンドに追加する
+			var passive = unit.passiveDetail.PassiveList.Find(x => x is PassiveAbility_kaz_MetaTactics) as PassiveAbility_kaz_MetaTactics;
+			passive?.OnPassiveCardUsed();
+			foreach (var cardId in PassiveAbility_kaz_MetaTactics.cardIds)
 			{
 				unit.personalEgoDetail.RemoveCard(cardId);
 			}
@@ -30,12 +36,14 @@ namespace MetaInvitation.Second
 					buf.Destroy();
 				}
 			}
-			unit.bufListDetail.AddBuf(new BattleUnitBuf_MetaManager(ManagerActivate));
+			unit.bufListDetail.AddBuf(new BattleUnitBuf_MetaManager(ManagerActivate, ManagerDeactivate));
 		}
 
 		// 付与時とラウンド開始時に実行される
 		public abstract void ManagerActivate(BattleUnitModel owner);
 
+		// マネージャーのDestroy時に実行される
+		public abstract void ManagerDeactivate(BattleUnitModel owner);
 
 	}
 

@@ -7,6 +7,8 @@
 
 		public override StatBonus GetStatBonus()
 		{
+			if (IsDestroyed()) { return null; }
+
 			return new StatBonus
 			{
 				hpAdder = 10,

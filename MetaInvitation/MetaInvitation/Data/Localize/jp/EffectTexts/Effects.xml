@@ -52,6 +52,10 @@
     </BattleEffectText>
 
     <!-- meta tactics-->
+    <BattleEffectText ID="kaz_MetaKeyword">
+      <Name>対抗戦術ページ</Name>
+      <Desc>対抗戦術ページを複数回使用すると、最後に使用した効果のみ発動する。</Desc>
+    </BattleEffectText>
     <BattleEffectText ID="kazmighty.meta_MetaNormal">
       <Name>通常：全面戦争</Name>
       <Desc>最大体力+10、混乱抵抗値+5</Desc>

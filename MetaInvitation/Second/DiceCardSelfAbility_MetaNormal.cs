@@ -17,6 +17,18 @@ namespace MetaInvitation.Second
 			}
 		}
 
+		public override void ManagerDeactivate(BattleUnitModel owner)
+		{
+			foreach (var target in BattleObjectManager.instance.GetAliveList(owner.faction))
+			{
+				var buf = target.bufListDetail.GetActivatedBufList().Find(x => x is BattleUnitBuf_MetaNormal && !x.IsDestroyed());
+				if (buf != null)
+				{
+					KeepRatio(target, () => buf.Destroy());
+				}
+			}
+		}
+
 		private void KeepRatio(BattleUnitModel target, Action action)
 		{
 			float maxHpBefore = target.MaxHp;

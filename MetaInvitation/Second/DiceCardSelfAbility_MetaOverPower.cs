@@ -11,7 +11,7 @@ namespace MetaInvitation.Second
 		{
 			foreach (var target in BattleObjectManager.instance.GetAliveList((owner.faction == Faction.Player) ? Faction.Enemy : Faction.Player))
 			{
-				var buf = target.bufListDetail.GetActivatedBufList().Find(x => x is BattleUnitBuf_MetaOverPower) as BattleUnitBuf_MetaOverPower;
+				var buf = target.bufListDetail.GetActivatedBufList().Find(x => x is BattleUnitBuf_MetaOverPower && !x.IsDestroyed()) as BattleUnitBuf_MetaOverPower;
 				if (buf != null)
 				{
 					buf.Mode |= RelativeFactions.Enemy;
@@ -21,7 +21,7 @@ namespace MetaInvitation.Second
 			}
 			foreach (var target in BattleObjectManager.instance.GetAliveList(owner.faction))
 			{
-				var buf = target.bufListDetail.GetActivatedBufList().Find(x => x is BattleUnitBuf_MetaOverPower) as BattleUnitBuf_MetaOverPower;
+				var buf = target.bufListDetail.GetActivatedBufList().Find(x => x is BattleUnitBuf_MetaOverPower && !x.IsDestroyed()) as BattleUnitBuf_MetaOverPower;
 				if (buf != null)
 				{
 					buf.Mode |= RelativeFactions.Ally;
@@ -30,7 +30,25 @@ namespace MetaInvitation.Second
 				target.bufListDetail.AddBuf(new BattleUnitBuf_MetaOverPower(RelativeFactions.Ally));
 			}
 		}
+
+		public override void ManagerDeactivate(BattleUnitModel owner)
+		{
+			foreach (var target in BattleObjectManager.instance.GetAliveList((owner.faction == Faction.Player) ? Faction.Enemy : Faction.Player))
+			{
+				var buf = target.bufListDetail.GetActivatedBufList().Find(x => x is BattleUnitBuf_MetaOverPower && !x.IsDestroyed()) as BattleUnitBuf_MetaOverPower;
+				if (buf != null)
+				{
+					buf.Mode &= ~RelativeFactions.Enemy;
+				}
+			}
+			foreach (var target in BattleObjectManager.instance.GetAliveList(owner.faction))
+			{
+				var buf = target.bufListDetail.GetActivatedBufList().Find(x => x is BattleUnitBuf_MetaOverPower && !x.IsDestroyed()) as BattleUnitBuf_MetaOverPower;
+				if (buf != null)
+				{
+					buf.Mode &= ~RelativeFactions.Ally;
+				}
+			}
+		}
 	}
-
-
 }
