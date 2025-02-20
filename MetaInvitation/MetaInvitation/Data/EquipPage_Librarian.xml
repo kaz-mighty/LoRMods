@@ -68,8 +68,8 @@
     <TextId>100</TextId>
     <BookIcon />
     <EquipEffect>
-      <HP>103</HP>
-      <Break>56</Break>
+      <HP>105</HP>
+      <Break>58</Break>
       <SpeedMin>2</SpeedMin>
       <Speed>7</Speed>
       <SResist>Endure</SResist>
@@ -84,7 +84,7 @@
       <Passive Pid="@origin">10008</Passive>
       <Passive>100</Passive>
       <Passive>101</Passive>
-      <Passive Pid="@origin">250223</Passive>
+      <Passive>109</Passive>
     </EquipEffect>
     <Rarity>Unique</Rarity>
     <CharacterSkin>Mei</CharacterSkin>

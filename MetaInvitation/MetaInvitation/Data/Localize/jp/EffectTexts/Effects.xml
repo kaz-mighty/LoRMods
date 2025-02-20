@@ -25,6 +25,10 @@
     </BattleEffectText>
 
     <!-- 2nd reception -->
+    <BattleEffectText ID="kaz_Target25">
+      <Name>標的</Name>
+      <Desc>攻撃で受けるダメージ・混乱ダメージ量が25%増加</Desc>
+    </BattleEffectText>
     <BattleEffectText ID="kazmighty.meta_PowerDivergence">
       <Name>力の発散</Name>
       <Desc>現在の広域攻撃の威力 -{0}(合算なら2倍)

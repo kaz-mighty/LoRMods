@@ -109,4 +109,10 @@
     <Cost>1</Cost>
     <Script>kaz_CarefulPursuit</Script>
   </Passive>
+  <Passive ID="109">
+    <!-- 簡易始末 -->
+    <Rarity>Unique</Rarity>
+    <Cost>3</Cost>
+    <Script>kaz_Target25</Script>
+  </Passive>
 </PassiveXmlRoot>

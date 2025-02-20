@@ -93,7 +93,7 @@
       <Passive Pid="@origin">10008</Passive>
       <Passive>100</Passive>
       <Passive>101</Passive>
-      <Passive Pid="@origin">250223</Passive>
+      <Passive>109</Passive>
       <Passive>102</Passive><!-- enemy only -->
     </EquipEffect>
     <Rarity>Unique</Rarity>

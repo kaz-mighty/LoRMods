@@ -103,6 +103,7 @@
     <Compile Include="Second\PassiveAbility_kaz_CarefulPursuit.cs" />
     <Compile Include="Second\PassiveAbility_kaz_DeepBreath.cs" />
     <Compile Include="Second\PassiveAbility_kaz_GreaterEvasion.cs" />
+    <Compile Include="Second\PassiveAbility_kaz_Target25.cs" />
     <Compile Include="Second\PassiveAbility_kaz_Parry2.cs" />
     <Compile Include="Second\PassiveAbility_kaz_ActingCommander.cs" />
     <Compile Include="Second\PassiveAbility_kaz_Parry1.cs" />
