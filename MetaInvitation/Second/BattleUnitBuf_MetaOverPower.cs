@@ -35,16 +35,16 @@ namespace MetaInvitation.Second
 			switch (mode)
 			{
 				case RelativeFactions.Ally | RelativeFactions.Enemy:
-					Lower = 0;
-					Upper = 2;
+					Lower = _allyLower;
+					Upper = _enemyUpper;
 					break;
 				case RelativeFactions.Ally:
-					Lower = 0;
-					Upper = 4;
+					Lower = _allyLower;
+					Upper = _allyUpper;
 					break;
 				case RelativeFactions.Enemy:
-					Lower = -2;
-					Upper = 2;
+					Lower = _enemyLower;
+					Upper = _enemyUpper;
 					break;
 				case RelativeFactions.None:
 					Destroy();
@@ -53,5 +53,10 @@ namespace MetaInvitation.Second
 		}
 
 		private RelativeFactions mode;
+
+		internal const int _allyLower = 0;
+		internal const int _allyUpper = 4;
+		internal const int _enemyLower = -2;
+		internal const int _enemyUpper = 2;
 	}
 }
