@@ -9,6 +9,7 @@ namespace MetaInvitation.Second
 	{
 		public BattleUnitBuf_MetaOverPower(RelativeFactions faction)
 		{
+			stack = 0;
 			mode = faction;
 			Update();
 		}

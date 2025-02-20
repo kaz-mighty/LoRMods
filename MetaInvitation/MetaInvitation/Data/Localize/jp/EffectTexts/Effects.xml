@@ -58,7 +58,7 @@
     </BattleEffectText>
     <BattleEffectText ID="kazmighty.meta_MetaNormal">
       <Name>通常：全面戦争</Name>
-      <Desc>最大体力+10、混乱抵抗値+5</Desc>
+      <Desc>最大体力+{0}、混乱抵抗値+{1}</Desc>
     </BattleEffectText>
     <BattleEffectText ID="kazmighty.meta_Smoke">
       <Name></Name>

@@ -72,7 +72,7 @@
   <!-- Meta Tactics Ability -->
   <BattleCardAbility ID="MetaNormal">
     <Desc>[装着時発動]
-舞台の間、全ての味方の最大体力を10、混乱抵抗値を5増加させる。
+舞台の間、全ての味方の最大体力/混乱抵抗値を10%(最低10/5)増加させる。
 (現在値は割合が一定になるよう増加する)</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="MetaSmoke">
