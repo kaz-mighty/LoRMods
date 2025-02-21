@@ -192,7 +192,7 @@ namespace MetaInvitation
 
 		public override void OnRoundEnd_before()
 		{
-			Singleton<TimeFieldManager>.Instance.stack += 30;
+			TimeFieldManager.Instance.stack += 30;
 		}
 
 		public override void OnRoundEndTheLast()

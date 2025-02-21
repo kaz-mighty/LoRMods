@@ -17,14 +17,14 @@ namespace MetaInvitation
 			[HarmonyPostfix]
 			static void Init()
 			{
-				Singleton<TimeFieldManager>.Instance.Init();
+				TimeFieldManager.Instance.Init();
 			}
 
 			[HarmonyPatch(typeof(StageController), "SortUnitPhase")]
 			[HarmonyPostfix]
 			static void OnAfterRollSpeedDice()
 			{
-				Singleton<TimeFieldManager>.Instance.OnAfterRollSpeedDice();
+				TimeFieldManager.Instance.OnAfterRollSpeedDice();
 			}
 
 			[HarmonyPatch(typeof(BattleUnitModel), "Die")]
@@ -38,7 +38,7 @@ namespace MetaInvitation
 					if (minHp > __instance.Book.DeadLine)
 					{
 						AccessTools.Property(typeof(BattleUnitModel), "hp").SetValue(__instance, minHp);
-						SingletonBehavior<BattleManagerUI>.Instance.ui_unitListInfoSummary.UpdateCharacterProfile(__instance, __instance.faction, __instance.hp, __instance.breakDetail.breakGauge, null);
+						BattleManagerUI.Instance.ui_unitListInfoSummary.UpdateCharacterProfile(__instance, __instance.faction, __instance.hp, __instance.breakDetail.breakGauge, null);
 						return false;
 					}
 				}
@@ -72,8 +72,8 @@ namespace MetaInvitation
 			[HarmonyPostfix]
 			static void CanUsingEgoFix(ref bool __result)
 			{
-				var cards = (Dictionary<SephirahType, List<BattleDiceCardModel>>)AccessTools.Field(typeof(SpecialCardListModel), "_cardSelectedDataByFloor").GetValue(Singleton<SpecialCardListModel>.Instance);
-				var sephirah = Singleton<StageController>.Instance.GetCurrentStageFloorModel().Sephirah;
+				var cards = (Dictionary<SephirahType, List<BattleDiceCardModel>>)AccessTools.Field(typeof(SpecialCardListModel), "_cardSelectedDataByFloor").GetValue(SpecialCardListModel.Instance);
+				var sephirah = StageController.Instance.GetCurrentStageFloorModel().Sephirah;
 				if (cards[sephirah].Count != 0)
 				{
 					__result = true;
@@ -121,7 +121,7 @@ namespace MetaInvitation
 				if (!__runOriginal) { return false; }
 				if (____owner.bufListDetail.HasBuf<Second.BattleUnitBuf_MetaSmoke>())
 				{
-					__result = Singleton<BattleEffectTextsXmlList>.Instance.GetEffectTextDesc(MetaInvitation.packageId + "_Smoke");
+					__result = BattleEffectTextsXmlList.Instance.GetEffectTextDesc(MetaInvitation.packageId + "_Smoke");
 					return false;
 				}
 				return true;

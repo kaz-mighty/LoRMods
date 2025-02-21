@@ -23,7 +23,7 @@ namespace MetaInvitation
 			});
 
 			stack += speedNum;
-			var turn = Singleton<StageController>.Instance.RoundTurn;
+			var turn = StageController.Instance.RoundTurn;
 			Debug.Log(string.Format("{0}: Trun {1}, SpeedNum {2}, NowTimeStack {3}", MetaInvitation.packageId, turn, speedNum, stack));
 			return;
 		}
@@ -36,7 +36,7 @@ namespace MetaInvitation
 	{
 		public override void OnWaveStart()
 		{
-			var stack = Singleton<TimeFieldManager>.Instance.stack;
+			var stack = TimeFieldManager.Instance.stack;
 			foreach (var x in BattleObjectManager.instance.GetAliveList((owner.faction == Faction.Enemy) ? Faction.Enemy : Faction.Player))
 			{
 				if (!x.bufListDetail.HasBuf<BattleUnitBuf_Time>())
@@ -54,11 +54,11 @@ namespace MetaInvitation
 	{
 		public override void OnWaveStart()
 		{
-			var specialCardList = Singleton<SpecialCardListModel>.Instance;
+			var specialCardList = SpecialCardListModel.Instance;
 			var _cardInHand = (List<BattleDiceCardModel>)AccessTools.Field(typeof(SpecialCardListModel), "_cardInHand").GetValue(specialCardList);
 			if (!_cardInHand.Exists(x => x.GetID() == MetaInvitation.timeWaveCardId))
 			{
-				specialCardList.AddCard(MetaInvitation.timeWaveCardId, Singleton<StageController>.Instance.GetCurrentStageFloorModel().Sephirah);
+				specialCardList.AddCard(MetaInvitation.timeWaveCardId, StageController.Instance.GetCurrentStageFloorModel().Sephirah);
 			}
 		}
 	}
@@ -180,7 +180,7 @@ namespace MetaInvitation
 
 		public override void OnRoundEnd()
 		{
-			SetStack(Singleton<TimeFieldManager>.Instance.stack);
+			SetStack(TimeFieldManager.Instance.stack);
 		}
 
 		public override void BeforeRollDice(BattleDiceBehavior behavior)

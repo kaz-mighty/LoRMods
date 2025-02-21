@@ -12,7 +12,7 @@
 		protected override string keywordId => MetaInvitation.packageId + "_MetaOverPower";
 		protected override string keywordIconId => MetaInvitation.packageId + "_PassiveBuf";
 		public override string bufActivatedText =>
-			Singleton<BattleEffectTextsXmlList>.Instance.GetEffectTextDesc(keywordId, Lower, Upper);
+			BattleEffectTextsXmlList.Instance.GetEffectTextDesc(keywordId, Lower, Upper);
 		public int Lower { get; private set; } = -999;
 		public int Upper { get; private set; } = 999;
 

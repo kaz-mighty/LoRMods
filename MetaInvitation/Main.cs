@@ -23,7 +23,7 @@ namespace MetaInvitation
 
 		public static void RemoveError()
 		{
-			Singleton<ModContentManager>.Instance.GetErrorLogs().RemoveAll(
+			ModContentManager.Instance.GetErrorLogs().RemoveAll(
 				(string errorLog) => errorLog.Contains(packageId) && errorLog.Contains("The same assembly name already exists")
 			);
 		}

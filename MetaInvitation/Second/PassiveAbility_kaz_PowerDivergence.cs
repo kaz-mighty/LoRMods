@@ -30,7 +30,7 @@ namespace MetaInvitation.Second
 			{
 				get
 				{
-					return Singleton<BattleEffectTextsXmlList>.Instance.GetEffectTextDesc(keywordId, stack, remainTurn);
+					return BattleEffectTextsXmlList.Instance.GetEffectTextDesc(keywordId, stack, remainTurn);
 				}
 			}
 
