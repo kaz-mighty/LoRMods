@@ -5,7 +5,7 @@ using LOR_DiceSystem;
 
 namespace MetaInvitation.Second
 {
-	class PassiveAbility_kaz_CarefulPursuit : PassiveAbilityBase
+	public class PassiveAbility_kaz_CarefulPursuit : PassiveAbilityBase
 	{
 		public override void BeforeRollDice(BattleDiceBehavior behavior)
 		{

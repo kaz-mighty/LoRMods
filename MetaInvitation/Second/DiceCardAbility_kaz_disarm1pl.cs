@@ -1,6 +1,6 @@
 ﻿namespace MetaInvitation.Second
 {
-	class DiceCardAbility_kaz_disarm1pl : DiceCardAbilityBase
+	public class DiceCardAbility_kaz_disarm1pl : DiceCardAbilityBase
 	{
 		public override string[] Keywords => new string[] { "Disarm_Keyword" };
 

@@ -5,7 +5,7 @@ using LOR_DiceSystem;
 
 namespace MetaInvitation.Second
 {
-	class PassiveAbility_kaz_ActingCommander : PassiveAbilityBase
+	public class PassiveAbility_kaz_ActingCommander : PassiveAbilityBase
 	{
 		public override void OnRoundStartAfter()
 		{

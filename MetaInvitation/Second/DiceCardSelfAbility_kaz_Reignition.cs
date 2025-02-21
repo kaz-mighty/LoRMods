@@ -2,7 +2,7 @@
 
 namespace MetaInvitation.Second
 {
-	class DiceCardSelfAbility_kaz_Reignition : DiceCardSelfAbilityBase
+	public class DiceCardSelfAbility_kaz_Reignition : DiceCardSelfAbilityBase
 	{
 		public override string[] Keywords => new string[] { "Energy_Keyword" };
 

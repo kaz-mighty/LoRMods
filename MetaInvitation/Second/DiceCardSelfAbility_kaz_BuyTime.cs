@@ -1,6 +1,6 @@
 ﻿namespace MetaInvitation.Second
 {
-	class DiceCardSelfAbility_kaz_BuyTime : DiceCardSelfAbilityBase
+	public class DiceCardSelfAbility_kaz_BuyTime : DiceCardSelfAbilityBase
 	{
 		public override string[] Keywords => new string[] { "Burn_Keyword", "Bleeding_Keyword", "bstart_Keyword" };
 

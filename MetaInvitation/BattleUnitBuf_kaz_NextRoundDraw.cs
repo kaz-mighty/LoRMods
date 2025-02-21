@@ -1,6 +1,6 @@
 ﻿namespace MetaInvitation
 {
-	class BattleUnitBuf_kaz_NextRoundDraw : BattleUnitBuf
+	public class BattleUnitBuf_kaz_NextRoundDraw : BattleUnitBuf
 	{
 		public override void OnRoundEndTheLast()
 		{

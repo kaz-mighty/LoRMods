@@ -5,7 +5,7 @@ using LOR_DiceSystem;
 
 namespace MetaInvitation.Second
 {
-	class PassiveAbility_kaz_Parry1 : PassiveAbilityBase
+	public class PassiveAbility_kaz_Parry1 : PassiveAbilityBase
 	{
 		public override int GetDamageReduction(BattleDiceBehavior behavior)
 		{

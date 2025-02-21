@@ -7,7 +7,7 @@ using OverPower = MetaInvitation.Second.BattleUnitBuf_MetaOverPower;
 
 namespace MetaInvitation.Second
 {
-	class PassiveAbility_kaz_MetaTactics : PassiveAbilityBase
+	public class PassiveAbility_kaz_MetaTactics : PassiveAbilityBase
 	{
 		public void OnPassiveCardUsed()
 		{

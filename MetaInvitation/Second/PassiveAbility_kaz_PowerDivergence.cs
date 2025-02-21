@@ -6,7 +6,7 @@ using LOR_DiceSystem;
 
 namespace MetaInvitation.Second
 {
-	class PassiveAbility_kaz_PowerDivergence : PassiveAbilityBase
+	public class PassiveAbility_kaz_PowerDivergence : PassiveAbilityBase
 	{
 		public override void OnRoundStart()
 		{

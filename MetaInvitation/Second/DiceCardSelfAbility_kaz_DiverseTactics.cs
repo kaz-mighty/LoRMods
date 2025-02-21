@@ -7,7 +7,7 @@ using LOR_DiceSystem;
 
 namespace MetaInvitation.Second
 {
-	class DiceCardSelfAbility_kaz_DiverseTactics : DiceCardSelfAbilityBase
+	public class DiceCardSelfAbility_kaz_DiverseTactics : DiceCardSelfAbilityBase
 	{
 		public override string[] Keywords => new string[] {
 			"kaz_DiverseTactics_Desc1",

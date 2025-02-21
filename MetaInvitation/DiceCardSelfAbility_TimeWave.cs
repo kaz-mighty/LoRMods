@@ -1,6 +1,6 @@
 ﻿namespace MetaInvitation
 {
-	class DiceCardSelfAbility_TimeWave : DiceCardSelfAbilityBase
+	public class DiceCardSelfAbility_TimeWave : DiceCardSelfAbilityBase
 	{
 		public override string[] Keywords
 		{

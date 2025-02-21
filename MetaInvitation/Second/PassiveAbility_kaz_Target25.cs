@@ -1,6 +1,6 @@
 ﻿namespace MetaInvitation.Second
 {
-	class PassiveAbility_kaz_Target25 : PassiveAbilityBase
+	public class PassiveAbility_kaz_Target25 : PassiveAbilityBase
 	{
 		public override void OnUseCard(BattlePlayingCardDataInUnitModel curCard)
 		{

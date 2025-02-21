@@ -1,6 +1,6 @@
 ﻿namespace MetaInvitation.Second
 {
-	class DiceCardSelfAbility_kaz_PowerDown2TargetNotHighlander : DiceCardSelfAbilityBase
+	public class DiceCardSelfAbility_kaz_PowerDown2TargetNotHighlander : DiceCardSelfAbilityBase
 	{
 		public override string[] Keywords => new string[] { "OnlyOne_Keyword" };
 		public override void OnStartParrying()

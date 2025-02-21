@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace MetaInvitation.Second
 {
-	class DiceCardSelfAbility_MetaNormal : DiceCardSelfAbilityBase_Meta
+	public class DiceCardSelfAbility_MetaNormal : DiceCardSelfAbilityBase_Meta
 	{
 		public override void ManagerActivate(BattleUnitModel owner)
 		{

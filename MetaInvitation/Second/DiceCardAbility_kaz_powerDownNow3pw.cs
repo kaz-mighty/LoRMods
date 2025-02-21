@@ -2,7 +2,7 @@
 
 namespace MetaInvitation.Second
 {
-	class DiceCardAbility_kaz_powerDownNow3pw: DiceCardAbilityBase
+	public class DiceCardAbility_kaz_powerDownNow3pw: DiceCardAbilityBase
 	{
 		public override string[] Keywords => new string[] { "ThisDice_Keyword" };
 

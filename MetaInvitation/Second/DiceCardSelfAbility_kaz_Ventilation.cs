@@ -1,6 +1,6 @@
 ﻿namespace MetaInvitation.Second
 {
-	class DiceCardSelfAbility_kaz_Ventilation : DiceCardSelfAbilityBase
+	public class DiceCardSelfAbility_kaz_Ventilation : DiceCardSelfAbilityBase
 	{
 		public override string[] Keywords => new string[] { "Energy_Keyword", "Smoke_Keyword" };
 

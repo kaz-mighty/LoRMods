@@ -1,6 +1,6 @@
 ﻿namespace MetaInvitation.Second
 {
-	class DiceCardAbility_kaz_vulnerable1pl : DiceCardAbilityBase
+	public class DiceCardAbility_kaz_vulnerable1pl : DiceCardAbilityBase
 	{
 		public override string[] Keywords => new string[] { "Vulnerable_Keyword" };
 

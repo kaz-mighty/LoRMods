@@ -1,6 +1,6 @@
 ﻿namespace MetaInvitation.Second
 {
-	class DiceCardPriority_kaz_Ventilation : DiceCardPriorityBase
+	public class DiceCardPriority_kaz_Ventilation : DiceCardPriorityBase
 	{
 		public override int GetPriorityBonus(BattleUnitModel owner)
 		{

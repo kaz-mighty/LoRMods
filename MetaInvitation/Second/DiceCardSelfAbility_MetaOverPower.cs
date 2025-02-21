@@ -5,7 +5,7 @@ using LOR_DiceSystem;
 
 namespace MetaInvitation.Second
 {
-	class DiceCardSelfAbility_MetaOverPower : DiceCardSelfAbilityBase_Meta
+	public class DiceCardSelfAbility_MetaOverPower : DiceCardSelfAbilityBase_Meta
 	{
 		public override void ManagerActivate(BattleUnitModel owner)
 		{

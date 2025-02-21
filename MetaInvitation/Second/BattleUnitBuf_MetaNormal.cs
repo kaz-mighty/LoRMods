@@ -2,7 +2,7 @@
 
 namespace MetaInvitation.Second
 {
-	class BattleUnitBuf_MetaNormal : BattleUnitBuf
+	public class BattleUnitBuf_MetaNormal : BattleUnitBuf
 	{
 		protected override string keywordId => MetaInvitation.packageId + "_MetaNormal";
 		protected override string keywordIconId => MetaInvitation.packageId + "_PassiveBuf";

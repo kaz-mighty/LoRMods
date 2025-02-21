@@ -5,7 +5,7 @@ using LOR_DiceSystem;
 
 namespace MetaInvitation.Second
 {
-	abstract class DiceCardSelfAbilityBase_Meta : DiceCardSelfAbilityBase
+	abstract public class DiceCardSelfAbilityBase_Meta : DiceCardSelfAbilityBase
 	{
 		public override string[] Keywords => new string[] { "kaz_MetaKeyword" };
 
@@ -47,5 +47,5 @@ namespace MetaInvitation.Second
 
 	}
 
-	delegate void ManagerActivater(BattleUnitModel owner);
+	public delegate void ManagerActivater(BattleUnitModel owner);
 }

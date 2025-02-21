@@ -1,6 +1,6 @@
 ﻿namespace MetaInvitation.Second
 {
-	class DiceCardSelfAbility_MetaDamageRate : DiceCardSelfAbilityBase_Meta
+	public class DiceCardSelfAbility_MetaDamageRate : DiceCardSelfAbilityBase_Meta
 	{
 		public override void ManagerActivate(BattleUnitModel owner)
 		{

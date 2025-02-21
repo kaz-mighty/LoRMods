@@ -5,7 +5,7 @@ using LOR_DiceSystem;
 
 namespace MetaInvitation.Second
 {
-	class BattleUnitBuf_MetaOverPower : BattleUnitBuf
+	public class BattleUnitBuf_MetaOverPower : BattleUnitBuf
 	{
 		public BattleUnitBuf_MetaOverPower(RelativeFactions faction)
 		{

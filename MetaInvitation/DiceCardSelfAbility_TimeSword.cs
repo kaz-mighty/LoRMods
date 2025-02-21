@@ -2,7 +2,7 @@
 
 namespace MetaInvitation
 {
-	class DiceCardSelfAbility_TimeSword: DiceCardSelfAbilityBase
+	public class DiceCardSelfAbility_TimeSword: DiceCardSelfAbilityBase
 	{
 		public override string[] Keywords => new string[] { "DrawCard_Keyword" };
 

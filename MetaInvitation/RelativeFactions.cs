@@ -3,7 +3,7 @@
 namespace MetaInvitation
 {
 	[Flags]
-	enum RelativeFactions
+	public enum RelativeFactions
 	{
 		None = 0,
 		Ally = 1 << 0,

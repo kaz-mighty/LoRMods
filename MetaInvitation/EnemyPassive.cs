@@ -158,7 +158,7 @@ namespace MetaInvitation
 	}
 
 	// 素早く捌く
-	class PassiveAbility_QuicklyHandle : PassiveAbilityBase
+	public class PassiveAbility_QuicklyHandle : PassiveAbilityBase
 	{
 		public override void OnStartBattle()
 		{

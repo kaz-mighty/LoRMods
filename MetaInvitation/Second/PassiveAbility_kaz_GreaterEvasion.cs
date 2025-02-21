@@ -5,7 +5,7 @@ using LOR_DiceSystem;
 
 namespace MetaInvitation.Second
 {
-	class PassiveAbility_kaz_GreaterEvasion : PassiveAbilityBase
+	public class PassiveAbility_kaz_GreaterEvasion : PassiveAbilityBase
 	{
 		public override void BeforeRollDice(BattleDiceBehavior behavior)
 		{

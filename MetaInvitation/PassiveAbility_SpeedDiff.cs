@@ -2,7 +2,7 @@
 
 namespace MetaInvitation
 {
-	class PassiveAbility_SpeedDiff: PassiveAbilityBase
+	public class PassiveAbility_SpeedDiff: PassiveAbilityBase
 	{
 		public override void OnUseCard(BattlePlayingCardDataInUnitModel curCard)
 		{
