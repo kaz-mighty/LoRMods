@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using UnityEngine;
-using LOR_DiceSystem;
-
-namespace MetaInvitation.Second
+﻿namespace MetaInvitation.Second
 {
 	public class DiceCardSelfAbility_MetaSmoke : DiceCardSelfAbilityBase_Meta
 	{
