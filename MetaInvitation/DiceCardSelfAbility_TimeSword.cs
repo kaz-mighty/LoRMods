@@ -10,7 +10,7 @@ namespace MetaInvitation
 		{
 			owner.allyCardDetail.DrawCards(1);
 
-			var timeBuf = owner.bufListDetail.GetActivatedBufList().Find(buf => buf is BattleUnitBuf_Time) as BattleUnitBuf_Time;
+			var timeBuf = owner.bufListDetail.GetActivatedBuf<BattleUnitBuf_Time>();
 			if (timeBuf == null || timeBuf.stack < 50)
 			{
 				return;

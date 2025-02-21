@@ -21,7 +21,7 @@ namespace MetaInvitation.Second
 		{
 			foreach (var target in BattleObjectManager.instance.GetAliveList(owner.faction))
 			{
-				var buf = target.bufListDetail.GetActivatedBufList().Find(x => x is BattleUnitBuf_MetaNormal && !x.IsDestroyed());
+				var buf = target.bufListDetail.GetActivatedBuf<BattleUnitBuf_MetaNormal>();
 				if (buf != null)
 				{
 					KeepRatio(target, () => buf.Destroy());

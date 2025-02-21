@@ -18,7 +18,7 @@
 		{
 			foreach (var target in BattleObjectManager.instance.GetAliveList((owner.faction == Faction.Player) ? Faction.Enemy : Faction.Player))
 			{
-				target.bufListDetail.GetActivatedBufList().Find(x => x is BattleUnitBuf_MetaSmoke && !x.IsDestroyed())?.Destroy();
+				target.bufListDetail.GetActivatedBuf<BattleUnitBuf_MetaSmoke>()?.Destroy();
 			}
 		}
 	}

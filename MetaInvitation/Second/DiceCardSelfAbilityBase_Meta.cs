@@ -30,7 +30,7 @@ namespace MetaInvitation.Second
 		{
 			foreach (var ally in BattleObjectManager.instance.GetAliveList(unit.faction))
 			{
-				var buf = ally.bufListDetail.GetActivatedBufList().Find(x => x is BattleUnitBuf_MetaManager && !x.IsDestroyed());
+				var buf = ally.bufListDetail.GetActivatedBuf<BattleUnitBuf_MetaManager>();
 				if (buf != null)
 				{
 					buf.Destroy();

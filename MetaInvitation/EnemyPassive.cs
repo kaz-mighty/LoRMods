@@ -42,7 +42,7 @@ namespace MetaInvitation
 		{
 			int max = 0;
 
-			var timeBuf = owner.bufListDetail.GetActivatedBufList().Find(buf => buf is BattleUnitBuf_Time) as BattleUnitBuf_Time;
+			var timeBuf = owner.bufListDetail.GetActivatedBuf<BattleUnitBuf_Time>();
 			if (timeBuf == null || timeBuf.stack < DiceCardSelfAbility_TimeWave.canUse)
 			{
 				return false;
@@ -134,7 +134,7 @@ namespace MetaInvitation
 		public override void OnRoundStart()
 		{
 			owner.cardSlotDetail.RecoverPlayPoint(2);
-			var buf = owner.bufListDetail.GetActivatedBufList().Find(x => x is BattleUnitBuf_Time) as BattleUnitBuf_Time;
+			var buf = owner.bufListDetail.GetActivatedBuf<BattleUnitBuf_Time>();
 			if (buf != null && buf.stack > 0)
 			{
 				owner.RecoverHP(Mathf.Min((buf.stack + 4) / 5, 70));

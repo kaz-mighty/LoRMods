@@ -22,7 +22,7 @@
 
 		public override bool OnChooseCard(BattleUnitModel owner)
 		{
-			var timeBuf = owner.bufListDetail.GetActivatedBufList().Find(buf => buf is BattleUnitBuf_Time) as BattleUnitBuf_Time;
+			var timeBuf = owner.bufListDetail.GetActivatedBuf<BattleUnitBuf_Time>();
 			return timeBuf != null && timeBuf.stack >= canUse;
 		}
 

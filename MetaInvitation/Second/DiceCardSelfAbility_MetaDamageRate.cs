@@ -27,11 +27,11 @@
 		{
 			foreach (var target in BattleObjectManager.instance.GetAliveList((owner.faction == Faction.Player) ? Faction.Enemy : Faction.Player))
 			{
-				target.bufListDetail.GetActivatedBufList().Find(x => x is BattleUnitBuf_MetaDamageRateEnemy && !x.IsDestroyed())?.Destroy();
+				target.bufListDetail.GetActivatedBuf<BattleUnitBuf_MetaDamageRateEnemy>()?.Destroy();
 			}
 			foreach (var target in BattleObjectManager.instance.GetAliveList(owner.faction))
 			{
-				target.bufListDetail.GetActivatedBufList().Find(x => x is BattleUnitBuf_MetaDamageRateAlly && !x.IsDestroyed())?.Destroy();
+				target.bufListDetail.GetActivatedBuf<BattleUnitBuf_MetaDamageRateAlly>()?.Destroy();
 			}
 		}
 	}

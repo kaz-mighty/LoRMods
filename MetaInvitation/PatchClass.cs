@@ -158,7 +158,7 @@ namespace MetaInvitation
 			[HarmonyPrefix]
 			static void HalfPower(BattleDiceBehavior __instance, DiceStatBonus ____statBonus)
 			{
-				var buf = __instance.owner?.bufListDetail.GetActivatedBufList().Find(x => x is Second.BattleUnitBuf_MetaOverPower) as Second.BattleUnitBuf_MetaOverPower;
+				var buf = __instance.owner?.bufListDetail.GetActivatedBuf<Second.BattleUnitBuf_MetaOverPower>();
 				if (buf != null)
 				{
 					if (____statBonus.power < buf.Lower)
@@ -178,16 +178,12 @@ namespace MetaInvitation
 		{
 			static bool HasAllyBuf(BattleUnitModel unit)
 			{
-				return unit?.bufListDetail.GetActivatedBufList().Find(
-					x => x is Second.BattleUnitBuf_MetaDamageRateAlly && !x.IsDestroyed()
-				) != null;
+				return unit != null && unit.bufListDetail.HasBuf<Second.BattleUnitBuf_MetaDamageRateAlly>();
 			}
 
 			static bool HasEnemyBuf(BattleUnitModel unit)
 			{
-				return unit?.bufListDetail.GetActivatedBufList().Find(
-					x => x is Second.BattleUnitBuf_MetaDamageRateEnemy && !x.IsDestroyed()
-				) != null;
+				return unit != null && unit.bufListDetail.HasBuf<Second.BattleUnitBuf_MetaDamageRateEnemy>();
 			}
 
 			[HarmonyPatch(typeof(BattleDiceBehavior), "ApplyDiceStatBonus")]

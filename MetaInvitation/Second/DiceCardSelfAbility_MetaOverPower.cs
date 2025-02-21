@@ -6,7 +6,7 @@
 		{
 			foreach (var target in BattleObjectManager.instance.GetAliveList((owner.faction == Faction.Player) ? Faction.Enemy : Faction.Player))
 			{
-				var buf = target.bufListDetail.GetActivatedBufList().Find(x => x is BattleUnitBuf_MetaOverPower && !x.IsDestroyed()) as BattleUnitBuf_MetaOverPower;
+				var buf = target.bufListDetail.GetActivatedBuf<BattleUnitBuf_MetaOverPower>();
 				if (buf != null)
 				{
 					buf.Mode |= RelativeFactions.Enemy;
@@ -16,7 +16,7 @@
 			}
 			foreach (var target in BattleObjectManager.instance.GetAliveList(owner.faction))
 			{
-				var buf = target.bufListDetail.GetActivatedBufList().Find(x => x is BattleUnitBuf_MetaOverPower && !x.IsDestroyed()) as BattleUnitBuf_MetaOverPower;
+				var buf = target.bufListDetail.GetActivatedBuf<BattleUnitBuf_MetaOverPower>();
 				if (buf != null)
 				{
 					buf.Mode |= RelativeFactions.Ally;
@@ -30,7 +30,7 @@
 		{
 			foreach (var target in BattleObjectManager.instance.GetAliveList((owner.faction == Faction.Player) ? Faction.Enemy : Faction.Player))
 			{
-				var buf = target.bufListDetail.GetActivatedBufList().Find(x => x is BattleUnitBuf_MetaOverPower && !x.IsDestroyed()) as BattleUnitBuf_MetaOverPower;
+				var buf = target.bufListDetail.GetActivatedBuf<BattleUnitBuf_MetaOverPower>();
 				if (buf != null)
 				{
 					buf.Mode &= ~RelativeFactions.Enemy;
@@ -38,7 +38,7 @@
 			}
 			foreach (var target in BattleObjectManager.instance.GetAliveList(owner.faction))
 			{
-				var buf = target.bufListDetail.GetActivatedBufList().Find(x => x is BattleUnitBuf_MetaOverPower && !x.IsDestroyed()) as BattleUnitBuf_MetaOverPower;
+				var buf = target.bufListDetail.GetActivatedBuf<BattleUnitBuf_MetaOverPower>();
 				if (buf != null)
 				{
 					buf.Mode &= ~RelativeFactions.Ally;

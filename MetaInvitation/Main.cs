@@ -65,5 +65,11 @@ namespace MetaInvitation
 		{
 			return (a + RandomUtil.Range(0, b - 1)) / b;
 		}
+
+		public static T GetActivatedBuf<T>(this BattleUnitBufListDetail self)
+			where T : class
+		{
+			return self.GetActivatedBufList().Find(buf => buf is T && !buf.IsDestroyed()) as T;
+		}
 	}
 }
