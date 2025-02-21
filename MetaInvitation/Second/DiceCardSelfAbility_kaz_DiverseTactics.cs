@@ -43,9 +43,7 @@ namespace MetaInvitation.Second
 				if (!logAlly)
 				{
 					candidates.Sort((x, y) => x.id.id - y.id.id);
-					var list = candidates.ConvertAll(x =>
-						string.Format("{0} ({1})", x.id, x.Name)
-					);
+					var list = candidates.ConvertAll(x => $"{x.id} ({x.Name})");
 					Debug.Log(MetaInvitation.packageId + ": DiverseTactics Card List by Ally");
 					Debug.Log(string.Join("\n", list));
 					logAlly = true;
@@ -61,9 +59,7 @@ namespace MetaInvitation.Second
 					cache.RemoveAll(x => !IsCandidate(x));
 
 					cache.Sort((x, y) => x.id.id - y.id.id);
-					var list = cache.ConvertAll(x =>
-						string.Format("{0} ({1})", x.id, x.Name)
-					);
+					var list = cache.ConvertAll(x => $"{x.id} ({x.Name})");
 					Debug.Log(MetaInvitation.packageId + ": DiverseTactics Card List by Emeny");
 					Debug.Log(string.Join("\n", list));
 

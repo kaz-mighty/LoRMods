@@ -24,7 +24,7 @@ namespace MetaInvitation
 
 			stack += speedNum;
 			var turn = StageController.Instance.RoundTurn;
-			Debug.Log(string.Format("{0}: Trun {1}, SpeedNum {2}, NowTimeStack {3}", MetaInvitation.packageId, turn, speedNum, stack));
+			Debug.Log($"{MetaInvitation.packageId}: Trun {turn}, SpeedNum {speedNum}, NowTimeStack {stack}");
 			return;
 		}
 

@@ -23,7 +23,7 @@ namespace MetaInvitation.Second
 		{
 			var useCardNum = owner.cardHistory.GetCurrentRoundCardList(StageController.Instance.RoundTurn).Count;
 			var num = _canUseSlotNum - useCardNum;
-			// Debug.Log(String.Format("Character: {0}, RecoverLight: {1} - {2}", owner.UnitData.unitData.name, _canUseSlotNum, useCardNum));
+			// Debug.Log($"Character: {owner.UnitData.unitData.name}, RecoverLight: {_canUseSlotNum} - {useCardNum}");
 			if (num > 0)
 			{
 				owner.cardSlotDetail.RecoverPlayPoint(Mathf.Min(num, 2));
