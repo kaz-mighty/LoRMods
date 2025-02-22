@@ -14,7 +14,7 @@
 		{
 			if (_nextTarget != null && !_nextTarget.IsDead())
 			{
-				foreach (BattleUnitModel battleUnitModel in BattleObjectManager.instance.GetAliveList((owner.faction == Faction.Player) ? Faction.Enemy : Faction.Player))
+				foreach (BattleUnitModel battleUnitModel in BattleObjectManager.instance.GetAliveList(owner.faction.GetOther()))
 				{
 					battleUnitModel.bufListDetail.RemoveBufAll(KeywordBuf.NicolaiTarget);
 				}

@@ -4,7 +4,7 @@
 	{
 		public override void ManagerActivate(BattleUnitModel owner)
 		{
-			foreach (var target in BattleObjectManager.instance.GetAliveList((owner.faction == Faction.Player) ? Faction.Enemy : Faction.Player))
+			foreach (var target in BattleObjectManager.instance.GetAliveList(owner.faction.GetOther()))
 			{
 				if (target.bufListDetail.HasBuf<BattleUnitBuf_MetaDamageRateEnemy>())
 				{
@@ -25,7 +25,7 @@
 
 		public override void ManagerDeactivate(BattleUnitModel owner)
 		{
-			foreach (var target in BattleObjectManager.instance.GetAliveList((owner.faction == Faction.Player) ? Faction.Enemy : Faction.Player))
+			foreach (var target in BattleObjectManager.instance.GetAliveList(owner.faction.GetOther()))
 			{
 				target.bufListDetail.GetActivatedBuf<BattleUnitBuf_MetaDamageRateEnemy>()?.Destroy();
 			}

@@ -10,7 +10,7 @@ namespace MetaInvitation.Second
 	{
 		public override void OnRoundStart()
 		{
-			foreach (var unit in BattleObjectManager.instance.GetAliveList((owner.faction == Faction.Player) ? Faction.Enemy : Faction.Player))
+			foreach (var unit in BattleObjectManager.instance.GetAliveList(owner.faction.GetOther()))
 			{
 				if (!unit.bufListDetail.HasBuf<BattleUnitBuf_kaz_PowerDivergence>())
 				{

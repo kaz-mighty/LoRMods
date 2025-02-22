@@ -124,7 +124,7 @@ namespace MetaInvitation.Second
 			var priorityDamage = 0.0f;
 			var priorityPower = 0.0f;
 
-			var enemyUnits = BattleObjectManager.instance.GetAliveList((owner.faction == Faction.Player) ? Faction.Enemy : Faction.Player);
+			var enemyUnits = BattleObjectManager.instance.GetAliveList(owner.faction.GetOther());
 			foreach (var unit in enemyUnits)
 			{
 				var smoke = 0;
@@ -161,7 +161,7 @@ namespace MetaInvitation.Second
 			bool canVoidEgo = voidEgo != null ? SpecialCardListModel.Instance.ExistEgoCardHand(voidEgo) : false;
 			int voidEgoEval = 0;
 
-			var enemyUnits = BattleObjectManager.instance.GetAliveList((owner.faction == Faction.Player) ? Faction.Enemy : Faction.Player);
+			var enemyUnits = BattleObjectManager.instance.GetAliveList(owner.faction.GetOther());
 			foreach (var unit in enemyUnits)
 			{
 				bool isStance = unit.passiveDetail.HasPassive<PassiveAbility_250127>(); // Changing Stances, 体勢変更
@@ -212,7 +212,7 @@ namespace MetaInvitation.Second
 			var priorityAlly = 0f;
 			var nicolaiTarget = false;
 
-			var enemyUnits = BattleObjectManager.instance.GetAliveList((owner.faction == Faction.Player) ? Faction.Enemy : Faction.Player);
+			var enemyUnits = BattleObjectManager.instance.GetAliveList(owner.faction.GetOther());
 			foreach (var unit in enemyUnits)
 			{
 				var smoke = 0;

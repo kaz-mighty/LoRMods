@@ -31,13 +31,13 @@ namespace MetaInvitation
 		public int stack = 0;
 	}
 
-	// 時の回廊
+	// 時の結界
 	public class PassiveAbility_TimeField : PassiveAbilityBase
 	{
 		public override void OnWaveStart()
 		{
 			var stack = TimeFieldManager.Instance.stack;
-			foreach (var x in BattleObjectManager.instance.GetAliveList((owner.faction == Faction.Enemy) ? Faction.Enemy : Faction.Player))
+			foreach (var x in BattleObjectManager.instance.GetAliveList(owner.faction))
 			{
 				if (!x.bufListDetail.HasBuf<BattleUnitBuf_Time>())
 				{

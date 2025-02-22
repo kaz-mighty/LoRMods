@@ -71,5 +71,10 @@ namespace MetaInvitation
 		{
 			return self.GetActivatedBufList().Find(buf => buf is T && !buf.IsDestroyed()) as T;
 		}
+
+		public static Faction GetOther(this Faction x)
+		{
+			return x == Faction.Player ? Faction.Enemy : Faction.Player;
+		}
 	}
 }
