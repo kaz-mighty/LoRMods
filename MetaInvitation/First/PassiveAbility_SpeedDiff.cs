@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace MetaInvitation
+namespace MetaInvitation.First
 {
 	public class PassiveAbility_SpeedDiff: PassiveAbilityBase
 	{

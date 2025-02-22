@@ -1,4 +1,4 @@
-﻿namespace MetaInvitation
+﻿namespace MetaInvitation.First
 {
 	public class DiceCardSelfAbility_TimeWave : DiceCardSelfAbilityBase
 	{

@@ -17,14 +17,14 @@ namespace MetaInvitation
 			[HarmonyPostfix]
 			static void Init()
 			{
-				TimeFieldManager.Instance.Init();
+				First.TimeFieldManager.Instance.Init();
 			}
 
 			[HarmonyPatch(typeof(StageController), "SortUnitPhase")]
 			[HarmonyPostfix]
 			static void OnAfterRollSpeedDice()
 			{
-				TimeFieldManager.Instance.OnAfterRollSpeedDice();
+				First.TimeFieldManager.Instance.OnAfterRollSpeedDice();
 			}
 
 			[HarmonyPatch(typeof(BattleUnitModel), "Die")]
@@ -32,7 +32,7 @@ namespace MetaInvitation
 			[HarmonyPriority(Priority.LowerThanNormal)]
 			static bool ForcelyDieCancel(BattleUnitModel __instance, bool __runOriginal)
 			{
-				if (__runOriginal && __instance.hp > __instance.Book.DeadLine && __instance.passiveDetail.HasPassive<PassiveAbility_TimeSub2>())
+				if (__runOriginal && __instance.hp > __instance.Book.DeadLine && __instance.passiveDetail.HasPassive<First.PassiveAbility_TimeSub2>())
 				{
 					var minHp = __instance.GetMinHp();
 					if (minHp > __instance.Book.DeadLine)

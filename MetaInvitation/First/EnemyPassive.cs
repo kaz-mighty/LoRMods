@@ -6,7 +6,7 @@ using Mod;
 using LOR_DiceSystem;
 
 
-namespace MetaInvitation
+namespace MetaInvitation.First
 {
 	// 時の波動(敵)
 	public class PassiveAbility_TimeWaveEnemy : PassiveAbilityBase

@@ -5,7 +5,7 @@ using HarmonyLib;
 using Mod;
 using LOR_DiceSystem;
 
-namespace MetaInvitation
+namespace MetaInvitation.First
 {
 	public class TimeFieldManager : Singleton<TimeFieldManager>
 	{
