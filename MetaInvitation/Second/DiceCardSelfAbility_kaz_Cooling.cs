@@ -6,7 +6,7 @@
 
 		public override void OnUseCard()
 		{
-			owner.cardSlotDetail.RecoverPlayPointByCard(2);
+			owner.cardSlotDetail.RecoverPlayPointByCard(1);
 			owner.breakDetail.RecoverBreak(3);
 			var buf = owner.bufListDetail.GetActivatedBuf(KeywordBuf.Burn) as BattleUnitBuf_burn;
 			if (buf != null)

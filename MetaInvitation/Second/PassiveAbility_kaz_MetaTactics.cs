@@ -164,14 +164,22 @@ namespace MetaInvitation.Second
 			var enemyUnits = BattleObjectManager.instance.GetAliveList(owner.faction.GetOther());
 			foreach (var unit in enemyUnits)
 			{
+				int passivePower = 0;
 				bool isStance = unit.passiveDetail.HasPassive<PassiveAbility_250127>(); // Changing Stances, 体勢変更
+				if (isStance) { passivePower += 2; }
+				if (unit.passiveDetail.HasPassive<PassiveAbility_250322>() // The Strongest, 最強
+				   && unit.passiveDetail.HasPassive<PassiveAbility_250024>()) // Myo’s Prowess, ミョの腕前
+				{
+					// 一部のダイスのみなので小さめに評価
+					passivePower += 3;
+				}
 
-				var power = CalcAttackPower(unit) + (isStance ? 2 : 0);
+				var power = CalcAttackPower(unit) + passivePower;
 				if (power > OverPower._enemyUpper)
 				{
 					priorityEnemy += 0.15f * (power - OverPower._enemyUpper);
 				}
-				power = CalcDefencePower(unit) + (isStance ? 2 : 0);
+				power = CalcDefencePower(unit) + passivePower;
 				if (power > OverPower._enemyUpper)
 				{
 					priorityEnemy += 0.12f * (power - OverPower._enemyUpper);

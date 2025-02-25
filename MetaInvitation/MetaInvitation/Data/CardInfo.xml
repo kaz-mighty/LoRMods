@@ -97,11 +97,11 @@
     <!-- 冷却 -->
     <Artwork>tmp.png</Artwork>
     <Rarity>Common</Rarity>
-    <Spec Range="Near" Cost="1" />
+    <Spec Range="Near" Cost="0" />
     <Script>kaz_Cooling</Script>
     <BehaviourList>
-      <Behaviour Min="3" Dice="9" Type="Atk" Detail="Hit" Motion="H" EffectRes="IndexUnit_J" Script="" />
-      <Behaviour Min="3" Dice="6" Type="Def" Detail="Guard" Motion="G" EffectRes="IndexUnit_G" Script="" />
+      <Behaviour Min="3" Dice="8" Type="Atk" Detail="Hit" Motion="H" EffectRes="IndexUnit_J" Script="" />
+      <Behaviour Min="2" Dice="5" Type="Def" Detail="Guard" Motion="G" EffectRes="IndexUnit_G" Script="" />
     </BehaviourList>
     <Chapter>6</Chapter>
     <Priority>0</Priority>

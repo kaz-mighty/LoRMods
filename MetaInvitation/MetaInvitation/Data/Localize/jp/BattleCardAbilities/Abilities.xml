@@ -19,7 +19,7 @@
     <Desc>[使用時] 光 1 回復。互いの煙が3減少</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="kaz_Cooling">
-    <Desc>[使用時] 光 2 回復。自分の火傷が3減少し、混乱抵抗値を3回復</Desc>
+    <Desc>[使用時] 光 1 回復。自分の火傷が3減少し、混乱抵抗値を3回復</Desc>
   </BattleCardAbility>
   <BattleCardAbility ID="kaz_nextDraw1">
     <Desc>[使用時] 次の幕の開始時にページを1枚引く</Desc>

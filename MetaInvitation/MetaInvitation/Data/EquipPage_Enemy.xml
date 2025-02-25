@@ -76,9 +76,9 @@
     <BookIcon />
     <EquipEffect>
       <HpReduction>0</HpReduction>
-      <HP>184</HP>
+      <HP>216</HP>
       <DeadLine>0</DeadLine>
-      <Break>86</Break>
+      <Break>102</Break>
       <SpeedMin>2</SpeedMin>
       <Speed>7</Speed>
       <SResist>Endure</SResist>
@@ -112,9 +112,9 @@
     <BookIcon />
     <EquipEffect>
       <HpReduction>0</HpReduction>
-      <HP>142</HP>
+      <HP>170</HP>
       <DeadLine>0</DeadLine>
-      <Break>65</Break>
+      <Break>70</Break>
       <SpeedMin>1</SpeedMin>
       <Speed>8</Speed>
       <SResist>Normal</SResist>
@@ -148,9 +148,9 @@
     <BookIcon />
     <EquipEffect>
       <HpReduction>0</HpReduction>
-      <HP>124</HP>
+      <HP>148</HP>
       <DeadLine>0</DeadLine>
-      <Break>78</Break>
+      <Break>90</Break>
       <SpeedMin>4</SpeedMin>
       <Speed>6</Speed>
       <SResist>Normal</SResist>
@@ -183,9 +183,9 @@
     <BookIcon />
     <EquipEffect>
       <HpReduction>0</HpReduction>
-      <HP>112</HP>
+      <HP>128</HP>
       <DeadLine>0</DeadLine>
-      <Break>54</Break>
+      <Break>62</Break>
       <SpeedMin>1</SpeedMin>
       <Speed>6</Speed>
       <SResist>Normal</SResist>
