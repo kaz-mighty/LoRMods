@@ -100,8 +100,8 @@
     <Spec Range="Near" Cost="1" />
     <Script>kaz_Cooling</Script>
     <BehaviourList>
-      <Behaviour Min="3" Dice="9" Type="Atk" Detail="Hit" Motion="H" EffectRes="" Script="" />
-      <Behaviour Min="3" Dice="6" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="" />
+      <Behaviour Min="3" Dice="9" Type="Atk" Detail="Hit" Motion="H" EffectRes="IndexUnit_J" Script="" />
+      <Behaviour Min="3" Dice="6" Type="Def" Detail="Guard" Motion="G" EffectRes="IndexUnit_G" Script="" />
     </BehaviourList>
     <Chapter>6</Chapter>
     <Priority>0</Priority>
@@ -115,7 +115,7 @@
     <Script>kaz_nextDraw1</Script>
     <BehaviourList>
       <Behaviour Min="4" Dice="9" Type="Def" Detail="Evasion" Motion="E" EffectRes="" Script="" />
-      <Behaviour Min="3" Dice="7" Type="Atk" Detail="Slash" Motion="J" EffectRes="" Script="" />
+      <Behaviour Min="3" Dice="7" Type="Atk" Detail="Slash" Motion="H" EffectRes="IndexUnit_H" Script="" />
     </BehaviourList>
     <Chapter>6</Chapter>
     <Priority>0</Priority>
@@ -128,7 +128,7 @@
     <Script>kaz_Reignition</Script>
     <BehaviourList>
       <Behaviour Min="1" Dice="3" Type="Def" Detail="Evasion" Motion="E" EffectRes="" Script="" />
-      <Behaviour Min="7" Dice="12" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="" />
+      <Behaviour Min="7" Dice="12" Type="Def" Detail="Guard" Motion="G" EffectRes="XiaoEgo_S3" Script="" />
     </BehaviourList>
     <Chapter>6</Chapter>
     <Priority>0</Priority>
@@ -142,7 +142,7 @@
     <Script>kaz_LightTrail</Script>
     <BehaviourList>
       <Behaviour Min="5" Dice="10" Type="Def" Detail="Evasion" Motion="E" EffectRes="" Script="" />
-      <Behaviour Min="2" Dice="6" Type="Atk" Detail="Slash" Motion="J" EffectRes="" Script="" />
+      <Behaviour Min="2" Dice="6" Type="Atk" Detail="Slash" Motion="J" EffectRes="Hubert_SpecialAtk" Script="" />
     </BehaviourList>
     <Chapter>6</Chapter>
     <Priority>0</Priority>
@@ -155,10 +155,10 @@
     <Spec Range="Near" Cost="4" />
     <Script>kaz_DiverseTactics</Script>
     <BehaviourList>
-      <Behaviour Min="3" Dice="9" Type="Atk" Detail="Penetrate" Motion="Z" EffectRes="" Script="powerUpNext2pl" />
-      <Behaviour Min="3" Dice="9" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="powerUpNext2pl" />
-      <Behaviour Min="3" Dice="9" Type="Atk" Detail="Slash" Motion="J" EffectRes="" Script="powerUpNext2pl" />
-      <Behaviour Min="3" Dice="9" Type="Atk" Detail="Hit" Motion="H" EffectRes="" Script="" />
+      <Behaviour Min="3" Dice="9" Type="Atk" Detail="Penetrate" Motion="Z" EffectRes="Liu1_Z" Script="powerUpNext2pl" />
+      <Behaviour Min="3" Dice="9" Type="Def" Detail="Guard" Motion="G" EffectRes="Liu1_G" Script="powerUpNext2pl" />
+      <Behaviour Min="3" Dice="9" Type="Atk" Detail="Slash" Motion="J" EffectRes="Liu1_J" Script="powerUpNext2pl" />
+      <Behaviour Min="3" Dice="9" Type="Atk" Detail="Hit" Motion="H" EffectRes="Liu1_H" Script="" />
     </BehaviourList>
     <Chapter>6</Chapter>
     <Priority>0</Priority>
@@ -170,8 +170,8 @@
     <Spec Range="Near" Cost="2" />
     <Script>kaz_nextDraw1Highlander</Script>
     <BehaviourList>
-      <Behaviour Min="3" Dice="8" Type="Atk" Detail="Slash" Motion="J" EffectRes="" Script="kaz_weak1pl" />
-      <Behaviour Min="6" Dice="9" Type="Atk" Detail="Penetrate" Motion="Z" EffectRes="" Script="kaz_disarm1pl" />
+      <Behaviour Min="3" Dice="8" Type="Atk" Detail="Slash" Motion="J" EffectRes="Liu1_J" Script="kaz_weak1pl" />
+      <Behaviour Min="6" Dice="9" Type="Atk" Detail="Penetrate" Motion="Z" EffectRes="Liu1_Z" Script="kaz_disarm1pl" />
     </BehaviourList>
     <Chapter>6</Chapter>
     <Priority>0</Priority>
@@ -183,9 +183,9 @@
     <Spec Range="Near" Cost="3" />
     <Script>kaz_PowerDown2TargetNotHighlander</Script>
     <BehaviourList>
-      <Behaviour Min="4" Dice="8" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="" />
+      <Behaviour Min="4" Dice="8" Type="Def" Detail="Guard" Motion="G" EffectRes="Bayyard_G" Script="" />
       <Behaviour Min="5" Dice="12" Type="Def" Detail="Evasion" Motion="E" EffectRes="" Script="kaz_powerDownNow3pw" />
-      <Behaviour Min="5" Dice="9" Type="Atk" Detail="Slash" Motion="J" EffectRes="" Script="drawCard1atk" />
+      <Behaviour Min="5" Dice="9" Type="Atk" Detail="Slash" Motion="J" EffectRes="Bayyard_J" Script="drawCard1atk" />
     </BehaviourList>
     <Chapter>6</Chapter>
     <Priority>0</Priority>
@@ -197,10 +197,10 @@
     <Spec Range="Near" Cost="3" />
     <Script>kaz_BuyTime</Script>
     <BehaviourList>
-      <Behaviour Min="7" Dice="11" Type="Def" Detail="Guard" Motion="G" EffectRes="" Script="kaz_recoverBreak2pwFriend" />
-      <Behaviour Min="1" Dice="5" Type="Atk" Detail="Hit" Motion="H" EffectRes="" Script="kaz_vulnerable1pl" />
+      <Behaviour Min="7" Dice="11" Type="Def" Detail="Guard" Motion="G" EffectRes="Bayyard_G" Script="kaz_recoverBreak2pwFriend" />
+      <Behaviour Min="1" Dice="5" Type="Atk" Detail="Hit" Motion="G" EffectRes="Bayyard_G" Script="kaz_vulnerable1pl" />
       <Behaviour Min="3" Dice="10" Type="Def" Detail="Evasion" Motion="E" EffectRes="" Script="" />
-      <Behaviour Min="2" Dice="7" Type="Standby" Detail="Guard" Motion="G" EffectRes="" Script="" />
+      <Behaviour Min="2" Dice="7" Type="Standby" Detail="Guard" Motion="G" EffectRes="Bayyard_G" Script="" />
     </BehaviourList>
     <Chapter>6</Chapter>
     <Priority>0</Priority>
@@ -212,8 +212,8 @@
     <Spec Range="Near" Cost="2" />
     <Script>kaz_PowerDown2TargetHighlander</Script>
     <BehaviourList>
-      <Behaviour Min="6" Dice="10" Type="Atk" Detail="Penetrate" Motion="Z" EffectRes="" Script="kaz_vulnerableBreak1pw" />
-      <Behaviour Min="3" Dice="7" Type="Atk" Detail="Slash" Motion="J" EffectRes="" Script="" />
+      <Behaviour Min="6" Dice="10" Type="Atk" Detail="Penetrate" Motion="Z" EffectRes="Liu1_Z" Script="kaz_vulnerableBreak1pw" />
+      <Behaviour Min="3" Dice="7" Type="Atk" Detail="Slash" Motion="H" EffectRes="Liu1_H" Script="" />
     </BehaviourList>
     <Chapter>6</Chapter>
     <Priority>0</Priority>
