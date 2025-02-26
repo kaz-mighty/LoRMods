@@ -87,7 +87,7 @@
       <Passive>109</Passive>
     </EquipEffect>
     <Rarity>Unique</Rarity>
-    <CharacterSkin>Mei</CharacterSkin>
+    <CharacterSkin>Liu1Unit</CharacterSkin>
     <CharacterSkinType>Lor</CharacterSkinType>
     <SkinGender>N</SkinGender>
     <Chapter>6</Chapter>
@@ -118,7 +118,7 @@
       <Passive>104</Passive>
     </EquipEffect>
     <Rarity>Unique</Rarity>
-    <CharacterSkin>Liu1Unit</CharacterSkin><!-- tmp -->
+    <CharacterSkin>Mei</CharacterSkin>
     <CharacterSkinType>Lor</CharacterSkinType>
     <SkinGender>N</SkinGender>
     <Chapter>6</Chapter>
@@ -148,7 +148,7 @@
       <Passive Pid="@origin">243105</Passive>
     </EquipEffect>
     <Rarity>Unique</Rarity>
-    <CharacterSkin>LiuSection2Unit</CharacterSkin><!-- tmp -->
+    <CharacterSkin>Lowell</CharacterSkin>
     <CharacterSkinType>Lor</CharacterSkinType>
     <SkinGender>N</SkinGender>
     <Chapter>6</Chapter>

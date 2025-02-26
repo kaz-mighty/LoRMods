@@ -82,7 +82,7 @@
   
   <Card ID="100">
     <!-- 換気 -->
-    <Artwork>tmp.png</Artwork>
+    <Artwork>tmp_Ventilation.png</Artwork>
     <Rarity>Common</Rarity>
     <Spec Range="Near" Cost="0" />
     <Script>kaz_Ventilation</Script>
@@ -122,7 +122,7 @@
   </Card>
   <Card ID="103">
     <!-- 再点火 -->
-    <Artwork>tmp.png</Artwork>
+    <Artwork>Reignition.png</Artwork>
     <Rarity>Unique</Rarity>
     <Spec Range="Near" Cost="5" />
     <Script>kaz_Reignition</Script>
@@ -136,7 +136,7 @@
   </Card>
   <Card ID="104">
     <!-- 光の軌跡 -->
-    <Artwork>tmp.png</Artwork>
+    <Artwork>LightTrail.png</Artwork>
     <Rarity>Unique</Rarity>
     <Spec Range="Near" Cost="2" />
     <Script>kaz_LightTrail</Script>

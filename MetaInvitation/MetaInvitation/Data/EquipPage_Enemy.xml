@@ -97,13 +97,13 @@
       <Passive>102</Passive><!-- enemy only -->
     </EquipEffect>
     <Rarity>Unique</Rarity>
-    <CharacterSkin>Mei</CharacterSkin>
+    <CharacterSkin>Liu1Unit</CharacterSkin>
     <CharacterSkinType>Lor</CharacterSkinType>
     <SkinGender>N</SkinGender>
     <Chapter>6</Chapter>
     <Episode>2</Episode>
     <RangeType>Melee</RangeType>
-    <RandomFace>false</RandomFace>
+    <RandomFace>true</RandomFace>
     <SpeedDiceNum>1</SpeedDiceNum>
   </Book>
   <Book ID="101">
@@ -133,7 +133,7 @@
       <Passive>107</Passive><!-- enemy only -->
     </EquipEffect>
     <Rarity>Unique</Rarity>
-    <CharacterSkin>Liu1Unit</CharacterSkin><!-- tmp -->
+    <CharacterSkin>Mei</CharacterSkin>
     <CharacterSkinType>Lor</CharacterSkinType>
     <SkinGender>N</SkinGender>
     <Chapter>6</Chapter>
@@ -168,7 +168,7 @@
       <Passive>107</Passive><!-- enemy only -->
     </EquipEffect>
     <Rarity>Unique</Rarity>
-    <CharacterSkin>Liu1Unit</CharacterSkin><!-- tmp -->
+    <CharacterSkin>Lowell</CharacterSkin>
     <CharacterSkinType>Lor</CharacterSkinType>
     <SkinGender>N</SkinGender>
     <Chapter>6</Chapter>
