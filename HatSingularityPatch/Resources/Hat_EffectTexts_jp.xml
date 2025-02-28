@@ -19,7 +19,7 @@
     </BattleEffectTextExtra>
     <BattleEffectTextExtra ID="Hat_SpiritualShield">
       <Name>精神障壁</Name>
-      <Desc>現在の値まで受ける混乱ダメージダメージを肩代わりする。最大混乱抵抗値の値まで保有可能。</Desc>
+      <Desc>現在の値まで受ける混乱ダメージを肩代わりする。最大混乱抵抗値の値まで保有可能。</Desc>
       <IconName>Hat_精神屏障</IconName>
       <Color>yellow</Color>
       <HasBracket>true</HasBracket>
@@ -402,6 +402,93 @@
 この効果で相手が混乱状態になった場合、余剰分の混乱ダメージを追加ダメージとして与える。</Desc>
       <IconName>Hat_沉沦泛滥</IconName>
       <Color>#1B80EC</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeSelf>true</IsChangeSelf>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+
+    <BattleEffectTextExtra ID="Hat_Tremor">
+      <Name>震え</Name>
+      <Desc>混乱抵抗値が{0}以下になれば混乱する。
+幕の終了時に混乱状態ならこの状態が解除される。</Desc>
+      <IconName>Hat_振动</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_Tremor_Keyword">
+      <Name>震え X</Name>
+      <Desc>混乱抵抗値がX以下になれば混乱する。
+幕の終了時に混乱状態ならこの状態が解除される。</Desc>
+      <IconName>Hat_振动</IconName>
+      <Color>#FF3333</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+
+    <BattleEffectTextExtra ID="Hat_TremorBurst">
+      <Name>震え爆発</Name>
+      <Desc>相手の震えだけダメージと混乱ダメージを与える。</Desc>
+      <IconName>Hat_振动爆发</IconName>
+      <Color>#F2B764</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeSelf>true</IsChangeSelf>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+
+    <BattleEffectTextExtra ID="Hat_Poise">
+      <Name>呼吸</Name>
+      <Desc>攻撃ダイスを振るとき、最大値が本来の値の半分(切り捨て)増加、ダメージ量+&lt;color=#88ABAB&gt;&lt;u&gt;{X}&lt;/u&gt;&lt;/color&gt;
+的中時、最大値が増加した分だけこの値が減少。</Desc>
+      <IconName>Hat_呼吸</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_Poise_Keyword">
+      <Name>呼吸 X</Name>
+      <Desc>攻撃ダイスを振るとき、最大値が本来の値の半分(切り捨て)増加、ダメージ量+ &lt;color=#88ABAB&gt;&lt;u&gt;(X x5)%&lt;/u&gt;&lt;/color&gt;
+的中時、最大値が増加した分だけこの値が減少。</Desc>
+      <IconName>Hat_呼吸</IconName>
+      <Color>#33CCFF</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_PoiseCriticalHit_Keyword">
+      <Name>会心</Name>
+      <Desc>的中時、本来のダイス値が本来の最大値を超えれば発動する。</Desc>
+      <IconName>Hat_会心</IconName>
+      <Color>#88ABAB</Color>
+      <HasBracket>true</HasBracket>
+      <IsChangeSelf>true</IsChangeSelf>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+
+
+    <BattleEffectTextExtra ID="Hat_Preassembled_Keyword">
+      <Name>先天</Name>
+      <Desc>このページは舞台の開始時に引く。</Desc>
+      <IconName>Hat_预装</IconName>
+      <Color>#FFC67C</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeSelf>true</IsChangeSelf>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+
+    <BattleEffectTextExtra ID="Discard_Keyword">
+      <Name>捨てる</Name>
+      <Desc></Desc>
+      <IconName>Hat_丢弃</IconName>
+      <Color>#C72828</Color>
       <HasBracket>true</HasBracket>
       <IsUnderline>true</IsUnderline>
       <IsChangeSelf>true</IsChangeSelf>

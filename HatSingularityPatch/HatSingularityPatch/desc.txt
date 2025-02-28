@@ -1,0 +1,10 @@
+Title:HatSingularity Patch
+Tag:Tool
+```
+This mod fixes some bugs in HatSingularity and also fixes the lack of Japanese support in the latest version.
+
+--------
+HatSingularityに含まれているいくつかのバグを修正し、日本語対応を追加します。
+
+未訳だったキーワード語は適当に訳しました。
+```
