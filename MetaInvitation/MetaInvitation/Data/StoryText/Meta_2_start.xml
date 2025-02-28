@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScenarioRoot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Chapter ID="-1">
+    <Title />
+  </Chapter>
+  <Group>
+    <GroupName>group</GroupName>
+    <Episode>
+      <EpisodeName>Episode</EpisodeName>
+      <Place>
+        <PlaceName>場所：図書館 内部</PlaceName>
+        <Dialog ID="0" Model="롤랑">
+          <Teller>ローラン</Teller>
+          <Title>召使い</Title>
+          <Content>はぁ……</Content>
+        </Dialog>
+        <Dialog ID="1" Model="앤젤라">
+          <Teller>アンジェラ</Teller>
+          <Title>図書館長</Title>
+          <Content>また接待が難航しているようね。今度は何が原因かしら？</Content>
+        </Dialog>
+        <Dialog ID="2" Model="롤랑">
+          <Teller>ローラン</Teller>
+          <Title>召使い</Title>
+          <Content>そりゃもちろん、図書館が都市の星に指定されたからな。
+リウ協会に、R社、特色の過去……ゲストもどんどん大物になっているし。</Content>
+        </Dialog>
+        <Dialog ID="3" Model="롤랑">
+          <Teller>ローラン</Teller>
+          <Title>召使い</Title>
+          <Content>分かりやすい対策法があればいいんだけど……。
+強いフィクサーほど隙も少ないし。</Content>
+        </Dialog>
+        <Dialog ID="4" Model="롤랑">
+          <Teller>ローラン</Teller>
+          <Title>召使い</Title>
+          <Content>そんな話をしたってことは、前みたいにちょうどいいゲストが見つかったとか？</Content>
+        </Dialog>
+        <Dialog ID="5" Model="앤젤라">
+          <Teller>アンジェラ</Teller>
+          <Title>図書館長</Title>
+          <Content>いえ、どんな方針で探せばいいのか分からなかったから。
+これから招待状の力で探してみるわね。</Content>
+        </Dialog>
+        <Dialog ID="6" Model="">
+          <Teller />
+          <Title />
+          <Content />
+        </Dialog>
+        <Dialog ID="7" Model="">
+          <Teller />
+          <Title />
+          <Content>1分後……</Content>
+        </Dialog>
+        <Dialog ID="8" Model="">
+          <Teller />
+          <Title />
+          <Content />
+        </Dialog>
+        <Dialog ID="9" Model="앤젤라">
+          <Teller>アンジェラ</Teller>
+          <Title>図書館長</Title>
+          <Content>見つかったわ、ローラン。</Content>
+        </Dialog>
+        <Dialog ID="10" Model="롤랑">
+          <Teller>ローラン</Teller>
+          <Title>召使い</Title>
+          <Content>早～</Content>
+        </Dialog>
+      </Place>
+    </Episode>
+  </Group>
+</ScenarioRoot>
