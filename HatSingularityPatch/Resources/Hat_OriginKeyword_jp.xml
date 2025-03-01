@@ -104,14 +104,16 @@
       <IsChangePassive>true</IsChangePassive>
     </OriginKeywordText>
 
+    <!-- Resist's "endured" and buf's "Resilience" have the same name in Japanese, 
+         causing incorrect replacement, so invalidate them. -->
     <OriginKeywordText ID="Resistance">
       <IconName>抵御</IconName>
       <Color>#33CCFF</Color>
       <HasBracket>true</HasBracket>
       <IsUnderline>true</IsUnderline>
-      <IsChangeSelf>true</IsChangeSelf>
-      <IsChangeAbility>true</IsChangeAbility>
-      <IsChangePassive>true</IsChangePassive>
+      <IsChangeSelf>false</IsChangeSelf>
+      <IsChangeAbility>false</IsChangeAbility>
+      <IsChangePassive>false</IsChangePassive>
     </OriginKeywordText>
 
     <OriginKeywordText ID="Vibrate">
