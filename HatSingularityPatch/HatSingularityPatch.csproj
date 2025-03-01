@@ -7,28 +7,29 @@
     <ProjectGuid>{F3CE7D17-AB34-4243-8E24-00DE09C689D0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HatSingularityPatch</RootNamespace>
-    <AssemblyName>HatSingularityPatch</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <RootNamespace>HatPatch</RootNamespace>
+    <AssemblyName>2HatSingularityPatch</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>HatSingularityPatch\Assemblies\</OutputPath>
+    <OutputPath>HatSingularityPatch\Assemblies\1FrameworkAssemblies\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <WarningLevel>1</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>HatSingularityPatch\Assemblies\</OutputPath>
+    <OutputPath>HatSingularityPatch\Assemblies\1FrameworkAssemblies\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <WarningLevel>1</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="0Harmony, Version=2.9.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -38,6 +39,10 @@
     </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\Common\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="HatSingularity">
+      <HintPath>.\HatSingularity.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -58,13 +63,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Initializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XmlPatch.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\Hat_EffectTexts_jp.xml" />
-    <Content Include="Resources\Hat_Etc_jp.xml" />
-    <Content Include="Resources\Hat_OriginKeyword_jp.xml" />
+    <EmbeddedResource Include="Resources\Hat_EffectTexts_jp.xml" LogicalName="Hat_EffectTexts_jp.xml" />
+    <EmbeddedResource Include="Resources\Hat_Etc_jp.xml" LogicalName="Hat_Etc_jp.xml" />
+    <EmbeddedResource Include="Resources\Hat_OriginKeyword_jp.xml" LogicalName="Hat_OriginKeyword_jp.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

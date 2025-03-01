@@ -2,7 +2,7 @@
 <NormalInvitation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Version>1.1</Version>
   <Workshop>
-    <ID>kaz_mighty.HatSingularityPatch</ID>
+    <ID>kazmighty.HatSingularityPatch</ID>
     <Title>HatSingularity Patch</Title>
     <Description></Description>
     <Tag />
