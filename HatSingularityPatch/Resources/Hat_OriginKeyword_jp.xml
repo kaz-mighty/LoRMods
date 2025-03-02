@@ -418,5 +418,17 @@
       <SpecialText>E.G.O</SpecialText>
     </OriginKeywordText>
 
+    <!-- Extra ===============================-->
+
+    <OriginKeywordText ID="ExhaustOnUse_Keyword">
+      <IconName>Hat_佚亡</IconName>
+      <Color>#FFC67C</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeSelf>true</IsChangeSelf>
+      <IsChangeAbility>false</IsChangeAbility>
+      <IsChangePassive>false</IsChangePassive>
+    </OriginKeywordText>
+
   </TextList>
 </OriginKeywordTextRoot>
