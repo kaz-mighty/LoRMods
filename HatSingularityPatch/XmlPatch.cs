@@ -39,7 +39,7 @@ namespace HatPatch
 							HatInitializer.Xmls[nameBody] = xml;
 							break;
 					}
-				} 
+				}
 				catch (Exception ex)
 				{
 					Debug.LogException(ex);

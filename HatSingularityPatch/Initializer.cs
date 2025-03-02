@@ -10,8 +10,8 @@ using Mod;
 
 namespace HatPatch
 {
-    public class Initializer : ModInitializer
-    {
+	public class Initializer : ModInitializer
+	{
 		// This must be called after HatSingularity is loaded and before it is initialized.
 		// Uses the fact that "1FrameworkLoader" loads and initializes files in order of file name.
 		public override void OnInitializeMod()

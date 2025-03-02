@@ -7,9 +7,9 @@ using Hat_Harmony;
 
 namespace HatPatch
 {
-    [HarmonyPatch]
-    class ReInitializer
-    {
+	[HarmonyPatch]
+	class ReInitializer
+	{
 		[HarmonyPatch(typeof(TextDataModel), "InitTextData")]
 		[HarmonyPostfix]
 		static void InittextDataPostFix()
