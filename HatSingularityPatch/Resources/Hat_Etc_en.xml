@@ -2,7 +2,7 @@
 <localize xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
 	<!-- Ui -->
-	<text id="JCorp_Shield">Shield</text>
+	<text id="Hat_Shield">Shield</text>
 	<text id="Hat_TremorView">Stagger Threshold Increase</text>
 	<text id="Hat_PoiseCrit">Critical Hit</text>
 	<!-- Placeholder only -->

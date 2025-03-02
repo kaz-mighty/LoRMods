@@ -4,7 +4,7 @@
 	<!-- Ui -->
 	<text id="Hat_Shield">보호막</text>
 	<text id="Hat_TremorView">흐트러짐 임계값 증가</text> <!-- What does 混乱阈值推进 mean? -->
-
+	<text id="Hat_PoiseCrit">치명타</text>
 	<!-- Placeholder only -->
 	<text id="ui_ability_discard">버림</text>
 	<text id="ui_ability_exhaustonuse">소멸</text>
