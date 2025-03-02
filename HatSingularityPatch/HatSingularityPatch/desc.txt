@@ -1,7 +1,8 @@
 Title:HatSingularity Patch
 Tag:Tool
 ```
-This mod fixes some bugs in HatSingularity and also fixes the lack of Japanese support in the latest version.
+This mod fixes some bugs in HatSingularity (1.0.0.9) and also fixes the lack of Japanese support in the latest version.
+HatSingularity itself is not included, so you will need to subscribe to it separately.
 
 Fixed bugs:
 - If you change the language, translation will not work properly until you restart the game. (Temporary fix, may break depending on mods that depend on the hat)
@@ -14,8 +15,9 @@ Other changes:
 
 
 --------
-HatSingularityに含まれているいくつかのバグを修正し、最新バージョンの日本語対応を追加します。
+HatSingularity(1.0.0.9)に含まれているいくつかのバグを修正し、最新バージョンの日本語対応を追加します。
 日本語で未訳だったキーワード語は適当に訳しました。
+HatSingularity自体は含まれてないので別途サブスクライブが必要です。
 
 修正したバグ：
 - 言語を変更すると、ゲームを再起動するまで翻訳が正常に動作しません。(暫定的な修正、Hatに依存するMod次第で壊れるかもしれません)
@@ -25,4 +27,11 @@ HatSingularityに含まれているいくつかのバグを修正し、最新バ
 
 その他の変更：
 - jpでは[抵抗]は置換されなくなりました。(状態異常と耐性で同じ名前になっているため)
+
+
+--------
+GitHub Link: https://github.com/kaz-mighty/LoRMods
+
+Credit
+HatSingularity (https://steamcommunity.com/sharedfiles/filedetails/?id=3051354156)
 ```
