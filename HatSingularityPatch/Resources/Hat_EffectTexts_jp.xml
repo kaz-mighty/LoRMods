@@ -328,6 +328,37 @@
       <IsChangeSelf>true</IsChangeSelf>
     </BattleEffectTextExtra>
 
+    <BattleEffectTextExtra ID="Hat_SlashPowerUp">
+      <Name>斬撃威力増加</Name>
+      <Desc></Desc>
+      <IconName>Hat_斩击威力提升</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_PenetratePowerUp">
+      <Name>貫通威力増加</Name>
+      <Desc></Desc>
+      <IconName>Hat_突刺威力提升</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_HitPowerUp">
+      <Name>打撃威力増加</Name>
+      <Desc></Desc>
+      <IconName>Hat_打击威力提升</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+
 
     <BattleEffectTextExtra ID="Hat_TemporySpeedDice">
       <Name>行動増幅</Name>

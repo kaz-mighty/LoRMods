@@ -8,6 +8,8 @@ using UnityEngine;
 using Mod;
 using HarmonyLib;
 using Hat_Harmony;
+using Hat_Xml;
+using LOR_XML;
 
 namespace HatPatch
 {
@@ -45,6 +47,43 @@ namespace HatPatch
 					Debug.LogException(ex);
 					Initializer.AddDisplayLog("Failed to load resource.", LogType.Warning);
 				}
+			}
+		}
+
+		[HarmonyPatch(typeof(HatInitializer.ExtraLoad), "AddXmls")]
+		[HarmonyPostfix]
+		internal static void PowerUpFilterFixPatch()
+		{
+			PowerUpFilterFix();
+		}
+
+		internal static void PowerUpFilterFix()
+		{
+			// To replace text with the Hat prefix, define BattleEffectTextExtra.
+			// Copy it to HatOriginText in order to display the filter correctly
+			// (with replacement turned off).
+
+			string[] textIds = { "SlashPowerUp", "PenetratePowerUp", "HitPowerUp" };
+
+			foreach (var textId in textIds)
+			{
+				var extraTextId = "Hat_" + textId;
+				var effectTextExtra = BattleEffectTextsXmlList.Instance.GetEffectText(extraTextId) as BattleEffectTextExtra;
+				if (effectTextExtra == null)
+				{
+					continue;
+				}
+				var effectText = BattleEffectTextsXmlList.Instance.GetEffectText(textId);
+				HatInitializer.HatOriginText.Add(new OriginKeywordText
+				{
+					ID = textId,
+					keywordName = effectText.Name,
+					keywordDesc = effectText.Desc,
+					iconName = effectTextExtra.iconName,
+					color = effectTextExtra.iconName,
+					hasBracket = effectTextExtra.hasBracket,
+					isUnderline = effectTextExtra.isUnderline,
+				});
 			}
 		}
 	}

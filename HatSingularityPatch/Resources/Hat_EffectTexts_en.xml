@@ -349,6 +349,40 @@ Can stack up to Max. Stagger Resist.</Desc>
       <IsChangeSelf>true</IsChangeSelf>
     </BattleEffectTextExtra>
 
+    <BattleEffectTextExtra ID="Hat_SlashPowerUp">
+      <Name>Slash Power-Up</Name>
+      <RecognizeName>Hat Slash Power-Up</RecognizeName>
+      <Desc></Desc>
+      <IconName>Hat_斩击威力提升</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_PenetratePowerUp">
+      <Name>Pierce Power-Up</Name>
+      <RecognizeName>Hat Pierce Power-Up</RecognizeName>
+      <Desc></Desc>
+      <IconName>Hat_突刺威力提升</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_HitPowerUp">
+      <Name>Blunt Power-Up</Name>
+      <RecognizeName>Hat Blunt Power-Up</RecognizeName>
+      <Desc></Desc>
+      <IconName>Hat_打击威力提升</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+
 
     <BattleEffectTextExtra ID="Hat_TemporySpeedDice">
       <Name>Temporary Speed Dice</Name>

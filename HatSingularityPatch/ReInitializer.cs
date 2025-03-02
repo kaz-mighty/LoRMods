@@ -40,6 +40,7 @@ namespace HatPatch
 			HatInitializer.ExtraLoad.AddOriginKeyword();
 			HatInitializer.ExtraLoad.AddEtc();
 			HatInitializer.ExtraLoad.AddEffectText();
+			XmlPatch.PowerUpFilterFix();
 			_isNeedFilterInit = true;
 		}
 
