@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<localize xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<!-- Ui -->
+	<text id="Hat_Shield">보호막</text>
+	<text id="Hat_TremorView">흐트러짐 임계값 증가</text> <!-- What does 混乱阈值推进 mean? -->
+
+	<!-- Placeholder only -->
+	<text id="ui_ability_discard">버림</text>
+	<text id="ui_ability_exhaustonuse">소멸</text>
+</localize>
