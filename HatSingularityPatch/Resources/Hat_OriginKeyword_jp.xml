@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OriginKeywordTextRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TextList>
+
+    <!-- 增益 ===============================-->
+    <OriginKeywordText ID="Strength">
+      <IconName>强壮</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </OriginKeywordText>
+    <OriginKeywordText ID="Strength_Keyword">
+      <IconName>强壮</IconName>
+      <Color>#33CCFF</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </OriginKeywordText>
+
+    <OriginKeywordText ID="Endurance">
+      <IconName>忍耐</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </OriginKeywordText>
+    <OriginKeywordText ID="Endurance_Keyword">
+      <IconName>忍耐</IconName>
+      <Color>#33CCFF</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </OriginKeywordText>
+
+    <OriginKeywordText ID="Quickness">
+      <IconName>迅捷</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </OriginKeywordText>
+    <OriginKeywordText ID="Quickness_Keyword">
+      <IconName>迅捷</IconName>
+      <Color>#33CCFF</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </OriginKeywordText>
+
+    <OriginKeywordText ID="Protection">
+      <IconName>守护</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </OriginKeywordText>
+    <OriginKeywordText ID="Protection_Keyword">
+      <IconName>守护</IconName>
+      <Color>#33CCFF</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </OriginKeywordText>
+
+    <OriginKeywordText ID="BreakProtection">
+      <IconName>振奋</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </OriginKeywordText>
+    <OriginKeywordText ID="BreakProtection_Keyword">
+      <IconName>振奋</IconName>
+      <Color>#33CCFF</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </OriginKeywordText>
+
+    <OriginKeywordText ID="DmgUp">
+      <IconName>伤害强化</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </OriginKeywordText>
+
+    <!-- 伪增益 ==== -->
+
+    <OriginKeywordText ID="SweepersSkill">
+      <IconName>坚韧</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeSelf>true</IsChangeSelf>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </OriginKeywordText>
+
+    <OriginKeywordText ID="WarpCharge">
+      <IconName>充能</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeSelf>true</IsChangeSelf>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </OriginKeywordText>
+
+    <!-- Resist's "endured" and buf's "Resilience" have the same name in Japanese, 
+         causing incorrect replacement, so invalidate them. -->
+    <OriginKeywordText ID="Resistance">
+      <IconName>抵御</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeSelf>false</IsChangeSelf>
+      <IsChangeAbility>false</IsChangeAbility>
+      <IsChangePassive>false</IsChangePassive>
+    </OriginKeywordText>
+
+    <OriginKeywordText ID="Vibrate">
+      <IconName>震颤</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeSelf>true</IsChangeSelf>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </OriginKeywordText>
+
+    <OriginKeywordText ID="OnlyOne_Keyword">
+      <IconName>剑刃解放2</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeSelf>true</IsChangeSelf>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </OriginKeywordText>
+
+    <OriginKeywordText ID="IndexRelease">
+      <IconName>剑刃解放2</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeSelf>true</IsChangeSelf>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </OriginKeywordText>
+
+
+    <!-- 负面 ===============================-->
+
+    <OriginKeywordText ID="Weak">
+      <IconName>虚弱</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </OriginKeywordText>
+    <OriginKeywordText ID="Weak_Keyword">
+      <IconName>虚弱</IconName>
+      <Color>#FF3333</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </OriginKeywordText>
+
+    <OriginKeywordText ID="Disarm">
+      <IconName>破绽</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </OriginKeywordText>
+    <OriginKeywordText ID="Disarm_Keyword">
+      <IconName>破绽</IconName>
+      <Color>#FF3333</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </OriginKeywordText>
+
+    <OriginKeywordText ID="Vulnerable">
+      <IconName>易损</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </OriginKeywordText>
+    <OriginKeywordText ID="Vulnerable_Keyword">
+      <IconName>易损</IconName>
+      <Color>#FF3333</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </OriginKeywordText>
+
+    <OriginKeywordText ID="Binding">
+      <IconName>束缚</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </OriginKeywordText>
+    <OriginKeywordText ID="Binding_Keyword">
+      <IconName>束缚</IconName>
+      <Color>#FF3333</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </OriginKeywordText>
+
+    <OriginKeywordText ID="Burn">
+      <IconName>烧伤</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </OriginKeywordText>
+    <OriginKeywordText ID="Burn_Keyword">
+      <IconName>烧伤</IconName>
+      <Color>#FF3333</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </OriginKeywordText>
+
+    <OriginKeywordText ID="Paralysis">
+      <IconName>麻痹</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </OriginKeywordText>
+    <OriginKeywordText ID="Paralysis_Keyword">
+      <IconName>麻痹</IconName>
+      <Color>#FF3333</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </OriginKeywordText>
+
+    <OriginKeywordText ID="Bleeding">
+      <IconName>流血</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </OriginKeywordText>
+    <OriginKeywordText ID="Bleeding_Keyword">
+      <IconName>流血</IconName>
+      <Color>#FF3333</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </OriginKeywordText>
+
+    <OriginKeywordText ID="BinahFairy">
+      <IconName>妖灵</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </OriginKeywordText>
+    <OriginKeywordText ID="Fairy_Keyword">
+      <IconName>妖灵</IconName>
+      <Color>#FF3333</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </OriginKeywordText>
+
+    <OriginKeywordText ID="Decay">
+      <IconName>腐蚀</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeSelf>true</IsChangeSelf>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </OriginKeywordText>
+
+    <OriginKeywordText ID="Butterfly_Seal">
+      <IconName>封印</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeSelf>true</IsChangeSelf>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </OriginKeywordText>
+
+    <!-- 伪负面 ==== -->
+
+    <OriginKeywordText ID="Stun">
+      <IconName>封印</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeSelf>true</IsChangeSelf>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </OriginKeywordText>
+
+    <OriginKeywordText ID="ForbidRecovery">
+      <IconName>禁疗</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeSelf>true</IsChangeSelf>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </OriginKeywordText>
+
+    <OriginKeywordText ID="NullifyPower">
+      <IconName>威力无效</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeSelf>true</IsChangeSelf>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </OriginKeywordText>
+
+    <!-- 中性 ===============================-->
+
+    <OriginKeywordText ID="Smoke">
+      <IconName>烟气</IconName>
+      <Color>yellow</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </OriginKeywordText>
+    <OriginKeywordText ID="Smoke_Keyword">
+      <IconName>烟气</IconName>
+      <Color>yellow</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </OriginKeywordText>
+
+    <OriginKeywordText ID="NicolaiTarget">
+      <IconName>集火</IconName>
+      <Color>yellow</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeSelf>true</IsChangeSelf>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </OriginKeywordText>
+
+    <!-- 特殊 ===============================-->
+
+    <OriginKeywordText ID="Origin_Buff">
+      <IconName>强壮</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+      <IsSpecialText>true</IsSpecialText>
+      <SpecialText>有利効果</SpecialText>
+    </OriginKeywordText>
+
+    <OriginKeywordText ID="Origin_Debuff">
+      <IconName>虚弱</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+      <IsSpecialText>true</IsSpecialText>
+      <SpecialText>状態異常</SpecialText>
+    </OriginKeywordText>
+
+    <OriginKeywordText ID="Origin_RedMist">
+      <IconName>红姐</IconName>
+      <Color>yellow</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+      <IsSpecialText>true</IsSpecialText>
+      <SpecialText>赤い霧</SpecialText>
+    </OriginKeywordText>
+
+    <OriginKeywordText ID="Origin_PositveEmotion">
+      <IconName>情感</IconName>
+      <Color>#CC00FF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+      <IsSpecialText>true</IsSpecialText>
+      <SpecialText>ポジティブエモーション</SpecialText>
+    </OriginKeywordText>
+
+    <OriginKeywordText ID="Origin_NegativeEmotion">
+      <IconName>情感</IconName>
+      <Color>#CC00FF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+      <IsSpecialText>true</IsSpecialText>
+      <SpecialText>ネガティブエモーション</SpecialText>
+    </OriginKeywordText>
+
+    <OriginKeywordText ID="Origin_EmotionLevel">
+      <IconName>情感</IconName>
+      <Color>#CC00FF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+      <IsSpecialText>true</IsSpecialText>
+      <SpecialText>感情レベル</SpecialText>
+    </OriginKeywordText>
+
+    <OriginKeywordText ID="Origin_Ego">
+      <IconName>情感</IconName>
+      <Color>#CC00FF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+      <IsSpecialText>true</IsSpecialText>
+      <SpecialText>E.G.O</SpecialText>
+    </OriginKeywordText>
+
+    <!-- Extra ===============================-->
+
+    <OriginKeywordText ID="ExhaustOnUse_Keyword">
+      <IconName>Hat_佚亡</IconName>
+      <Color>#FFC67C</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeSelf>true</IsChangeSelf>
+      <IsChangeAbility>false</IsChangeAbility>
+      <IsChangePassive>false</IsChangePassive>
+    </OriginKeywordText>
+
+  </TextList>
+</OriginKeywordTextRoot>

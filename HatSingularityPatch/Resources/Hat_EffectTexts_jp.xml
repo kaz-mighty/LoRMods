@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BattleEffectTextRootExtra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <effectTextList>
+
+  </effectTextList>
+
+  <extraTextList>
+
+    <BattleEffectTextExtra ID="Hat_PhysicalShield">
+      <Name>バリア</Name>
+      <Desc>現在の値まで受けるダメージを肩代わりする。最大HPの値まで保有可能。</Desc>
+      <IconName>Hat_护盾</IconName>
+      <Color>#0997F7</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeSelf>true</IsChangeSelf>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_SpiritualShield">
+      <Name>精神障壁</Name>
+      <Desc>現在の値まで受ける混乱ダメージを肩代わりする。最大混乱抵抗値の値まで保有可能。</Desc>
+      <IconName>Hat_精神屏障</IconName>
+      <Color>yellow</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeSelf>true</IsChangeSelf>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+
+
+    <BattleEffectTextExtra ID="Hat_DmgDown">
+      <Name>ダメージ低下</Name>
+      <Desc>今回の幕の間、攻撃ダイスで与えるダメージが{0}減少</Desc>
+      <IconName>Hat_伤害降低</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_DmgDown_Keyword">
+      <Name>ダメージ低下 X</Name>
+      <Desc>今回の幕の間、攻撃ダイスで与えるダメージがX減少</Desc>
+      <IconName>Hat_伤害降低</IconName>
+      <Color>#FF3333</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+
+
+    <BattleEffectTextExtra ID="Hat_BleedingVulnerable">
+      <Name>出血脆弱</Name>
+      <Desc>今回の幕の間、[出血]の効果によって受けるダメージ量が{0}増加</Desc>
+      <IconName>Hat_流血易损</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_BleedingVulnerable_Keyword">
+      <Name>出血脆弱 X</Name>
+      <Desc>今回の幕の間、[出血]の効果によって受けるダメージ量がX増加</Desc>
+      <IconName>Hat_流血易损</IconName>
+      <Color>#FF3333</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_BleedingProtection">
+      <Name>出血保護</Name>
+      <Desc>今回の幕の間、[出血]の効果によって受けるダメージ量が{0}減少</Desc>
+      <IconName>Hat_流血守护</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_BleedingProtection_Keyword">
+      <Name>出血保護 X</Name>
+      <Desc>今回の幕の間、[出血]の効果によって受けるダメージ量がX減少</Desc>
+      <IconName>Hat_流血守护</IconName>
+      <Color>#33CCFF</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+
+    <BattleEffectTextExtra ID="Hat_BurnVulnerable">
+      <Name>火傷脆弱</Name>
+      <Desc>今回の幕の間、[火傷]の効果によって受けるダメージ量が{0}増加</Desc>
+      <IconName>Hat_烧伤易损</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_BurnVulnerable_Keyword">
+      <Name>火傷脆弱 X</Name>
+      <Desc>今回の幕の間、[火傷]の効果によって受けるダメージ量がX増加</Desc>
+      <IconName>Hat_烧伤易损</IconName>
+      <Color>#FF3333</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_BurnProtection">
+      <Name>火傷保護</Name>
+      <Desc>今回の幕の間、[火傷]の効果によって受けるダメージ量が{0}減少</Desc>
+      <IconName>Hat_烧伤守护</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_BurnProtection_Keyword">
+      <Name>火傷保護 X</Name>
+      <Desc>今回の幕の間、[火傷]の効果によって受けるダメージ量がX減少</Desc>
+      <IconName>Hat_烧伤守护</IconName>
+      <Color>#33CCFF</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+
+    <BattleEffectTextExtra ID="Hat_RuptureVulnerable">
+      <Name>破裂脆弱</Name>
+      <Desc>今回の幕の間、[破裂]の効果によって受けるダメージ量が{0}増加</Desc>
+      <IconName>Hat_破裂易损</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_RuptureVulnerable_Keyword">
+      <Name>破裂脆弱 X</Name>
+      <Desc>今回の幕の間、[破裂]の効果によって受けるダメージ量がX増加</Desc>
+      <IconName>Hat_破裂易损</IconName>
+      <Color>#FF3333</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_RuptureProtection">
+      <Name>破裂保護</Name>
+      <Desc>今回の幕の間、[破裂]の効果によって受けるダメージ量が{0}減少</Desc>
+      <IconName>Hat_破裂守护</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_RuptureProtection_Keyword">
+      <Name>破裂保護 X</Name>
+      <Desc>今回の幕の間、[破裂]の効果によって受けるダメージ量がX減少</Desc>
+      <IconName>Hat_破裂守护</IconName>
+      <Color>#33CCFF</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+
+    <BattleEffectTextExtra ID="Hat_SinkingVulnerable">
+      <Name>沈潜脆弱</Name>
+      <Desc>今回の幕の間、[沈潜]の効果によって受ける混乱ダメージ量が{0}増加</Desc>
+      <IconName>Hat_沉沦易损</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_SinkingVulnerable_Keyword">
+      <Name>沈潜脆弱 X</Name>
+      <Desc>今回の幕の間、[沈潜]の効果によって受ける混乱ダメージ量がX増加</Desc>
+      <IconName>Hat_沉沦易损</IconName>
+      <Color>#FF3333</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_SinkingProtection">
+      <Name>沈潜保護</Name>
+      <Desc>今回の幕の間、[沈潜]の効果によって受ける混乱ダメージ量が{0}減少</Desc>
+      <IconName>Hat_沉沦守护</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_SinkingProtection_Keyword">
+      <Name>沈潜脆弱 X</Name>
+      <Desc>今回の幕の間、[沈潜]の効果によって受ける混乱ダメージ量がX減少</Desc>
+      <IconName>Hat_沉沦守护</IconName>
+      <Color>#33CCFF</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+
+    <BattleEffectTextExtra ID="Hat_LightRecoverUp">
+      <Name>光促進</Name>
+      <Desc>この幕の間、光を回復する際に追加で光を{0}回復する</Desc>
+      <IconName>Hat_光芒恢复量提升</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_LightRecoverUp_Keyword">
+      <Name>光促進 X</Name>
+      <Desc>この幕の間、光を回復する際に追加で光をX回復する</Desc>
+      <IconName>Hat_光芒恢复量提升</IconName>
+      <Color>#33CCFF</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_LightLimitUp"> <!--a.k.a. "for the Scene this status was inflicted and next Scene"-->
+      <Name>光増強</Name>
+      <Desc>この効果がある間、光の最大値が{0}増加</Desc>
+      <IconName>Hat_光芒上限提升</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_LightLimitUp_Keyword">
+      <Name>光増強 X</Name>
+      <Desc>この効果がある間、光の最大値がX増加</Desc>
+      <IconName>Hat_光芒上限提升</IconName>
+      <Color>#33CCFF</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_LightLimitDown">
+      <Name>光減退</Name>
+      <Desc>この効果がある間、光の最大値が{0}減少</Desc>
+      <IconName>Hat_光芒上限降低</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_LightLimitDown_Keyword">
+      <Name>光減退 X</Name>
+      <Desc>この効果がある間、光の最大値がX減少</Desc>
+      <IconName>Hat_光芒上限降低</IconName>
+      <Color>#FF3333</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_CardLimitUp">
+      <Name>手札増加</Name>
+      <Desc>この効果がある間、手元のページ枚数上限が{0}枚増加</Desc>
+      <IconName>Hat_手牌上限提升</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_CardLimitUp_Keyword">
+      <Name>手札増加 X</Name>
+      <Desc>この効果がある間、手元のページ枚数上限がX枚増加</Desc>
+      <IconName>Hat_手牌上限提升</IconName>
+      <Color>#33CCFF</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_CardLimitDown">
+      <Name>手札減少</Name>
+      <Desc>この効果がある間、手元のページ枚数上限が{0}枚減少</Desc>
+      <IconName>Hat_手牌上限降低</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_CardLimitDown_Keyword">
+      <Name>手札減少 X</Name>
+      <Desc>この効果がある間、手元のページ枚数上限がX枚減少</Desc>
+      <IconName>Hat_手牌上限降低</IconName>
+      <Color>#FF3333</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+
+
+    <BattleEffectTextExtra ID="Hat_SlashPowerDown">
+      <Name>斬撃威力低下</Name>
+      <Desc>今回の幕の間、斬撃威力が{0}減少</Desc>
+      <IconName>Hat_斩击威力降低</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_SlashPowerDown_Keyword">
+      <Name>斬撃威力低下 X</Name>
+      <Desc>今回の幕の間、斬撃威力がX減少</Desc>
+      <IconName>Hat_斩击威力降低</IconName>
+      <Color>#FF3333</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_PenetratePowerDown">
+      <Name>貫通威力低下</Name>
+      <Desc>今回の幕の間、貫通威力が{0}減少</Desc>
+      <IconName>Hat_突刺威力降低</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_PenetratePowerDown_Keyword">
+      <Name>貫通威力低下 X</Name>
+      <Desc>今回の幕の間、貫通威力がX減少</Desc>
+      <IconName>Hat_突刺威力降低</IconName>
+      <Color>#FF3333</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_HitPowerDown">
+      <Name>打撃威力低下</Name>
+      <Desc>今回の幕の間、打撃威力が{0}減少</Desc>
+      <IconName>Hat_打击威力降低</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_HitPowerDown_Keyword">
+      <Name>打撃威力低下 X</Name>
+      <Desc>今回の幕の間、打撃威力がX減少</Desc>
+      <IconName>Hat_打击威力降低</IconName>
+      <Color>#FF3333</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+
+    <BattleEffectTextExtra ID="Hat_SlashPowerUp">
+      <Name>斬撃威力増加</Name>
+      <Desc></Desc>
+      <IconName>Hat_斩击威力提升</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_PenetratePowerUp">
+      <Name>貫通威力増加</Name>
+      <Desc></Desc>
+      <IconName>Hat_突刺威力提升</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_HitPowerUp">
+      <Name>打撃威力増加</Name>
+      <Desc></Desc>
+      <IconName>Hat_打击威力提升</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+
+
+    <BattleEffectTextExtra ID="Hat_TemporySpeedDice">
+      <Name>行動増幅</Name>
+      <Desc>今回の幕の間、速度ダイスが{0}個増加</Desc>
+      <IconName>Hat_临时速度骰子</IconName>
+      <Color>#FFCC00</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeSelf>true</IsChangeSelf>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+
+    <BattleEffectTextExtra ID="Hat_Rupture">
+      <Name>破裂</Name>
+      <Desc>被ダメージ時、{0}ダメージを受けて値が半分に減少(小数点以下切り捨て)</Desc>
+      <IconName>Hat_破裂</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_Rupture_Keyword">
+      <Name>破裂 X</Name>
+      <Desc>被ダメージ時、Xダメージを受けて値が半分に減少(小数点以下切り捨て)</Desc>
+      <IconName>Hat_破裂</IconName>
+      <Color>#FF3333</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+
+    <BattleEffectTextExtra ID="Hat_DimensionalRift">
+      <Name>次元の裂け目</Name>
+      <Desc>幕の終了時に破裂を{0}得て数値が1減少</Desc>
+      <IconName>Hat_次元裂隙</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_DimensionalRift_Keyword">
+      <Name>次元の裂け目 X</Name>
+      <Desc>幕の終了時に破裂をX得て数値が1減少</Desc>
+      <IconName>Hat_次元裂隙</IconName>
+      <Color>#FF3333</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+
+
+    <BattleEffectTextExtra ID="Hat_Sinking">
+      <Name>沈潜</Name>
+      <Desc>被ダメージ時、{0}混乱ダメージを受けて数値が半分に減少(小数点以下切り捨て)</Desc>
+      <IconName>Hat_沉沦</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_Sinking_Keyword">
+      <Name>沈潜 X</Name>
+      <Desc>被ダメージ時、X混乱ダメージを受けて数値が半分に減少(小数点以下切り捨て)</Desc>
+      <IconName>Hat_沉沦</IconName>
+      <Color>#FF3333</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+
+    <BattleEffectTextExtra ID="Hat_SinkingDeluge">
+      <Name>沈潜殺到</Name>
+      <Desc>全ての対象の[沈潜]を発動。ただし直接指定した対象の[沈潜]の値を参照して混乱ダメージを与える。
+この効果で相手が混乱状態になった場合、余剰分の混乱ダメージを追加ダメージとして与える。</Desc>
+      <IconName>Hat_沉沦泛滥</IconName>
+      <Color>#1B80EC</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeSelf>true</IsChangeSelf>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+
+    <BattleEffectTextExtra ID="Hat_Tremor">
+      <Name>震え</Name>
+      <Desc>混乱抵抗値が{0}以下になれば混乱する。
+幕の終了時に混乱状態ならこの状態が解除される。</Desc>
+      <IconName>Hat_振动</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_Tremor_Keyword">
+      <Name>震え X</Name>
+      <Desc>混乱抵抗値がX以下になれば混乱する。
+幕の終了時に混乱状態ならこの状態が解除される。</Desc>
+      <IconName>Hat_振动</IconName>
+      <Color>#FF3333</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+
+    <BattleEffectTextExtra ID="Hat_TremorBurst">
+      <Name>震え爆発</Name>
+      <Desc>相手の震えだけダメージと混乱ダメージを与える。</Desc>
+      <IconName>Hat_振动爆发</IconName>
+      <Color>#F2B764</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeSelf>true</IsChangeSelf>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+
+    <BattleEffectTextExtra ID="Hat_Poise">
+      <Name>呼吸</Name>
+      <Desc>攻撃ダイスの最大値が本来の値の半分(切り捨て)増加し、ダメージ量が+&lt;color=#88ABAB&gt;&lt;u&gt;{X}%&lt;/u&gt;&lt;/color&gt;。
+的中時、最大値の増加分だけこの値が減少。</Desc>
+      <IconName>Hat_呼吸</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_Poise_Keyword">
+      <Name>呼吸 X</Name>
+      <Desc>攻撃ダイスの最大値が本来の値の半分(切り捨て)増加し、ダメージ量が+ &lt;color=#88ABAB&gt;&lt;u&gt;(X x5)%&lt;/u&gt;&lt;/color&gt;。
+的中時、最大値の増加分だけこの値が減少。</Desc>
+      <IconName>Hat_呼吸</IconName>
+      <Color>#33CCFF</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_PoiseCriticalHit_Keyword">
+      <Name>会心</Name>
+      <Desc>的中時、本来のダイス値が本来の最大値を超えれば発動する。</Desc>
+      <IconName>Hat_会心</IconName>
+      <Color>#88ABAB</Color>
+      <HasBracket>true</HasBracket>
+      <IsChangeSelf>true</IsChangeSelf>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+
+
+    <BattleEffectTextExtra ID="Hat_Preassembled_Keyword">
+      <Name>先天</Name>
+      <Desc>このページは舞台の開始時に引く。</Desc>
+      <IconName>Hat_预装</IconName>
+      <Color>#FFC67C</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeSelf>true</IsChangeSelf>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+
+    <BattleEffectTextExtra ID="Discard_Keyword">
+      <Name>捨てる</Name>
+      <Desc></Desc>
+      <IconName>Hat_丢弃</IconName>
+      <Color>#C72828</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeSelf>true</IsChangeSelf>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+
+  </extraTextList>
+</BattleEffectTextRootExtra>

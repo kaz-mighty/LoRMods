@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BattleEffectTextRootExtra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <effectTextList>
+
+  </effectTextList>
+
+  <extraTextList>
+
+    <BattleEffectTextExtra ID="Hat_PhysicalShield">
+      <Name>Shield</Name>
+      <RecognizeName>Hat Shield</RecognizeName>
+      <Desc>Resist incoming damage up to the current value.
+Can stack up to Max. HP.</Desc>
+      <IconName>Hat_护盾</IconName>
+      <Color>#0997F7</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeSelf>true</IsChangeSelf>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_SpiritualShield">
+      <Name>Mental Barrier</Name>
+      <RecognizeName>Hat mental Barrier</RecognizeName>
+      <Desc>Resist incoming Stagger damage up to the current value.
+Can stack up to Max. Stagger Resist.</Desc>
+      <IconName>Hat_精神屏障</IconName>
+      <Color>yellow</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeSelf>true</IsChangeSelf>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+
+
+    <BattleEffectTextExtra ID="Hat_DmgDown">
+      <Name>Damage Down</Name>
+      <RecognizeName>Hat Damage Down</RecognizeName>
+      <Desc>All Offensive dice the character plays deal -{0} damage for the Scene.</Desc>
+      <IconName>Hat_伤害降低</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_DmgDown_Keyword">
+      <Name>Damage Down X</Name>
+      <Desc>All Offensive dice the character plays deal -X damage for the Scene.</Desc>
+      <IconName>Hat_伤害降低</IconName>
+      <Color>#FF3333</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+
+
+    <BattleEffectTextExtra ID="Hat_BleedingVulnerable">
+      <Name>Bleed Fragile</Name>
+      <RecognizeName>Hat Bleed Fragile</RecognizeName>
+      <Desc>Take {0} additional damage from Bleed this Scene.</Desc>
+      <IconName>Hat_流血易损</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_BleedingVulnerable_Keyword">
+      <Name>Bleed Fragile X</Name>
+      <Desc>Take X additional damage from Bleed for the Scene.</Desc>
+      <IconName>Hat_流血易损</IconName>
+      <Color>#FF3333</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_BleedingProtection">
+      <Name>Bleed Protection</Name>
+      <RecognizeName>Hat Bleed Protection</RecognizeName>
+      <Desc>Take {0} less damage from Bleed this Scene.</Desc>
+      <IconName>Hat_流血守护</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_BleedingProtection_Keyword">
+      <Name>Bleed Protection X</Name>
+      <Desc>Take X less damage from Bleed for the Scene.</Desc>
+      <IconName>Hat_流血守护</IconName>
+      <Color>#33CCFF</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+
+    <BattleEffectTextExtra ID="Hat_BurnVulnerable">
+      <Name>Burn Fragile</Name>
+      <RecognizeName>Hat Burn Fragile</RecognizeName>
+      <Desc>Take {0} additional damage from Burn this Scene.</Desc>
+      <IconName>Hat_烧伤易损</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_BurnVulnerable_Keyword">
+      <Name>Burn Fragile X</Name>
+      <Desc>Take X additional damage from Burn for the Scene.</Desc>
+      <IconName>Hat_烧伤易损</IconName>
+      <Color>#FF3333</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_BurnProtection">
+      <Name>Burn Protection</Name>
+      <RecognizeName>Hat Burn Protection</RecognizeName>
+      <Desc>Take {0} less damage from Burn this Scene.</Desc>
+      <IconName>Hat_烧伤守护</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_BurnProtection_Keyword">
+      <Name>Burn Protection X</Name>
+      <Desc>Take X less damage from Burn for the Scene.</Desc>
+      <IconName>Hat_烧伤守护</IconName>
+      <Color>#33CCFF</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+
+    <BattleEffectTextExtra ID="Hat_RuptureVulnerable">
+      <Name>Rupture Fragile</Name>
+      <RecognizeName>Hat Rupture Fragile</RecognizeName>
+      <Desc>Take {0} additional damage from Rupture this Scene.</Desc>
+      <IconName>Hat_破裂易损</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_RuptureVulnerable_Keyword">
+      <Name>Rupture Fragile X</Name>
+      <Desc>Take X additional damage from Rupture for the Scene.</Desc>
+      <IconName>Hat_破裂易损</IconName>
+      <Color>#FF3333</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_RuptureProtection">
+      <Name>Rupture Protection</Name>
+      <RecognizeName>Hat Rupture Protection</RecognizeName>
+      <Desc>Take {0} less damage from Rupture this Scene.</Desc>
+      <IconName>Hat_破裂守护</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_RuptureProtection_Keyword">
+      <Name>Rupture Protection X</Name>
+      <Desc>Take X less damage from Rupture for the Scene.</Desc>
+      <IconName>Hat_破裂守护</IconName>
+      <Color>#33CCFF</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+
+    <BattleEffectTextExtra ID="Hat_SinkingVulnerable">
+      <Name>Sinking Fragile</Name>
+      <RecognizeName>Hat Sinking Fragile</RecognizeName>
+      <Desc>Take {0} additional Stagger damage from Sinking this Scene.</Desc>
+      <IconName>Hat_沉沦易损</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_SinkingVulnerable_Keyword">
+      <Name>Sinking Fragile X</Name>
+      <Desc>Take X additional Stagger damage from Sinking for the Scene.</Desc>
+      <IconName>Hat_沉沦易损</IconName>
+      <Color>#FF3333</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_SinkingProtection">
+      <Name>Sinking Protection</Name>
+      <RecognizeName>Hat Sinking Protection</RecognizeName>
+      <Desc>Take {0} less Stagger damage from Sinking this Scene.</Desc>
+      <IconName>Hat_沉沦守护</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_SinkingProtection_Keyword">
+      <Name>Sinking Protection X</Name>
+      <Desc>Take X less Stagger damage from Sinking for the Scene.</Desc>
+      <IconName>Hat_沉沦守护</IconName>
+      <Color>#33CCFF</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+
+    <BattleEffectTextExtra ID="Hat_LightRecoverUp">
+      <Name>Increased Light Restoration</Name>
+      <RecognizeName>Hat Increased Light Restoration</RecognizeName>
+      <Desc>For the Scene, when restoring Light, restore {0} additional Light.</Desc>
+      <IconName>Hat_光芒恢复量提升</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_LightRecoverUp_Keyword">
+      <Name>Increased Light Restoration X</Name>
+      <Desc>For the Scene, when restoring Light, restore X additional Light.</Desc>
+      <IconName>Hat_光芒恢复量提升</IconName>
+      <Color>#33CCFF</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_LightLimitUp"> <!--a.k.a. "for the Scene this status was inflicted and next Scene"-->
+      <Name>Increased Max Light Capacity</Name>
+      <RecognizeName>Hat Increased Max Light Capacity</RecognizeName>
+      <Desc>Increase Max Light Capacity by {0} until the status is removed.</Desc>
+      <IconName>Hat_光芒上限提升</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_LightLimitUp_Keyword">
+      <Name>Increased Max Light Capacity X</Name>
+      <Desc>Increase Max Light Capacity by X until the status is removed.</Desc>
+      <IconName>Hat_光芒上限提升</IconName>
+      <Color>#33CCFF</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_LightLimitDown">
+      <Name>Decreased Max Light Capacity</Name>
+      <RecognizeName>Hat Decreased Max Light Capacity</RecognizeName>
+      <Desc>Decrease Max Light Capacity by {0} until the status is removed.</Desc>
+      <IconName>Hat_光芒上限降低</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_LightLimitDown_Keyword">
+      <Name>Decreased Max Light Capacity X</Name>
+      <Desc>Decrease Max Light Capacity by X until the status is removed.</Desc>
+      <IconName>Hat_光芒上限降低</IconName>
+      <Color>#FF3333</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_CardLimitUp">
+      <Name>Increased Max Hand Size</Name>
+      <RecognizeName>Hat Increased Max Hand Size</RecognizeName>
+      <Desc>Increase Max Hand Size by {0} until the status is removed.</Desc>
+      <IconName>Hat_手牌上限提升</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_CardLimitUp_Keyword">
+      <Name>Increased Max Hand Size X</Name>
+      <Desc>Increase Max Hand Size by X until the status is removed.</Desc>
+      <IconName>Hat_手牌上限提升</IconName>
+      <Color>#33CCFF</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_CardLimitDown">
+      <Name>Decreased Max Hand Size</Name>
+      <RecognizeName>Hat Decreased Max Hand Size</RecognizeName>
+      <Desc>Decrease Max Hand Size by {0} until the status is removed.</Desc>
+      <IconName>Hat_手牌上限降低</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_CardLimitDown_Keyword">
+      <Name>Decreased Max Hand Size X</Name>
+      <Desc>Decrease Max Hand Size by X until the status is removed.</Desc>
+      <IconName>Hat_手牌上限降低</IconName>
+      <Color>#FF3333</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+
+
+    <BattleEffectTextExtra ID="Hat_SlashPowerDown">
+      <Name>Slash Power-down</Name>
+      <RecognizeName>Hat Slash Power-down</RecognizeName>
+      <Desc>Slash dice lose {0} Power for this Scene.</Desc>
+      <IconName>Hat_斩击威力降低</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_SlashPowerDown_Keyword">
+      <Name>Slash Power-down X</Name>
+      <Desc>Slash dice lose X Power for this Scene.</Desc>
+      <IconName>Hat_斩击威力降低</IconName>
+      <Color>#FF3333</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_PenetratePowerDown">
+      <Name>Pierce Power-down</Name>
+      <RecognizeName>Hat Pierce Power-down</RecognizeName>
+      <Desc>Pierce dice lose {0} Power for this Scene.</Desc>
+      <IconName>Hat_突刺威力降低</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_PenetratePowerDown_Keyword">
+      <Name>Pierce Power-down X</Name>
+      <Desc>Pierce dice lose X Power for this Scene.</Desc>
+      <IconName>Hat_突刺威力降低</IconName>
+      <Color>#FF3333</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_HitPowerDown">
+      <Name>Blunt Power-down</Name>
+      <RecognizeName>Hat Blunt Power-down</RecognizeName>
+      <Desc>Blunt dice lose {0} Power for this Scene.</Desc>
+      <IconName>Hat_打击威力降低</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_HitPowerDown_Keyword">
+      <Name>Blunt Power-down X</Name>
+      <Desc>Blunt dice lose X Power for this Scene.</Desc>
+      <IconName>Hat_打击威力降低</IconName>
+      <Color>#FF3333</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+
+    <BattleEffectTextExtra ID="Hat_SlashPowerUp">
+      <Name>Slash Power-Up</Name>
+      <RecognizeName>Hat Slash Power-Up</RecognizeName>
+      <Desc></Desc>
+      <IconName>Hat_斩击威力提升</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_PenetratePowerUp">
+      <Name>Pierce Power-Up</Name>
+      <RecognizeName>Hat Pierce Power-Up</RecognizeName>
+      <Desc></Desc>
+      <IconName>Hat_突刺威力提升</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_HitPowerUp">
+      <Name>Blunt Power-Up</Name>
+      <RecognizeName>Hat Blunt Power-Up</RecognizeName>
+      <Desc></Desc>
+      <IconName>Hat_打击威力提升</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+
+
+    <BattleEffectTextExtra ID="Hat_TemporySpeedDice">
+      <Name>Temporary Speed Dice</Name>
+      <RecognizeName>Hat Temporary Speed Dice</RecognizeName>
+      <Desc>Gain {0} additional Speed dice for the Scene.</Desc>
+      <IconName>Hat_临时速度骰子</IconName>
+      <Color>#FFCC00</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeSelf>true</IsChangeSelf>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+
+    <BattleEffectTextExtra ID="Hat_Rupture">
+      <Name>Rupture</Name>
+      <RecognizeName>Hat Rupture</RecognizeName>
+      <Desc>When hit, take {0} damage and halve the stack. (Rounds down)</Desc>
+      <IconName>Hat_破裂</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_Rupture_Keyword">
+      <Name>Rupture X</Name>
+      <Desc>When hit, take X damage and halve the stack. (Rounds down)</Desc>
+      <IconName>Hat_破裂</IconName>
+      <Color>#FF3333</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+
+    <BattleEffectTextExtra ID="Hat_DimensionalRift">
+      <Name>Dimensional Rift</Name>
+      <RecognizeName>Hat Dimensional Rift</RecognizeName>
+      <Desc>At the end of each Scene, inflict {0} Rupture to this character and lose 1 stack.</Desc>
+      <IconName>Hat_次元裂隙</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_DimensionalRift_Keyword">
+      <Name>Dimensional Rift X</Name>
+      <Desc>At the end of each Scene, inflict X Rupture to this character and lose 1 stack.</Desc>
+      <IconName>Hat_次元裂隙</IconName>
+      <Color>#FF3333</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+
+
+    <BattleEffectTextExtra ID="Hat_Sinking">
+      <Name>Sinking</Name>
+      <RecognizeName>Hat Sinking</RecognizeName>
+      <Desc>When hit, take {0} Stagger damage and halve the stack. (Rounds down)</Desc>
+      <IconName>Hat_沉沦</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_Sinking_Keyword">
+      <Name>Sinking X</Name>
+      <Desc>When hit, take X Stagger damage and halve the stack. (Rounds down)</Desc>
+      <IconName>Hat_沉沦</IconName>
+      <Color>#FF3333</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+
+    <BattleEffectTextExtra ID="Hat_SinkingDeluge">
+      <Name>Sinking Deluge</Name>
+      <RecognizeName>Hat Sinking Deluge</RecognizeName>
+      <Desc>Activate all target's Sinking instantly, but use current target's [Sinking] as base damage value.
+If target's Stagger Resist drops to 0, convert overflowing Stagger damage to physical damage.
+      </Desc>
+      <IconName>Hat_沉沦泛滥</IconName>
+      <Color>#1B80EC</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeSelf>true</IsChangeSelf>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+
+    <BattleEffectTextExtra ID="Hat_Tremor">
+      <Name>Tremor</Name>
+      <RecognizeName>Hat Tremor</RecognizeName>
+      <Desc>If Stagger Resist drops to {0}, become Staggered.
+At the end of the Scene, if Staggered, purge this status.</Desc>
+      <IconName>Hat_振动</IconName>
+      <Color>#FF3333</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_Tremor_Keyword">
+      <Name>Tremor X</Name>
+      <Desc>If Stagger Resist drops to X, become Staggered.
+At the end of the Scene, if Staggered, purge this status.</Desc>
+      <IconName>Hat_振动</IconName>
+      <Color>#FF3333</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+
+    <BattleEffectTextExtra ID="Hat_TremorBurst">
+      <Name>Tremor Burst</Name>
+      <RecognizeName>Hat Tremor Burst</RecognizeName>
+      <Desc>Deal damage and Stagger damage equal to target's Tremor.</Desc>
+      <IconName>Hat_振动爆发</IconName>
+      <Color>#F2B764</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeSelf>true</IsChangeSelf>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+
+    <BattleEffectTextExtra ID="Hat_Preassembled_Keyword">
+      <Name>Innate</Name>
+      <RecognizeName>Hat Innate</RecognizeName>
+      <Desc>This page will be drawn at the start of the Act.</Desc>
+      <IconName>Hat_预装</IconName>
+      <Color>#FFC67C</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeSelf>true</IsChangeSelf>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+
+    <BattleEffectTextExtra ID="Discard_Keyword">
+      <Name>Discard</Name>
+      <RecognizeName>Hat Discard</RecognizeName>
+      <Desc></Desc>
+      <IconName>Hat_丢弃</IconName>
+      <Color>#C72828</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeSelf>true</IsChangeSelf>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+
+    <BattleEffectTextExtra ID="Hat_Poise">
+      <Name>Poise</Name>
+      <RecognizeName>Hat Poise</RecognizeName>
+      <Desc>When rolling an Offensive die, boost the maximum roll value of it by half of its original value (Rounded down), and increase damage by &lt;color=#88ABAB&gt;&lt;u&gt;{X}%&lt;/u&gt;&lt;/color&gt;.
+On a successful hit, lose the amount stack equal to the amount by which the maximum roll value was boosted.</Desc>
+      <IconName>Hat_呼吸</IconName>
+      <Color>#33CCFF</Color>
+      <HasBracket>true</HasBracket>
+      <IsUnderline>true</IsUnderline>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_Poise_Keyword">
+      <Name>Poise X</Name>
+      <Desc>When rolling an Offensive die, boost the maximum roll value of it by half of its original value (Rounded down), and increase damage by &lt;color=#88ABAB&gt;&lt;u&gt;(X x 5)%&lt;/u&gt;&lt;/color&gt;.
+On a successful hit, lose the amount stack equal to the amount by which the maximum roll value was boosted.</Desc>
+      <IconName>Hat_呼吸</IconName>
+      <Color>#33CCFF</Color>
+      <IsChangeSelf>true</IsChangeSelf>
+    </BattleEffectTextExtra>
+    <BattleEffectTextExtra ID="Hat_PoiseCriticalHit_Keyword">
+      <Name>On Crit</Name>
+      <RecognizeName>Hat On Crit</RecognizeName>
+      <Desc>Activates when dealing damage if the natural roll is higher than the original maximum roll value.</Desc>
+      <IconName>Hat_会心</IconName>
+      <Color>#88ABAB</Color>
+      <HasBracket>true</HasBracket>
+      <IsChangeSelf>true</IsChangeSelf>
+      <IsChangeAbility>true</IsChangeAbility>
+      <IsChangePassive>true</IsChangePassive>
+    </BattleEffectTextExtra>
+
+  </extraTextList>
+</BattleEffectTextRootExtra>
