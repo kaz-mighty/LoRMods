@@ -7,6 +7,8 @@ Fixed bugs:
 - If you change the language, translation will not work properly until you restart the game. (Temporary fix, may break depending on mods that depend on the hat)
 - Missing translations for "shield" in en and "Critical Hit" in kr.
 - The last three keywords in the Battle Page Filter are blank in all languages.
+- The "Singleton" icon in the filter is not displayed.
+
 
 --------
 HatSingularityに含まれているいくつかのバグを修正し、最新バージョンの日本語対応を追加します。
@@ -15,6 +17,7 @@ HatSingularityに含まれているいくつかのバグを修正し、最新バ
 - 言語を変更すると、ゲームを再起動するまで翻訳が正常に動作しません。(暫定的な修正、Hatに依存するMod次第で壊れるかもしれません)
 - enのshield、krのCritical Hitの翻訳の欠落。
 - 全言語でバトルページフィルターの最後の3つのキーワードが空欄になってしまう。
+- フィルターの唯一のアイコンが表示されない。
 
 
 未訳だったキーワード語は適当に訳しました。
