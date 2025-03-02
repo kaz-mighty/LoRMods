@@ -443,8 +443,8 @@
 
     <BattleEffectTextExtra ID="Hat_Poise">
       <Name>呼吸</Name>
-      <Desc>攻撃ダイスを振るとき、最大値が本来の値の半分(切り捨て)増加、ダメージ量+&lt;color=#88ABAB&gt;&lt;u&gt;{X}&lt;/u&gt;&lt;/color&gt;
-的中時、最大値が増加した分だけこの値が減少。</Desc>
+      <Desc>攻撃ダイスの最大値が本来の値の半分(切り捨て)増加し、ダメージ量が+&lt;color=#88ABAB&gt;&lt;u&gt;{X}%&lt;/u&gt;&lt;/color&gt;。
+的中時、最大値の増加分だけこの値が減少。</Desc>
       <IconName>Hat_呼吸</IconName>
       <Color>#33CCFF</Color>
       <HasBracket>true</HasBracket>
@@ -454,8 +454,8 @@
     </BattleEffectTextExtra>
     <BattleEffectTextExtra ID="Hat_Poise_Keyword">
       <Name>呼吸 X</Name>
-      <Desc>攻撃ダイスを振るとき、最大値が本来の値の半分(切り捨て)増加、ダメージ量+ &lt;color=#88ABAB&gt;&lt;u&gt;(X x5)%&lt;/u&gt;&lt;/color&gt;
-的中時、最大値が増加した分だけこの値が減少。</Desc>
+      <Desc>攻撃ダイスの最大値が本来の値の半分(切り捨て)増加し、ダメージ量が+ &lt;color=#88ABAB&gt;&lt;u&gt;(X x5)%&lt;/u&gt;&lt;/color&gt;。
+的中時、最大値の増加分だけこの値が減少。</Desc>
       <IconName>Hat_呼吸</IconName>
       <Color>#33CCFF</Color>
       <IsChangeSelf>true</IsChangeSelf>

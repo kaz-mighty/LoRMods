@@ -499,7 +499,7 @@ At the end of the Scene, if Staggered, purge this status.</Desc>
     <BattleEffectTextExtra ID="Hat_Poise">
       <Name>Poise</Name>
       <RecognizeName>Hat Poise</RecognizeName>
-      <Desc>When rolling an Offensive die, boost the maximum roll value of it by half of its original value (Rounded down), and increase damage by &lt;color=#88ABAB&gt;&lt;u&gt;{X}&lt;/u&gt;&lt;/color&gt;.
+      <Desc>When rolling an Offensive die, boost the maximum roll value of it by half of its original value (Rounded down), and increase damage by &lt;color=#88ABAB&gt;&lt;u&gt;{X}%&lt;/u&gt;&lt;/color&gt;.
 On a successful hit, lose the amount stack equal to the amount by which the maximum roll value was boosted.</Desc>
       <IconName>Hat_呼吸</IconName>
       <Color>#33CCFF</Color>
