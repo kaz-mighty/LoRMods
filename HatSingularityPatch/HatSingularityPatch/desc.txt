@@ -9,9 +9,13 @@ Fixed bugs:
 - The last three keywords in the Battle Page Filter are blank in all languages.
 - The "Singleton" icon in the filter is not displayed.
 
+Other changes:
+- [抵抗] (Resilience) is no longer replaced in jp. (Because it's name is the same as Resist's "endured" in JP)
+
 
 --------
 HatSingularityに含まれているいくつかのバグを修正し、最新バージョンの日本語対応を追加します。
+日本語で未訳だったキーワード語は適当に訳しました。
 
 修正したバグ：
 - 言語を変更すると、ゲームを再起動するまで翻訳が正常に動作しません。(暫定的な修正、Hatに依存するMod次第で壊れるかもしれません)
@@ -19,6 +23,6 @@ HatSingularityに含まれているいくつかのバグを修正し、最新バ
 - 全言語でバトルページフィルターの最後の3つのキーワードが空欄になってしまう。
 - フィルターの唯一のアイコンが表示されない。
 
-
-未訳だったキーワード語は適当に訳しました。
+その他の変更：
+- jpでは[抵抗]は置換されなくなりました。(状態異常と耐性で同じ名前になっているため)
 ```
