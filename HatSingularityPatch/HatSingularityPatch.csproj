@@ -66,13 +66,23 @@
       <HintPath>..\..\Common\UnityEngine.CoreModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\Common\UnityEngine.InputLegacyModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\Common\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="UnityEngine.UIModule">
       <HintPath>..\..\Common\UnityEngine.UIModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BattleMultiPreviewListUI.cs" />
     <Compile Include="ExtraPreviewPatch.cs" />
+    <Compile Include="ExtraPreviewReplace.cs" />
     <Compile Include="HarmonyExtention.cs" />
     <Compile Include="OnlyOneFilterPatch.cs" />
     <Compile Include="ReInitializer.cs" />
