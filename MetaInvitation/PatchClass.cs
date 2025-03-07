@@ -211,7 +211,6 @@ namespace MetaInvitation
 				yield return CodeInstruction.Call(typeof(MetaDamageRate_Patch), "HasAllyBuf");
 				yield return new CodeInstruction(OpCodes.Stloc, hasAllyBuf);
 
-				var codeList = new List<CodeInstruction>(codes);
 				foreach (var code in codes)
 				{
 					yield return code;
@@ -276,7 +275,6 @@ namespace MetaInvitation
 				yield return CodeInstruction.Call(typeof(MetaDamageRate_Patch), "HasAllyBuf");
 				yield return new CodeInstruction(OpCodes.Stloc, hasAllyBuf);
 
-				var codeList = new List<CodeInstruction>(codes);
 				foreach (var code in codes)
 				{
 					yield return code;
