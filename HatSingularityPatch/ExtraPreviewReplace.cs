@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using HarmonyLib;
@@ -89,8 +89,8 @@ namespace HatPatch
 				previewListUI.Init(__instance);
 				previewListUIDict.Add(__instance, previewListUI);
 			}
+			previewListUI.BaseSortingOrder = __instance.transform.parent.childCount * 2 + BattleMultiPreviewListUI.RootSortingOrder + 2;
 			previewListUI.SetPreviewCards(previewCardList);
-			previewListUI.BaseSortingOrder = __instance.transform.parent.childCount * 2 + CardUIOrderPatch.BaseSortingOrder + 2;
 			previewListUI.ShowPreview();
 		}
 

@@ -54,8 +54,8 @@ namespace HatPatch
 				}
 			}
 		}
-
-		public int BaseSortingOrder { get; set; }
+		// Note: Must be set before SetPreviewCards if needed.
+		public int BaseSortingOrder { get; set; } = RootSortingOrder + (10 + 1) * 2;
 
 		public void Init(BattleDiceCardUI parentUI)
 		{
@@ -162,5 +162,7 @@ namespace HatPatch
 		List<BattleDiceCardUI> _previewUiList = new List<BattleDiceCardUI>();
 		List<BattleDiceCardModel> _previewCardList;
 
+		// BattleUnitCardsInHandUI Canvas Order == 1350
+		internal const int RootSortingOrder = 1350 + 1;
 	}
 }

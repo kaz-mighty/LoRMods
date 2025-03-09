@@ -58,7 +58,7 @@ namespace HatPatch
 				}
 				else
 				{
-					canvas.sortingOrder = instance.transform.GetSiblingIndex() * 2 + BaseSortingOrder;
+					canvas.sortingOrder = instance.transform.GetSiblingIndex() * 2 + BattleMultiPreviewListUI.RootSortingOrder;
 				}
 
 				// Also fix the Renderer Order of the Book Hunter Mod
@@ -79,7 +79,7 @@ namespace HatPatch
 				}
 				else
 				{
-					canvas.sortingOrder = instance.transform.parent.childCount * 2 + BaseSortingOrder;
+					canvas.sortingOrder = instance.transform.parent.childCount * 2 + BattleMultiPreviewListUI.RootSortingOrder;
 				}
 
 				// Also fix the Renderer Order of the Book Hunter Mod
@@ -89,8 +89,5 @@ namespace HatPatch
 				}
 			}
 		}
-
-		// BattleUnitCardsInHandUI Canvas Order == 1350
-		internal const int BaseSortingOrder = 1350 + 1;
 	}
 }
