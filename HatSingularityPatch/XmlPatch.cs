@@ -18,11 +18,6 @@ namespace HatPatch
 	{
 		[HarmonyPatch(typeof(HatInitializer.ExtraLoad), "GetAllResources")]
 		[HarmonyPostfix]
-		internal static void ReplaceResourcesPatch()
-		{
-			ReplaceResources();
-		}
-
 		internal static void ReplaceResources()
 		{
 			var assembly = Assembly.GetExecutingAssembly();
@@ -52,11 +47,6 @@ namespace HatPatch
 
 		[HarmonyPatch(typeof(HatInitializer.ExtraLoad), "AddXmls")]
 		[HarmonyPostfix]
-		internal static void PowerUpFilterFixPatch()
-		{
-			PowerUpFilterFix();
-		}
-
 		internal static void PowerUpFilterFix()
 		{
 			// To replace text with the Hat prefix, define BattleEffectTextExtra.
