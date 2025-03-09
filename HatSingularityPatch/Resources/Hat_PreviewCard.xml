@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreviewCardListRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CardList>
+    <!-- 漂亮的线, Will Make Fine Silk, 素敵な糸が出ます -->
+    <PreviewCardList ModId="Lor" CardId="401003">
+      <Preview>
+        <!-- 精美面料, Fascinating Fabric, 素敵な生地 -->
+        <PreviewModId>Lor</PreviewModId>
+        <PreviewCardId>401007</PreviewCardId>
+      </Preview>
+    </PreviewCardList>
+
+    <!-- 燎原之势-燎原烈火 -->
+    <PreviewCardList ModId="Lor" CardId="601008">
+      <Preview>
+        <PreviewModId>Lor</PreviewModId>
+        <PreviewCardId>601014</PreviewCardId>
+      </Preview>
+    </PreviewCardList>
+
+    <!-- 极端狂化-狂暴血刃 -->
+    <PreviewCardList ModId="Lor" CardId="608017">
+      <Preview>
+        <PreviewModId>Lor</PreviewModId>
+        <PreviewCardId>608001</PreviewCardId>
+      </Preview>
+    </PreviewCardList>
+
+    <!-- 短兵相接-起势动作 -->
+    <PreviewCardList ModId="Lor" CardId="511001">
+      <Preview>
+        <PreviewModId>Lor</PreviewModId>
+        <PreviewCardId>511005</PreviewCardId>
+      </Preview>
+    </PreviewCardList>
+
+    <!-- 舍吾皮肉-断汝筋骨 -->
+    <PreviewCardList ModId="Lor" CardId="512003">
+      <Preview>
+        <PreviewModId>Lor</PreviewModId>
+        <PreviewCardId>512006</PreviewCardId>
+      </Preview>
+    </PreviewCardList>
+
+    <!-- 预备动作-一点突破 -->
+    <PreviewCardList ModId="Lor" CardId="616006">
+      <Preview>
+        <PreviewModId>Lor</PreviewModId>
+        <PreviewCardId>616007</PreviewCardId>
+      </Preview>
+    </PreviewCardList>
+
+    <!-- Crescendo-落幕终曲 -->
+    <PreviewCardList ModId="Lor" CardId="705011">
+      <Preview>
+        <PreviewModId>Lor</PreviewModId>
+        <PreviewCardId>705012</PreviewCardId>
+      </Preview>
+    </PreviewCardList>
+
+    <!-- 绝望之焰-焦灼死灰 -->
+    <PreviewCardList ModId="Lor" CardId="705021">
+      <Preview>
+        <PreviewModId>Lor</PreviewModId>
+        <PreviewCardId>705022</PreviewCardId>
+      </Preview>
+    </PreviewCardList>
+
+    <!-- 剑刃解放I II III-->
+    <PreviewCardList ModId="Lor" CardId="605008">
+      <Preview>
+        <PreviewModId>Lor</PreviewModId>
+        <PreviewCardId>605009</PreviewCardId>
+      </Preview>
+      <Preview>
+        <PreviewModId>Lor</PreviewModId>
+        <PreviewCardId>605010</PreviewCardId>
+      </Preview>
+    </PreviewCardList>
+    <PreviewCardList ModId="Lor" CardId="605009">
+      <Preview>
+        <PreviewModId>Lor</PreviewModId>
+        <PreviewCardId>605010</PreviewCardId>
+      </Preview>
+    </PreviewCardList>
+
+    <!--拇指-->
+    <!--子弹装填-->
+    <PreviewCardList ModId="Lor" CardId="602001">
+      <Preview>
+        <PreviewModId>Lor</PreviewModId>
+        <PreviewCardId>602020</PreviewCardId>
+      </Preview>
+      <Preview>
+        <PreviewModId>Lor</PreviewModId>
+        <PreviewCardId>602021</PreviewCardId>
+      </Preview>
+      <Preview>
+        <PreviewModId>Lor</PreviewModId>
+        <PreviewCardId>602022</PreviewCardId>
+      </Preview>
+    </PreviewCardList>
+    <!--枪刺拼杀-->
+    <PreviewCardList ModId="Lor" CardId="602002">
+      <Preview>
+        <PreviewModId>Lor</PreviewModId>
+        <PreviewCardId>602020</PreviewCardId>
+      </Preview>
+      <Preview>
+        <PreviewModId>Lor</PreviewModId>
+        <PreviewCardId>602021</PreviewCardId>
+      </Preview>
+      <Preview>
+        <PreviewModId>Lor</PreviewModId>
+        <PreviewCardId>602022</PreviewCardId>
+      </Preview>
+    </PreviewCardList>
+    <!--牵制射击-->
+    <PreviewCardList ModId="Lor" CardId="602003">
+      <Preview>
+        <PreviewModId>Lor</PreviewModId>
+        <PreviewCardId>602020</PreviewCardId>
+      </Preview>
+      <Preview>
+        <PreviewModId>Lor</PreviewModId>
+        <PreviewCardId>602021</PreviewCardId>
+      </Preview>
+      <Preview>
+        <PreviewModId>Lor</PreviewModId>
+        <PreviewCardId>602022</PreviewCardId>
+      </Preview>
+    </PreviewCardList>
+    <!--冲击弹头-->
+    <PreviewCardList ModId="Lor" CardId="602004">
+      <Preview>
+        <PreviewModId>Lor</PreviewModId>
+        <PreviewCardId>602020</PreviewCardId>
+      </Preview>
+      <Preview>
+        <PreviewModId>Lor</PreviewModId>
+        <PreviewCardId>602021</PreviewCardId>
+      </Preview>
+      <Preview>
+        <PreviewModId>Lor</PreviewModId>
+        <PreviewCardId>602022</PreviewCardId>
+      </Preview>
+    </PreviewCardList>
+    <!--密集火网-->
+    <PreviewCardList ModId="Lor" CardId="602006">
+      <Preview>
+        <PreviewModId>Lor</PreviewModId>
+        <PreviewCardId>602020</PreviewCardId>
+      </Preview>
+      <Preview>
+        <PreviewModId>Lor</PreviewModId>
+        <PreviewCardId>602021</PreviewCardId>
+      </Preview>
+      <Preview>
+        <PreviewModId>Lor</PreviewModId>
+        <PreviewCardId>602022</PreviewCardId>
+      </Preview>
+    </PreviewCardList>
+    <!--即决审判-->
+    <PreviewCardList ModId="Lor" CardId="602009">
+      <Preview>
+        <PreviewModId>Lor</PreviewModId>
+        <PreviewCardId>602020</PreviewCardId>
+      </Preview>
+      <Preview>
+        <PreviewModId>Lor</PreviewModId>
+        <PreviewCardId>602021</PreviewCardId>
+      </Preview>
+      <Preview>
+        <PreviewModId>Lor</PreviewModId>
+        <PreviewCardId>602022</PreviewCardId>
+      </Preview>
+    </PreviewCardList>
+  </CardList>
+</PreviewCardListRoot>

@@ -41,6 +41,11 @@
       <HintPath>..\..\Common\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="ErrorLogCleaner, Version=1.3.0.0, Culture=neutral, PublicKeyToken=07c306830c1999be, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>HatSingularityPatch\Assemblies\1FrameworkAssemblies\ErrorLogCleaner.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="HatSingularity">
       <HintPath>.\HatSingularity.dll</HintPath>
       <Private>False</Private>
@@ -61,8 +66,24 @@
       <HintPath>..\..\Common\UnityEngine.CoreModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\Common\UnityEngine.InputLegacyModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\Common\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\Common\UnityEngine.UIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BattleMultiPreviewListUI.cs" />
+    <Compile Include="CardUIOrderPatch.cs" />
+    <Compile Include="ExtraPreviewReplace.cs" />
+    <Compile Include="HarmonyExtention.cs" />
     <Compile Include="OnlyOneFilterPatch.cs" />
     <Compile Include="ReInitializer.cs" />
     <Compile Include="Initializer.cs" />
@@ -76,6 +97,10 @@
     <EmbeddedResource Include="Resources\Hat_Etc_jp.xml" LogicalName="Hat_Etc_jp.xml" />
     <EmbeddedResource Include="Resources\Hat_Etc_kr.xml" LogicalName="Hat_Etc_kr.xml" />
     <EmbeddedResource Include="Resources\Hat_OriginKeyword_jp.xml" LogicalName="Hat_OriginKeyword_jp.xml" />
+    <EmbeddedResource Include="Resources\Hat_PreviewCard.xml" LogicalName="Hat_PreviewCard.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

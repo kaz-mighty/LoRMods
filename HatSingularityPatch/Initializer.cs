@@ -8,6 +8,7 @@ using UnityEngine;
 using HarmonyLib;
 using Mod;
 using Hat_Harmony;
+using ErrorLogCleaner;
 
 namespace HatPatch
 {
@@ -31,6 +32,8 @@ namespace HatPatch
 			}
 
 			harmony.PatchAll(Assembly.GetExecutingAssembly());
+			LogCleaner.AddCommonAssembly(Assembly.GetExecutingAssembly());
+			LogCleaner.CleanUp();
 		}
 
 		internal static void AddDisplayLog(string msg, LogType type)
