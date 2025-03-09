@@ -90,7 +90,7 @@ namespace HatPatch
 				previewListUIDict.Add(__instance, previewListUI);
 			}
 			previewListUI.SetPreviewCards(previewCardList);
-			previewListUI.BaseSortingOrder = __instance.transform.parent.childCount * 2 + ExtraPreviewPatch.BaseSortingOrder + 2;
+			previewListUI.BaseSortingOrder = __instance.transform.parent.childCount * 2 + CardUIOrderPatch.BaseSortingOrder + 2;
 			previewListUI.ShowPreview();
 		}
 

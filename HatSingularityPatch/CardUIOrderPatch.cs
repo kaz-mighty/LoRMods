@@ -9,7 +9,7 @@ using HarmonyLib;
 namespace HatPatch
 {
 	[HarmonyPatch]
-	class ExtraPreviewPatch
+	class CardUIOrderPatch
 	{
 		[HarmonyPatch(typeof(BattleDiceCardUI), "HideDetail")]
 		[HarmonyPatch(typeof(BattleDiceCardUI), "ResetSiblingIndex")]
@@ -24,11 +24,11 @@ namespace HatPatch
 			{
 				case "HideDetail":
 				case "ResetSiblingIndex":
-					insertMethod = AccessTools.Method(typeof(ExtraPreviewPatch), "ResetOrder");
+					insertMethod = AccessTools.Method(typeof(CardUIOrderPatch), "ResetOrder");
 					break;
 				case "OnClick":
 				case "ShowDetail":
-					insertMethod = AccessTools.Method(typeof(ExtraPreviewPatch), "SetAsLastOrder");
+					insertMethod = AccessTools.Method(typeof(CardUIOrderPatch), "SetAsLastOrder");
 					break;
 				default:
 					throw new ArgumentException("The patch attribute has an invalid value.");

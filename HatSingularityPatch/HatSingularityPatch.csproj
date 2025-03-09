@@ -81,7 +81,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BattleMultiPreviewListUI.cs" />
-    <Compile Include="ExtraPreviewPatch.cs" />
+    <Compile Include="CardUIOrderPatch.cs" />
     <Compile Include="ExtraPreviewReplace.cs" />
     <Compile Include="HarmonyExtention.cs" />
     <Compile Include="OnlyOneFilterPatch.cs" />
