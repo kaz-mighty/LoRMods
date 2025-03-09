@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.IO;
 using System.Reflection;
 using UnityEngine;
+using Debug = UnityEngine.Debug;
 using HarmonyLib;
 using Mod;
 using Hat_Harmony;
@@ -18,6 +20,8 @@ namespace HatPatch
 		// Uses the fact that "1FrameworkLoader" loads and adds initialization list in order of file name.
 		public override void OnInitializeMod()
 		{
+			var stopwatch = Stopwatch.StartNew();
+
 			var hatVersion = Assembly.GetAssembly(typeof(HatInitializer)).GetName().Version;
 			if (hatVersion != patchTargetVersion)
 			{
@@ -34,6 +38,9 @@ namespace HatPatch
 			harmony.PatchAll(Assembly.GetExecutingAssembly());
 			LogCleaner.AddCommonAssembly(Assembly.GetExecutingAssembly());
 			LogCleaner.CleanUp();
+
+			stopwatch.Stop();
+			Debug.Log($"(Mod: {packageName}) Initialization time elapsed {stopwatch.ElapsedMilliseconds} ms");
 		}
 
 		internal static void AddDisplayLog(string msg, LogType type)

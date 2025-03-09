@@ -1,6 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
+using Debug = UnityEngine.Debug;
 using HarmonyLib;
 using Hat_Harmony;
 using Hat_Method;
@@ -19,12 +21,16 @@ namespace HatPatch
 		[HarmonyPostfix]
 		static void CancelPatch()
 		{
+			var stopwatch = Stopwatch.StartNew();
 			Initializer.harmony.Unpatch(typeof(BattleDiceCardUI).GetMethod("ShowDetail"), HarmonyPatchType.Postfix, "LOR.HatSingularity");
 			Initializer.harmony.Unpatch(typeof(BattleDiceCardUI).GetMethod("HideDetail"), HarmonyPatchType.Postfix, "LOR.HatSingularity");
 			Initializer.harmony.Unpatch(typeof(BattleDiceCardUI).GetMethod("OnClick"), HarmonyPatchType.Postfix, "LOR.HatSingularity");
 
 			// It will work without Canvas, but other mods may be using Canvas, so leave it as is.
 			// Initializer.harmony.Unpatch(typeof(BattleUnitCardsInHandUI).GetMethod("UpdateCardList"), HarmonyPatchType.Postfix, "LOR.HatSingularity");
+
+			stopwatch.Stop();
+			Debug.Log($"(Mod: {Initializer.packageName}) Patch cancel time elapsed {stopwatch.ElapsedMilliseconds} ms");
 		}
 
 		static List<BattleDiceCardModel> GetBattlePreviewCardModels(BattleDiceCardModel cardModel)
