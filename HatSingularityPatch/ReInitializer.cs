@@ -10,13 +10,6 @@ namespace HatPatch
 	[HarmonyPatch]
 	class ReInitializer
 	{
-		[HarmonyPatch(typeof(TextDataModel), "InitTextData")]
-		[HarmonyPostfix]
-		static void InittextDataPostFix()
-		{
-			ReInitialize();
-		}
-
 		[HarmonyPatch(typeof(UICardListDetailFilterPopup), "Open")]
 		[HarmonyPrefix]
 		static void ReInitializeBeforeOpen()
@@ -30,6 +23,8 @@ namespace HatPatch
 			}
 		}
 
+		[HarmonyPatch(typeof(TextDataModel), "InitTextData")]
+		[HarmonyPostfix]
 		static void ReInitialize()
 		{
 			HatInitializer.HatOriginText.Clear();
