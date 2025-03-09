@@ -15,8 +15,8 @@ Fixed bugs:
 Other changes:
 - [抵抗] (Resilience) is no longer replaced in jp. (Because it's name is the same as Resist's "endured" in JP)
 - The Multiple preview system during battle has been almost remade.
-  - No matter which preview page you move the cursor over, the first one will be displayed in detail.
-  - To select, use the mouse wheel or left and right keys as before.
+-- No matter which preview page you move the cursor over, the first one will be displayed in detail.
+-- To select, use the mouse wheel or left and right keys as before.
 
 --------
 HatSingularity(1.0.0.9)に含まれているいくつかのバグを修正し、最新バージョンの日本語対応を追加します。
@@ -34,8 +34,11 @@ HatSingularity自体は含まれてないので別途サブスクライブが必
 その他の変更：
 - jpでは[抵抗]は置換されなくなりました。(状態異常と耐性で同じ名前になっているため)
 - 戦闘中のマルチプレビューシステムはほぼ作り直されました。
-  - どのプレビューページにカーソルを移動させても、1枚目が詳細表示されます。
-  - 選択するには今までのようにマウスホイールか左右キーを使用します。
+-- どのプレビューページにカーソルを移動させても、1枚目が詳細表示されます。
+-- 選択するには今までのようにマウスホイールか左右キーを使用します。
+
+--------
+这修复了 "帽子的奇点科技"（1.0.0.9）中的一些错误。请检查其他语言以获取更多信息。
 
 --------
 GitHub Link: https://github.com/kaz-mighty/LoRMods
