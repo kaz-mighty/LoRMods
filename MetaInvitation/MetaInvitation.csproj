@@ -115,6 +115,8 @@
     <Compile Include="First\DiceCardSelfAbility_TimeWave.cs" />
     <Compile Include="First\DiceCardSelfAbility_TimeSword.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
