@@ -97,6 +97,7 @@
     <EmbeddedResource Include="Resources\Hat_Etc_jp.xml" LogicalName="Hat_Etc_jp.xml" />
     <EmbeddedResource Include="Resources\Hat_Etc_kr.xml" LogicalName="Hat_Etc_kr.xml" />
     <EmbeddedResource Include="Resources\Hat_OriginKeyword_jp.xml" LogicalName="Hat_OriginKeyword_jp.xml" />
+    <EmbeddedResource Include="Resources\Hat_PreviewCard.xml" LogicalName="Hat_PreviewCard.xml" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
