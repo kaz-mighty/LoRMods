@@ -137,7 +137,7 @@ namespace HatPatch
 			}
 		}
 
-		public static Dictionary<BattleDiceCardUI, BattleMultiPreviewListUI> previewListUIDict = 
+		public static Dictionary<BattleDiceCardUI, BattleMultiPreviewListUI> previewListUIDict =
 			new Dictionary<BattleDiceCardUI, BattleMultiPreviewListUI>();
 
 		public const string HatObjectName = "HatPatch_MultiPreviewCard";

@@ -1,0 +1,10 @@
+# There was no particular reason for it, it was just that way from the beginning.
+# C# files
+[*.cs]
+indent_style = tab
+tab_width = 4
+
+# Xml files
+[*.xml]
+indent_style = space
+indent_size = 2

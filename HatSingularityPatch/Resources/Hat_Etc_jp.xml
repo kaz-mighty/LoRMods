@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <localize xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
-	<!-- Ui -->
-	<text id="Hat_Shield">バリア</text>
-	<text id="Hat_TremorView">混乱閾値増加</text>
-	<text id="Hat_PoiseCrit">会心</text>
-	<!-- Placeholder only -->
-	<text id="ui_ability_discard">捨てる</text>
-	<text id="ui_ability_exhaustonuse">使い捨て</text>
+  <!-- Ui -->
+  <text id="Hat_Shield">バリア</text>
+  <text id="Hat_TremorView">混乱閾値増加</text>
+  <text id="Hat_PoiseCrit">会心</text>
+  <!-- Placeholder only -->
+  <text id="ui_ability_discard">捨てる</text>
+  <text id="ui_ability_exhaustonuse">使い捨て</text>
 </localize>

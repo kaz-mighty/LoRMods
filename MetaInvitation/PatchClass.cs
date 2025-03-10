@@ -212,7 +212,7 @@ namespace MetaInvitation
 				yield return new CodeInstruction(OpCodes.Stloc, hasAllyBuf);
 
 				var codeList = new List<CodeInstruction>(codes);
-				foreach(var code in codes)
+				foreach (var code in codes)
 				{
 					yield return code;
 					if (code.Calls(targetMethod))
@@ -277,7 +277,7 @@ namespace MetaInvitation
 				yield return new CodeInstruction(OpCodes.Stloc, hasAllyBuf);
 
 				var codeList = new List<CodeInstruction>(codes);
-				foreach(var code in codes)
+				foreach (var code in codes)
 				{
 					yield return code;
 					if (code.Calls(targetMethod))

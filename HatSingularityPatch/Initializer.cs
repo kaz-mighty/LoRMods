@@ -21,7 +21,8 @@ namespace HatPatch
 			var hatVersion = Assembly.GetAssembly(typeof(HatInitializer)).GetName().Version;
 			if (hatVersion != patchTargetVersion)
 			{
-				switch (GlobalGameManager.Instance.CurrentOption.language) {
+				switch (GlobalGameManager.Instance.CurrentOption.language)
+				{
 					case "jp":
 						AddDisplayLog("HatSingularityのバージョンが1.0.0.9ではありません。パッチがうまくいかない可能性があります。", LogType.Log);
 						break;

@@ -267,7 +267,8 @@ namespace MetaInvitation.Second
 
 			priorityEnemy /= enemyUnits.Count;
 			priorityAlly /= allyUnits.Count;
-			if (nicolaiTarget) {
+			if (nicolaiTarget)
+			{
 				priorityAlly += 0.5f * 2f * 2f / (allyUnits.Count + 1);
 			}
 			// ダメージ増加率 + 混乱ダメージ増加率を

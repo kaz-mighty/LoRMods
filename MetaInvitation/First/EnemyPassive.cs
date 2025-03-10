@@ -48,7 +48,8 @@ namespace MetaInvitation.First
 				return false;
 			}
 
-			foreach (var unit in BattleObjectManager.instance.GetAliveList(Faction.Player)) {
+			foreach (var unit in BattleObjectManager.instance.GetAliveList(Faction.Player))
+			{
 				int point = 0;
 				var bufList = unit.bufListDetail.GetActivatedBufList();
 				foreach (var buf in bufList)
