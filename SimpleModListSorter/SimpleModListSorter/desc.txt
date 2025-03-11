@@ -1,0 +1,8 @@
+Title:Simple Mod List Sorter
+Tag:Tool
+```
+
+--------
+GitHub Link: https://github.com/kaz-mighty/LoRMods
+
+```
