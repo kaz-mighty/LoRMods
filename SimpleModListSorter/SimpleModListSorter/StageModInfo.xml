@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NormalInvitation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Version>1.1</Version>
+  <Workshop>
+    <ID>kazmighty.SimpleModListSorter</ID>
+    <Title>Simple Mod List Sorter</Title>
+    <Description>A simple tool that allows you to sort the Mod list without using BepInEx.</Description>
+    <Tag>Tool</Tag>
+    <PreviewImage />
+  </Workshop>
+  <InvitationFile>
+    <Stage Exist="false"/>
+    <EnemyUnit Exist="false"/>
+    <EquipPage_Enemy Exist="false"/>
+    <EquipPage_Librarian Exist="false"/>
+    <DropBook Exist="false"/>
+    <CardDropTable Exist="false"/>
+    <CardInfo Exist="false"/>
+    <Deck Exist="false"/>
+    <Dialog Exist="false"/>
+    <BookDesc Exist="false"/>
+    <Passive Exist="false"/>
+  </InvitationFile>
+</NormalInvitation>

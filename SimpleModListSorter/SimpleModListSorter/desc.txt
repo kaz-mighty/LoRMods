@@ -1,0 +1,42 @@
+Title:Simple Mod List Sorter
+Tag:Tool
+```
+A simple tool that allows you to sort the Mod list without using BepInEx.
+
+[olist]
+[*] When you enable this mod and start the game, a text file with the mod list output will be opened.
+[*] Sort each line of the text file in the order you want.
+[*] When you close the text file, the order will be reflected in the game's save data.
+[/olist]
+
+[list]
+[*] The text file is output to (game installation location)/LibraryOfRuina_Data/Mods/SimpleModListSorter.txt.
+[*] If the text file already exists, the mods that don't exist in the file will be added to the end, and the other order will be maintained. 
+  This makes it easy to synchronize the order even if you replace save data.
+[*] 1FrameworkPriorityLoader and BaseMod cannot be reordered.
+[*] If there are multiple Mods with the same ID, the order among them cannot be specified.
+[*] I recommend using a text editor that allows you to select one line by clicking on the line number.
+[/list]
+
+--------
+BepInEx無しでModリストの並び替えができるシンプルなツール。
+
+[olist]
+[*] このModを有効にしてゲームを開始すると、Modリストを出力したテキストファイルが開きます。
+[*] テキストファイルの各行を並び替えたい順番に並び替えます。
+[*] テキストファイルを閉じると、ゲームのセーブデータに順序が反映されます。
+[/olist]
+
+[list]
+[*] テキストファイルは(ゲームのインストール先)/LibraryOfRuina_Data/Mods/SimpleModListSorter.txtに出力されます。
+[*] 既にテキストファイルがある場合は、ファイルに存在しないModが末尾に追加され、その他の順序は維持されます。
+  これにより、セーブデータを入れ替えても並び順を楽に同期できます。
+[*] 1FrameworkPriorityLoader と BaseMod は並び替えられません。
+[*] 同じIDを持つModが複数ある場合、それら同士の順序は指定できません。
+[*] 行番号のクリックで1行選択ができるテキストエディタを推奨します。
+[/list]
+
+--------
+GitHub Link: https://github.com/kaz-mighty/LoRMods
+
+```
