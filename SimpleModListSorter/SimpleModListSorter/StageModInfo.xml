@@ -4,8 +4,8 @@
   <Workshop>
     <ID>kazmighty.SimpleModListSorter</ID>
     <Title>Simple Mod List Sorter</Title>
-    <Description></Description>
-    <Tag />
+    <Description>A simple tool that allows you to sort the Mod list without using BepInEx.</Description>
+    <Tag>Tool</Tag>
     <PreviewImage />
   </Workshop>
   <InvitationFile>
