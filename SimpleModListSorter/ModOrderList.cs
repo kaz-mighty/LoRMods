@@ -69,7 +69,7 @@ namespace SimpleModListSorter
 			foreach (var modInfo in list)
 			{
 				var length = modInfo.directory.Length;
-				if (length > maxDirectoryLength)
+				if (length > maxDirectoryLength && length <= MaxDirectoryAlignment)
 				{
 					maxDirectoryLength = length;
 				}
@@ -188,6 +188,7 @@ namespace SimpleModListSorter
 		List<ModOrderInfo> list = new List<ModOrderInfo>();
 
 		public static readonly string filePath = Path.Combine(Application.dataPath, "Mods", "SimpleModListSorter.txt");
+		private const int MaxDirectoryAlignment = 32;
 		private static readonly string[] specialMods = new string[]
 		{
 			"1FrameworkPriorityLoader",
