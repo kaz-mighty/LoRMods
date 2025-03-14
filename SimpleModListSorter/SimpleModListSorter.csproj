@@ -32,6 +32,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="0Harmony, Version=2.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>SimpleModListSorter\Assemblies\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\Common\BaseGame\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
@@ -53,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Initializer.cs" />
     <Compile Include="ModOrderList.cs" />
+    <Compile Include="PatchClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -4,6 +4,7 @@ using System.Diagnostics;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
 using Mod;
+using HarmonyLib;
 
 namespace SimpleModListSorter
 {
@@ -11,6 +12,8 @@ namespace SimpleModListSorter
 	{
 		public override void OnInitializeMod()
 		{
+			harmony.PatchAll(typeof(PatchClass));
+
 			var isSuccess = ModOrderList.LoadFile(false, out var modOrder);
 			if (isSuccess)
 			{
@@ -19,36 +22,27 @@ namespace SimpleModListSorter
 			}
 			if (isSuccess)
 			{
-				var process = new Process();
-				process.StartInfo.FileName = ModOrderList.filePath;
-				process.StartInfo.UseShellExecute = true;
-				process.EnableRaisingEvents = true;
-				process.Exited += OnExitedTextEdit;
-				process.Start();
-
-				if (!canAsync)
-				{
-					Debug.Log("WaitForExit");
-					process.WaitForExit();
-				}
+				textProcess = new Process();
+				textProcess.StartInfo.FileName = ModOrderList.filePath;
+				textProcess.StartInfo.UseShellExecute = true;
+				textProcess.Start();
 			}
 		}
 
-		void OnExitedTextEdit(object _sender, EventArgs _e)
+		internal static void OnAllModInitialized()
 		{
+			if (textProcess == null) { return; }
+
+			Debug.Log($"(Mod: {packageName}) WaitForExit...");
+			textProcess.WaitForExit();
+
 			if (ModOrderList.LoadFile(true, out var modOrder))
 			{
-				modOrder.SortAndSaveGameList();
+				modOrder.SortGameList();
 				AddDisplayLog("Sorting completed.", LogType.Log);
 			}
 
-			var process = _sender as Process;
-			if (process != null)
-			{
-				// If canAsync == false and dispose here, the Exited event will occur twice, so release it.
-				process.Exited -= OnExitedTextEdit;
-				process.Dispose();
-			}
+			textProcess.Dispose();
 		}
 
 		internal static void AddDisplayLog(string msg, LogType type)
@@ -71,12 +65,10 @@ namespace SimpleModListSorter
 			Debug.unityLogger.Log(type, msg);
 			ModContentManager.Instance.GetErrorLogs().Add(msg);
 		}
-
-		// Which is better?
-		public static bool canAsync = false;
+		private static Process textProcess = null;
 
 		public static readonly string packageName = "Simple Mod List Sorter";
 		public static readonly string packageId = "kazmighty.SimpleModListSorter";
-
+		public static readonly Harmony harmony = new Harmony(packageId);
 	}
 }

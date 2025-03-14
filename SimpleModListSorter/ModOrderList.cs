@@ -147,12 +147,11 @@ namespace SimpleModListSorter
 		}
 
 		/// <summary>
-		/// Sort and save the game's mod list based on this list.
+		/// Sort the game's mod list based on this list.
 		/// </summary>
-		public void SortAndSaveGameList()
+		public void SortGameList()
 		{
 			var allMods = ModContentManager.Instance.GetAllMods();
-			var activeMods = new List<ModContentInfo>();
 			var unsorted = new List<ModContentInfo>(allMods);
 			allMods.Clear();
 			foreach (var orderInfo in list)
@@ -163,15 +162,6 @@ namespace SimpleModListSorter
 				allMods.Add(contentInfo);
 			}
 			allMods.AddRange(unsorted);
-
-			foreach (var contentInfo in allMods)
-			{
-				if (contentInfo.activated)
-				{
-					activeMods.Add(contentInfo);
-				}
-			}
-			ModContentManager.Instance.SaveSelectionData(allMods, activeMods);
 		}
 
 		private static ModContentDict GetAllModDictionary()

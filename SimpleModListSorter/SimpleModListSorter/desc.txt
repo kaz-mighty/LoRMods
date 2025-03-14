@@ -7,6 +7,7 @@ A simple tool that allows you to sort the Mod list without using BepInEx.
 [*] When you enable this mod and start the game, a text file with the mod list output will be opened.
 [*] Sort each line of the text file in the order you want.
 [*] When you close the text file, the order will be reflected in the game's save data.
+  The game will not proceed until the text file is closed.
 [/olist]
 
 [list]
@@ -25,6 +26,7 @@ BepInEx無しでModリストの並び替えができるシンプルなツール�
 [*] このModを有効にしてゲームを開始すると、Modリストを出力したテキストファイルが開きます。
 [*] テキストファイルの各行を並び替えたい順番に並び替えます。
 [*] テキストファイルを閉じると、ゲームのセーブデータに順序が反映されます。
+  テキストファイルを閉じるまでゲームは進行しません。
 [/olist]
 
 [list]
